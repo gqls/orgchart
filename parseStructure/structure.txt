@@ -1,0 +1,252 @@
+q5-orgmaps/                              # Root project directory
+│
+├── .github/                             # GitHub configuration
+│   └── workflows/                       # CI/CD workflows
+│       ├── laravel-tests.yml            # Backend test workflow
+│       └── frontend-tests.yml           # Frontend test workflow
+│
+├── app/                                 # Laravel application code
+│   ├── Console/                         # Artisan commands
+│   │   └── Commands/
+│   │       ├── ImportOrganizationData.php
+│   │       └── CalculateMetrics.php
+│   │
+│   ├── Events/                          # Event classes
+│   │
+│   ├── Exceptions/                      # Exception handlers
+│   │   └── Handler.php
+│   │
+│   ├── Http/                            # HTTP layer
+│   │   ├── Controllers/                 # Controllers
+│   │   │   ├── Api/                     # API controllers
+│   │   │   │   ├── AuthController.php
+│   │   │   │   ├── DepartmentController.php
+│   │   │   │   ├── OrganizationController.php
+│   │   │   │   ├── PositionController.php
+│   │   │   │   ├── ReportingRelationshipController.php
+│   │   │   │   └── ScenarioController.php
+│   │   │   └── Controller.php
+│   │   │
+│   │   ├── Middleware/                  # Middleware
+│   │   │   ├── Authenticate.php
+│   │   │   ├── CheckOrganizationAccess.php
+│   │   │   └── VerifyCsrfToken.php
+│   │   │
+│   │   └── Requests/                    # Form requests
+│   │       ├── CreateOrganizationRequest.php
+│   │       ├── CreatePositionRequest.php
+│   │       └── CreateScenarioRequest.php
+│   │
+│   ├── Models/                          # Eloquent models
+│   │   ├── ActivityLog.php
+│   │   ├── Department.php
+│   │   ├── Metric.php
+│   │   ├── Organization.php
+│   │   ├── Permission.php
+│   │   ├── Position.php
+│   │   ├── ReportingRelationship.php
+│   │   ├── Role.php
+│   │   ├── Scenario.php
+│   │   ├── ScenarioRelationship.php
+│   │   ├── StrategicObjective.php
+│   │   ├── Strategy.php
+│   │   ├── Template.php
+│   │   └── User.php
+│   │
+│   ├── Policies/                        # Authorization policies
+│   │   ├── OrganizationPolicy.php
+│   │   ├── PositionPolicy.php
+│   │   └── ScenarioPolicy.php
+│   │
+│   ├── Providers/                       # Service providers
+│   │   ├── AppServiceProvider.php
+│   │   ├── AuthServiceProvider.php
+│   │   ├── EventServiceProvider.php
+│   │   └── RouteServiceProvider.php
+│   │
+│   └── Services/                        # Business logic services
+│       ├── ImportService.php
+│       ├── MetricsCalculationService.php
+│       ├── OrganizationChartService.php
+│       └── ScenarioComparisonService.php
+│
+├── bootstrap/                           # Laravel bootstrap
+│   └── app.php
+│
+├── config/                              # Configuration files
+│   ├── app.php
+│   ├── auth.php
+│   ├── database.php
+│   └── sanctum.php
+│
+├── database/                            # Database
+│   ├── factories/                       # Model factories
+│   │   ├── DepartmentFactory.php
+│   │   ├── OrganizationFactory.php
+│   │   ├── PositionFactory.php
+│   │   ├── RoleFactory.php
+│   │   ├── ScenarioFactory.php
+│   │   └── UserFactory.php
+│   │
+│   ├── migrations/                      # Migrations
+│   │   ├── 2023_01_01_000001_create_roles_table.php
+│   │   ├── 2023_01_01_000002_create_permissions_table.php
+│   │   ├── 2023_01_01_000003_create_users_table.php
+│   │   ├── 2023_01_01_000004_create_organizations_table.php
+│   │   ├── 2023_01_01_000005_create_organization_user_table.php
+│   │   ├── 2023_01_01_000006_create_departments_table.php
+│   │   ├── 2023_01_01_000007_create_positions_table.php
+│   │   ├── 2023_01_01_000008_create_reporting_relationships_table.php
+│   │   ├── 2023_01_01_000009_create_scenarios_table.php
+│   │   ├── 2023_01_01_000010_create_scenario_positions_table.php
+│   │   ├── 2023_01_01_000011_create_scenario_relationships_table.php
+│   │   ├── 2023_01_01_000012_create_strategies_table.php
+│   │   ├── 2023_01_01_000013_create_strategic_objectives_table.php
+│   │   ├── 2023_01_01_000014_create_metrics_table.php
+│   │   ├── 2023_01_01_000015_create_scenario_metrics_table.php
+│   │   ├── 2023_01_01_000016_create_activity_logs_table.php
+│   │   └── 2023_01_01_000017_create_templates_table.php
+│   │
+│   └── seeders/                         # Seeders
+│       ├── DatabaseSeeder.php
+│       ├── RoleSeeder.php
+│       ├── MetricSeeder.php
+│       └── DemoDataSeeder.php
+│
+├── docker/                              # Docker configuration
+│   ├── app/                             # PHP-FPM container
+│   │   └── Dockerfile
+│   ├── mysql/                           # MySQL container
+│   │   └── my.cnf
+│   ├── nginx/                           # Nginx container
+│   │   ├── Dockerfile
+│   │   └── default.conf
+│   └── redis/                           # Redis container
+│       └── redis.conf
+│
+├── kubernetes/                          # Kubernetes configuration
+│   ├── app/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── mysql/
+│   │   ├── deployment.yaml
+│   │   ├── service.yaml
+│   │   └── persistent-volume-claim.yaml
+│   ├── nginx/
+│   │   ├── configmap.yaml
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── redis/
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── secrets.yaml
+│   └── ingress.yaml
+│
+├── public/                              # Public assets
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   │   └── logo.svg
+│   ├── favicon.ico
+│   └── index.php
+│
+├── resources/                           # Resource files
+│   ├── css/                             # CSS files
+│   │   └── app.css
+│   │
+│   ├── js/                              # JavaScript files
+│   │   ├── app.js                       # Main JS entry point
+│   │   ├── bootstrap.js                 # JS bootstrap
+│   │   ├── router.js                    # Vue Router config
+│   │   ├── store/                       # Vuex store
+│   │   │   ├── index.js
+│   │   │   ├── modules/
+│   │   │   │   ├── auth.js
+│   │   │   │   ├── organizations.js
+│   │   │   │   └── scenarios.js
+│   │   │   └── mutations.js
+│   │   │
+│   │   └── components/                  # Vue components
+│   │       ├── App.vue                  # Main app component
+│   │       ├── Dashboard.vue            # Dashboard component
+│   │       ├── Header.vue               # Header component
+│   │       ├── Sidebar.vue              # Sidebar component
+│   │       ├── Login.vue                # Login component
+│   │       ├── Register.vue             # Registration component
+│   │       ├── OrganizationsList.vue    # Organizations list
+│   │       ├── OrganizationCreate.vue   # Create organization
+│   │       ├── OrgChart.vue             # Org chart component
+│   │       ├── AsIsAnalysis.vue         # Analysis component
+│   │       ├── ToBeModeling.vue         # Modeling component
+│   │       ├── ActivityAnalysis.vue     # Activity analysis
+│   │       └── HrData.vue               # HR data component
+│   │
+│   └── views/                           # Laravel views
+│       ├── app.blade.php                # SPA entry point
+│       └── welcome.blade.php            # Welcome page
+│
+├── routes/                              # Routes
+│   ├── api.php                          # API routes
+│   ├── channels.php                     # Broadcast channels
+│   ├── console.php                      # Console routes
+│   └── web.php                          # Web routes
+│
+├── storage/                             # Laravel storage
+│   ├── app/
+│   │   └── public/
+│   ├── framework/
+│   └── logs/
+│
+├── tests/                               # Tests
+│   ├── Feature/                         # Feature tests
+│   │   ├── AuthTest.php
+│   │   ├── OrganizationTest.php
+│   │   ├── DepartmentTest.php
+│   │   ├── PositionTest.php
+│   │   └── ScenarioTest.php
+│   │
+│   ├── Unit/                            # Unit tests
+│   │   ├── MetricsCalculationTest.php
+│   │   └── OrganizationChartTest.php
+│   │
+│   ├── Javascript/                      # JavaScript tests
+│   │   ├── components/                  # Component tests
+│   │   │   ├── Dashboard.test.js
+│   │   │   ├── OrgChart.test.js
+│   │   │   ├── AsIsAnalysis.test.js
+│   │   │   └── ToBeModeling.test.js
+│   │   ├── setup.js                     # Jest setup
+│   │   └── styleMock.js                 # Style mock
+│   │
+│   └── TestCase.php                     # Base test case
+│
+├── cypress/                             # Cypress E2E tests
+│   ├── fixtures/                        # Test fixtures
+│   ├── integration/                     # Test specs
+│   │   ├── auth.spec.js
+│   │   ├── dashboard.spec.js
+│   │   ├── orgchart.spec.js
+│   │   ├── tobemodeling.spec.js
+│   │   └── asisanalysis.spec.js
+│   ├── plugins/
+│   │   └── index.js
+│   └── support/
+│       ├── commands.js
+│       └── index.js
+│
+├── .env                                 # Environment variables
+├── .env.example                         # Example env file
+├── .env.testing                         # Testing env file
+├── .gitignore                           # Git ignore file
+├── composer.json                        # Composer dependencies
+├── package.json                         # NPM dependencies
+├── phpunit.xml                          # PHPUnit configuration
+├── jest.config.js                       # Jest configuration
+├── webpack.mix.js                       # Laravel Mix config
+├── tailwind.config.js                   # Tailwind CSS config
+├── babel.config.js                      # Babel configuration
+├── .eslintrc.js                         # ESLint configuration
+├── docker-compose.yml                   # Docker Compose
+├── README.md                            # Project readme
+├── TESTING.md                           # Testing guide
+└── LICENSE                              # License file
