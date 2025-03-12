@@ -57,7 +57,7 @@ You can find more detailed information in the appendices, including:
 **Appendices:**
 
 * **Appendix A: API Documentation**
-   * [Link to OpenAPI/Swagger documentation]
+   * [API Documentation](https://swagger.io/specification/)
 * **Appendix B: Database Schema Diagram**
    * [Database entity-relationship diagram]
 * **Appendix C: Development Setup Guide**
