@@ -16,8 +16,8 @@ class AuthTest extends TestCase
         parent::setUp();
 
         // Create roles
-        Role::create(['name' => 'Orgcharts Admin', 'slug' => 'orgcharts-admin', 'description' => 'Q5 administrator']);
-        Role::create(['name' => 'Q5 Consultant', 'slug' => 'orgcharts-consultant', 'description' => 'Q5 consultant']);
+        Role::create(['name' => 'Orgchart Admin', 'slug' => 'orgcharts-admin', 'description' => 'OrgChart administrator']);
+        Role::create(['name' => 'OrgChart Consultant', 'slug' => 'orgcharts-consultant', 'description' => 'OrgChart consultant']);
         Role::create(['name' => 'Management Consultant', 'slug' => 'management-consultant', 'description' => 'Management consultant']);
         Role::create(['name' => 'End-User Client', 'slug' => 'end-user-client', 'description' => 'End-user client']);
     }

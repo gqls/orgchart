@@ -191,7 +191,7 @@ function getOpenCollectiveSponsors(): string
         $src = $customSponsorImages[$member['MemberId'] ?? ''] ?? $member['image'] ?? (strtr($member['profile'], ['https://opencollective.com/' => 'https://images.opencollective.com/']).'/avatar/256.png');
         [$x, $y] = @getimagesize($src) ?: [0, 0];
         $validImage = ($x && $y);
-        $src = $validImage ? htmlspecialchars($src) : 'https://opencollective.com/static/images/default-guest-logo.svg';
+        $src = $validImage ? htmlspecialchars($src) : 'https://opencollective.com/static/images/default-guest-logo.jpeg';
         $height = match ($member['status']) {
             'sponsor' => 64,
             'backerPlus' => 42,

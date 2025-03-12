@@ -1,3 +1,3 @@
 <?php
 
-namespace Q5-orgmaps;
+namespace orgcharts;

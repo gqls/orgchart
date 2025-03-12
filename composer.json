@@ -1,7 +1,7 @@
 {
   "name": "laravel/laravel",
   "type": "project",
-  "description": "The Q5 OrgMaps application.",
+  "description": "The OrgChart application.",
   "keywords": ["framework", "laravel"],
   "license": "MIT",
   "require": {

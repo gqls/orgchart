@@ -146,7 +146,7 @@ orgchart/                              # Root project directory
 │   ├── css/
 │   ├── js/
 │   ├── img/
-│   │   └── logo.svg
+│   │   └── logo.jpeg
 │   ├── favicon.ico
 │   └── index.php
 │

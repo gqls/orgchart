@@ -18,12 +18,12 @@ class RoleSeeder extends Seeder
             [
                 'name' => 'Orgcharts Admin',
                 'slug' => 'orgcharts-admin',
-                'description' => 'Q5 administrator with full access'
+                'description' => 'OrgChart administrator with full access'
             ],
             [
-                'name' => 'Q5 Consultant',
+                'name' => 'OrgChart Consultant',
                 'slug' => 'orgcharts-consultant',
-                'description' => 'Q5 consultant with access to client organizations'
+                'description' => 'OrgChart consultant with access to client organizations'
             ],
             [
                 'name' => 'Management Consultant',

@@ -80,3 +80,16 @@ Instead of using the hostname, let's use the internal IP address:
 172.18.0.2
 
 docker-compose exec app bash -c "sed -i 's/DB_HOST=.*/DB_HOST=172.18.0.2/g' .env"
+
+docker-compose restart
+docker-compose exec app php artisan config:clear
+
+docker-compose exec app ps aux
+
+chmod +x docker/app/fix-permissions.sh
+docker-compose down
+docker-compose up -d --build
+# run the fix permissions script explicitly
+docker-compose exec app fix-permissions
+
+

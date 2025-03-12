@@ -5,7 +5,7 @@
       <div class="header-content">
         <div class="brand">
           <router-link to="/dashboard" class="logo">
-            <img src="/img/logo.svg" alt="OrgChart Logo" class="logo-img" />
+            <img src="/img/orgchartlogo.jpeg" alt="OrgChart Logo" class="logo-img" />
             <span class="logo-text">OrgChart</span>
           </router-link>
           <div class="tagline">The art and science of organizational health</div>

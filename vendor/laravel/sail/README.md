@@ -1,4 +1,4 @@
-<p align="center"><img width="294" height="69" src="/art/logo.svg" alt="Logo Laravel Sail"></p>
+<p align="center"><img width="294" height="69" src="/art/logo.jpeg" alt="Logo Laravel Sail"></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/laravel/sail"><img src="https://img.shields.io/packagist/dt/laravel/sail" alt="Total Downloads"></a>
