@@ -3,8 +3,8 @@
 // database/factories/ScenarioFactory.php
 namespace Database\Factories;
 
-use App\app\app\Models\Organization;
-use App\app\app\Models\Scenario;
+use App\Models\Organization;
+use App\Models\Scenario;
 use App\app\app\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

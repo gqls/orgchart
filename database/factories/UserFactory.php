@@ -2,8 +2,8 @@
 // database/factories/UserFactory.php
 namespace Database\Factories;
 
-use App\app\app\Models\Role;
-use App\app\app\Models\User;
+use App\Models\Role;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 

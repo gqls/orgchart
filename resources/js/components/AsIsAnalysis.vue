@@ -26,7 +26,7 @@
             </div>
             <div class="metric-value">{{ formatMetricValue(metric) }}</div>
             <div class="metric-goal" v-if="metric.pivot && metric.pivot.goal">
-              Goal: {{ formatMetricValue({...metric, pivot: {value: metric.pivot.goal}}) }}
+              Goal: {{ formatMetricGoal(metric) }}
             </div>
           </div>
         </div>
@@ -324,6 +324,7 @@ export default {
   },
 
   methods: {
+
     async loadData() {
       try {
         // Fetch positions
@@ -863,6 +864,19 @@ export default {
       }
 
       return metric.pivot.value;
+    },
+
+    formatMetricGoal(metric) {
+      // Create a copy with the goal as the value
+      const metricWithGoalAsValue = {
+        ...metric,
+        pivot: {
+          ...metric.pivot,
+          value: metric.pivot.goal
+        }
+      };
+
+      return this.formatMetricValue(metricWithGoalAsValue);
     },
 
     formatCurrency(value, includeSymbol = true) {

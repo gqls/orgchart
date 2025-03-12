@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Dashboard from './components/Dashboard.vue';
-import Login from './components/Login.vue';
-import Register from './components/Register.vue';
-import OrganizationsList from './components/OrganizationsList.vue';
-import OrganizationCreate from './components/OrganizationCreate.vue';
-import axios from 'axios';
+const { createRouter, createWebHistory } = require('vue-router');
+const Dashboard = require('./components/Dashboard.vue').default;
+const Login = require('./components/Login.vue').default;
+const Register = require('./components/Register.vue').default;
+const OrganizationsList = require('./components/OrganizationsList.vue').default;
+const OrganizationCreate = require('./components/OrganizationCreate.vue').default;
+const axios = require('axios');
 
 // Create router
 const router = createRouter({
@@ -73,4 +73,4 @@ router.beforeEach(async (to, from, next) => {
     }
 });
 
-export default router;
+module.exports = router;

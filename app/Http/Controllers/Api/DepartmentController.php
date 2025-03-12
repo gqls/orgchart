@@ -3,7 +3,7 @@
 // app/Http/Controllers/Api/DepartmentController.php
 namespace App\Http\Controllers\Api;
 
-use App\app\app\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use App\app\Models\Department;
 use App\app\Models\Organization;
 use Illuminate\Http\Request;

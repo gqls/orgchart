@@ -1,9 +1,10 @@
+const path = require('path');
 const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .vue({ version: 3 })
     .postCss('resources/css/app.css', 'public/css', [
-        require('tailwindcss'),
+        require('@tailwindcss/postcss'),
         require('autoprefixer'),
     ])
     .webpackConfig({
@@ -11,7 +12,7 @@ mix.js('resources/js/app.js', 'public/js')
             alias: {
                 '@': path.resolve('resources/js'),
             },
-        },
+        }
     });
 
 if (mix.inProduction()) {

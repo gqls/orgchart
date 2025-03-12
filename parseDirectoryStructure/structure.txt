@@ -242,7 +242,7 @@ orgchart/                              # Root project directory
 ├── package.json                         # NPM dependencies
 ├── phpunit.xml                          # PHPUnit configuration
 ├── jest.config.js                       # Jest configuration
-├── webpack.mix.js                       # Laravel Mix config
+├── webpack.mix.cjs                       # Laravel Mix config
 ├── tailwind.config.js                   # Tailwind CSS config
 ├── babel.config.js                      # Babel configuration
 ├── .eslintrc.js                         # ESLint configuration

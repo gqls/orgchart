@@ -943,3 +943,4 @@ export default {
 .vertical .org-chart {
   flex-direction: row;
 }
+</style>
