@@ -1,16 +1,16 @@
-# Q5 OrgMaps Technical Report
+# OrgChart Technical Report
 
 ## Executive Summary
 
-This technical report provides a comprehensive overview of the Q5 OrgMaps system, a web-based platform designed for organizational modeling, analysis, workforce planning, and strategic alignment. The system enables HR professionals, management consultants, and business leaders to visualize and optimize organizational structures through interactive charts, data-driven analysis, and scenario planning.
+This technical report provides a comprehensive overview of the OrgChart system, a web-based platform designed for organizational modeling, analysis, workforce planning, and strategic alignment. The system enables HR professionals, management consultants, and business leaders to visualize and optimize organizational structures through interactive charts, data-driven analysis, and scenario planning.
 
-The Q5 OrgMaps platform is built on a modern technology stack with Laravel as the backend framework and Vue.js for the frontend. It employs a containerized architecture using Docker and Kubernetes for scalability and resilience. This report details the system architecture, technology stack, key features, implementation details, testing strategy, deployment approach, and recommendations for future development.
+The OrgChart platform is built on a modern technology stack with Laravel as the backend framework and Vue.js for the frontend. It employs a containerized architecture using Docker and Kubernetes for scalability and resilience. This report details the system architecture, technology stack, key features, implementation details, testing strategy, deployment approach, and recommendations for future development.
 
 ## 1. System Overview
 
 ### 1.1 Purpose and Scope
 
-Q5 OrgMaps serves as a comprehensive tool for organizational development and transformation. Its primary purposes include:
+OrgChart serves as a comprehensive tool for organizational development and transformation. Its primary purposes include:
 
 - Visualizing existing organizational structures through interactive org charts
 - Analyzing organizational metrics such as spans of control, layers, and costs
@@ -19,7 +19,7 @@ Q5 OrgMaps serves as a comprehensive tool for organizational development and tra
 - Comparing different scenarios to optimize decision-making
 - Facilitating workforce planning and cost management
 
-The system caters to multiple user roles including Q5 administrators, Q5 consultants, management consultants, and end-user clients, each with appropriate access levels and permissions.
+The system caters to multiple user roles including OrgChart administrators, OrgChart consultants, management consultants, and end-user clients, each with appropriate access levels and permissions.
 
 ### 1.2 Key Features
 
@@ -77,7 +77,7 @@ The system is designed for:
 
 ### 2.1 High-Level Architecture
 
-Q5 OrgMaps employs a modern web application architecture with the following components:
+OrgChart employs a modern web application architecture with the following components:
 
 - **Frontend**: Single-page application (SPA) built with Vue.js
 - **Backend**: RESTful API built with Laravel PHP framework
@@ -266,8 +266,8 @@ The API follows RESTful principles with the following main endpoints:
 
 Authentication is implemented using Laravel Sanctum, providing token-based authentication for API access. The system employs role-based access control with the following roles:
 
-1. **Q5 Admin**: Full system access including user management
-2. **Q5 Consultant**: Access to all client organizations and features
+1. **OrgChart Admin**: Full system access including user management
+2. **OrgChart Consultant**: Access to all client organizations and features
 3. **Management Consultant**: Access to assigned client organizations
 4. **End-User Client**: Access to their own organization data
 
@@ -658,11 +658,11 @@ Docker Compose is used for local development, while Kubernetes is employed for p
 
 ## 9. Conclusion
 
-The Q5 OrgMaps system provides a comprehensive solution for organizational modeling, analysis, and transformation. Its modern architecture, scalable infrastructure, and feature-rich implementation make it a powerful tool for HR professionals, consultants, and business leaders.
+The OrgChart system provides a comprehensive solution for organizational modeling, analysis, and transformation. Its modern architecture, scalable infrastructure, and feature-rich implementation make it a powerful tool for HR professionals, consultants, and business leaders.
 
-The system's strength lies in its intuitive visualization capabilities, data-driven analysis, and scenario planning features. The multi-tenant architecture allows for secure isolation of organizational data while enabling Q5 consultants to provide valuable insights to their clients.
+The system's strength lies in its intuitive visualization capabilities, data-driven analysis, and scenario planning features. The multi-tenant architecture allows for secure isolation of organizational data while enabling OrgChart consultants to provide valuable insights to their clients.
 
-With a solid foundation of well-structured code, comprehensive testing, and robust deployment processes, the Q5 OrgMaps system is positioned for reliable operation and future growth. The outlined future enhancements will continue to add value and keep the system at the forefront of organizational management technology.
+With a solid foundation of well-structured code, comprehensive testing, and robust deployment processes, the OrgChart system is positioned for reliable operation and future growth. The outlined future enhancements will continue to add value and keep the system at the forefront of organizational management technology.
 
 ## Appendices
 
