@@ -1,0 +1,71 @@
+# orgmaps-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orgchart-app
+  labels:
+    app: orgchart
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: orgchart
+  template:
+    metadata:
+      labels:
+        app: orgchart
+    spec:
+      containers:
+        - name: orgchart-app
+          image: orgchart:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: APP_ENV
+              value: "production"
+            - name: DB_CONNECTION
+              value: "postgresql"
+            - name: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_host
+            - name: DB_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_port
+            - name: DB_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_database
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_password
+          resources:
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+            requests:
+              cpu: "500m"
+              memory: "512Mi"
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5

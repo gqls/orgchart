@@ -1,0 +1,50 @@
+# orgmaps-mysql-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orgchart-mysql
+  labels:
+    app: orgchart-mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orgchart-mysql
+  template:
+    metadata:
+      labels:
+        app: orgchart-mysql
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:8.0
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_root_password
+            - name: MYSQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_database
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_username
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: orgchart-secrets
+                  key: db_password
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim

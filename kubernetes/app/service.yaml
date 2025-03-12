@@ -1,0 +1,12 @@
+# orgmaps-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: orgchart-service
+spec:
+  selector:
+    app: orgchart
+  ports:
+    - port: 80
+      targetPort: 80
+  type: LoadBalancer
