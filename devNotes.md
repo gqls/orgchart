@@ -93,3 +93,27 @@ docker-compose up -d --build
 docker-compose exec app fix-permissions
 
 
+--
+
+docker-compose exec node npm install
+
+docker-compose build node
+docker-compose up -d node
+
+
+How to Test if Your Node Code is Running in a Container
+container-test.js in your project root
+Add the test:container script to your package.json
+run from local:
+npm run test:container
+run from containers:
+docker-compose exec node bash
+npm run test:container
+
+
+
+
+
+
+
+
