@@ -2,7 +2,7 @@
 <template>
   <div class="sidebar" :class="{ 'open': open }">
     <div class="sidebar-header">
-      <div class="org-info">
+      <div class="org-info" v-if="organization && organization.name">
         <div
             class="org-logo"
             :style="organization.logo_path ? { backgroundImage: `url(${organization.logo_path})` } : { backgroundColor: organization.primary_color || '#4caf50' }"
@@ -10,6 +10,10 @@
           {{ !organization.logo_path ? organization.name.charAt(0) : '' }}
         </div>
         <div class="org-name">{{ organization.name }}</div>
+      </div>
+      <div class="org-info" v-else>
+        <div class="org-logo" style="backgroundColor: '#4caf50'">?</div>
+        <div class="org-name">Loading...</div>
       </div>
       <button @click="$emit('toggle')" class="btn-toggle-sidebar">
         <i class="fas fa-chevron-left"></i>
@@ -176,12 +180,36 @@
 
 <script>
 import axios from 'axios';
+import ToBeModeling from './ToBeModeling.vue';
+import ActivityAnalysis from "./ActivityAnalysis.vue";
+import AsIsAnalysis from "./AsIsAnalysis.vue";
+import Header from "./Header.vue";
+import HrData from "./HrData.vue";
+import Login from "./Login.vue";
+import OrganizationCreate from "./OrganizationCreate.vue";
+import OrganizationsList from "./OrganizationsList.vue";
+import Register from "./Register.vue";
+import OrgChart from "./OrgChart.vue";
 
 export default {
+  components: {
+    ToBeModeling,
+    ActivityAnalysis,
+    AsIsAnalysis,
+    Header,
+    HrData,
+    Login,
+    OrganizationCreate,
+    OrganizationsList,
+    OrgChart,
+    Register,
+  },
+
   props: {
     organization: {
       type: Object,
-      required: true
+      required: true,
+      default: () => ({id: null,})
     },
     open: {
       type: Boolean,

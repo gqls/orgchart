@@ -246,11 +246,13 @@ export default {
   props: {
     organization: {
       type: Object,
-      required: true
+      required: true,
+      default: () => ({})
     },
     scenario: {
       type: Object,
-      required: true
+      required: true,
+      default: () => null
     }
   },
 
@@ -278,6 +280,12 @@ export default {
   },
 
   computed: {
+    hasValidData() {
+      return this.organization &&
+          Object.keys(this.organization).length > 0 &&
+          this.scenario;
+    },
+
     keyMetrics() {
       return this.metrics.filter(metric =>
           ['headcount', 'total_fully_loaded_cost', 'avg_span', 'total_managers'].includes(metric.code)

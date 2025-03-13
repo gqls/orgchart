@@ -1,83 +1,105 @@
 // resources/js/components/Dashboard.vue
 <template>
   <div class="dashboard">
-    <div class="dashboard-header">
-      <h1>{{ organization.name }}</h1>
-      <div class="dashboard-actions">
-        <button @click="toggleSidebar" class="btn-toggle">
-          <i class="fas fa-bars"></i>
+    <!-- Show error message if there is one -->
+    <div v-if="error" class="error-container">
+      <div class="error-message">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>{{ error }}</p>
+        <button class="btn-primary" @click="goToDashboard">
+          Return to Dashboard
         </button>
       </div>
     </div>
+    <template v-else>
+      <div class="dashboard-header">
+        <h1>{{ organization.name }}</h1>
+        <div class="dashboard-actions">
+          <button @click="toggleSidebar" class="btn-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
 
-    <div class="main-container" :class="{ 'sidebar-open': sidebarOpen }">
-      <sidebar :organization="organization" :open="sidebarOpen" />
+      <div class="main-container" :class="{ 'sidebar-open': sidebarOpen }">
+        <sidebar :organization="organization" :open="sidebarOpen"/>
 
-      <div class="content">
-        <div class="metrics-overview">
-          <div class="metric-card" v-for="metric in dashboardMetrics" :key="metric.id">
-            <div class="metric-value" :class="getMetricClass(metric)">
-              {{ formatMetricValue(metric) }}
-              <span v-if="metric.trend" class="trend-indicator" :class="getTrendClass(metric.trend)">
+        <div class="content">
+          <div class="metrics-overview">
+            <div class="metric-card" v-for="metric in dashboardMetrics" :key="metric.id">
+              <div class="metric-value" :class="getMetricClass(metric)">
+                {{ formatMetricValue(metric) }}
+                <span v-if="metric.trend" class="trend-indicator" :class="getTrendClass(metric.trend)">
                 <i :class="getTrendIcon(metric.trend)"></i>
                 {{ formatTrendValue(metric.trend) }}
               </span>
-            </div>
-            <div class="metric-label">{{ metric.name }}</div>
-          </div>
-        </div>
-
-        <div class="tab-container">
-          <div class="tab-header">
-            <div
-                v-for="tab in tabs"
-                :key="tab.id"
-                @click="activeTab = tab.id"
-                :class="['tab', { active: activeTab === tab.id }]"
-            >
-              {{ tab.name }}
+              </div>
+              <div class="metric-label">{{ metric.name }}</div>
             </div>
           </div>
 
-          <div class="tab-content">
-            <div v-if="activeTab === 'as-is-analysis'" class="as-is-analysis">
-              <as-is-analysis :organization="organization" :scenario="currentScenario" />
+          <div class="tab-container">
+            <div class="tab-header">
+              <div
+                  v-for="tab in tabs"
+                  :key="tab.id"
+                  @click="activeTab = tab.id"
+                  :class="['tab', { active: activeTab === tab.id }]"
+              >
+                {{ tab.name }}
+              </div>
             </div>
-            <div v-if="activeTab === 'to-be-modeling'" class="to-be-modeling">
-              <to-be-modeling :organization="organization" :scenario="currentScenario" />
-            </div>
-            <div v-if="activeTab === 'org-chart'" class="org-chart">
-              <org-chart :organization="organization" :scenario="currentScenario" />
-            </div>
-            <div v-if="activeTab === 'activity-analysis'" class="activity-analysis">
-              <activity-analysis :organization="organization" :scenario="currentScenario" />
-            </div>
-            <div v-if="activeTab === 'hr-data'" class="hr-data">
-              <hr-data :organization="organization" :scenario="currentScenario" />
+
+            <div class="tab-content">
+              <div v-if="activeTab === 'as-is-analysis'" class="as-is-analysis">
+                <as-is-analysis :organization="organization" :scenario="currentScenario"/>
+              </div>
+              <div v-if="activeTab === 'to-be-modeling'" class="to-be-modeling">
+                <to-be-modeling :organization="organization" :scenario="currentScenario"/>
+              </div>
+              <div v-if="activeTab === 'org-chart'" class="org-chart">
+                <org-chart :organization="organization" :scenario="currentScenario"/>
+              </div>
+              <div v-if="activeTab === 'activity-analysis'" class="activity-analysis">
+                <activity-analysis :organization="organization" :scenario="currentScenario"/>
+              </div>
+              <div v-if="activeTab === 'hr-data'" class="hr-data">
+                <hr-data :organization="organization" :scenario="currentScenario"/>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </template>
   </div>
 </template>
 
 <script>
 import Sidebar from './Sidebar.vue';
 import AsIsAnalysis from './AsIsAnalysis.vue';
-import ToBModeling from './ToBeModeling.vue';
+import ToBeModeling from './ToBeModeling.vue';
 import OrgChart from './OrgChart.vue';
 import ActivityAnalysis from './ActivityAnalysis.vue';
 import HrData from './HrData.vue';
+import Header from "./Header.vue";
+import Login from "./Login.vue";
+import OrganizationCreate from "./OrganizationCreate.vue";
+import OrganizationsList from "./OrganizationsList.vue";
+import Register from "./Register.vue";
 
 export default {
   components: {
     Sidebar,
     AsIsAnalysis,
-    ToBModeling,
+    ToBeModeling,
     OrgChart,
     ActivityAnalysis,
     HrData,
+    Header,
+    Login,
+    OrganizationCreate,
+    OrganizationsList,
+    Register,
   },
 
   props: {
@@ -101,37 +123,62 @@ export default {
         { id: 'as-is-analysis', name: 'As Is Analysis' },
         { id: 'activity-analysis', name: 'Activity Analysis' },
         { id: 'to-be-modeling', name: 'To Be Modeling' },
-      ]
+      ],
+      error: null,
     };
   },
 
-  created() {
-    this.fetchOrganization();
-    this.fetchScenarios();
+  async created() {
+    try {
+      // Verify the organizationId exists before making the API call
+      if (this.organizationId) {
+        await this.fetchOrganization();
+        await this.fetchScenarios();
+      } else {
+        this.error = "No organization ID provided. Please select an organization from the dashboard.";
+        console.error('No organization ID provided');
+      }
+    } catch (error) {
+      this.error = "Error loading organization data. Please try again.";
+      console.error('Error initializing Dashboard:', error);
+    }
   },
 
   methods: {
     async fetchOrganization() {
       try {
         const response = await axios.get(`/api/organizations/${this.organizationId}`);
-        this.organization = response.data;
+        if (response.data && typeof response.data === 'object') {
+          this.organization = response.data;
+        } else {
+          console.error('Invalid organization data received:', response.data);
+          this.organization = {}; // Fallback to empty object
+        }
       } catch (error) {
         console.error('Error fetching organization:', error);
+        this.organization = {}; // Fallback to empty object
       }
     },
 
     async fetchScenarios() {
       try {
         const response = await axios.get(`/api/organizations/${this.organizationId}/scenarios`);
-        this.scenarios = response.data;
+        if (Array.isArray(response.data)) {
+          this.scenarios = response.data;
 
-        // Find current scenario
-        const currentScenario = this.scenarios.find(s => s.is_current);
-        if (currentScenario) {
-          this.setCurrentScenario(currentScenario.id);
+          // Find current scenario safely
+          const currentScenario = this.scenarios.find(s => s.is_current);
+          if (currentScenario) {
+            this.currentScenario = currentScenario;
+            this.selectedScenarioId = currentScenario.id;
+          }
+        } else {
+          console.error('Invalid scenarios data received:', response.data);
+          this.scenarios = []; // Fallback to empty array
         }
       } catch (error) {
         console.error('Error fetching scenarios:', error);
+        this.scenarios = []; // Fallback to empty array
       }
     },
 
@@ -226,6 +273,10 @@ export default {
       if (trend.value > 0) return 'fas fa-arrow-up';
       if (trend.value < 0) return 'fas fa-arrow-down';
       return 'fas fa-equals';
+    },
+
+    goToDashboard() {
+      this.$router.push({ name: 'dashboard' })
     }
   }
 };
@@ -312,6 +363,39 @@ export default {
 
 .trend-down {
   color: #f44336;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.error-message {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.error-message i {
+  font-size: 3rem;
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.error-message p {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.error-message button {
+  margin-top: 1rem;
 }
 
 .tab-container {

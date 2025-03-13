@@ -471,4 +471,45 @@ class ScenarioController extends Controller
             'comparison' => $comparison,
         ]);
     }
+
+    /**
+     * Get detailed information about a specific scenario.
+     *
+     * @param \App\Models\Organization $organization
+     * @param \App\Models\Scenario $scenario
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function detail(Organization $organization, Scenario $scenario)
+    {
+        $this->authorize('view', $organization);
+
+        if ($scenario->organization_id !== $organization->id) {
+            return response()->json(['message' => 'Scenario does not belong to this organization'], 403);
+        }
+
+        // Load relationships for the scenario
+        $scenario->load([
+            'user',
+            'positions' => function ($query) {
+                $query->with('department');
+            },
+            'metrics',
+            'relationships' => function ($query) {
+                $query->with(['manager', 'directReport']);
+            }
+        ]);
+
+        // Calculate summary statistics
+        $summary = [
+            'position_count' => $scenario->positions()->count(),
+            'department_count' => $scenario->positions()->distinct('department_id')->count('department_id'),
+            'total_cost' => $scenario->positions()->sum('fully_loaded_cost'),
+            'relationship_count' => $scenario->relationships()->count(),
+        ];
+
+        return response()->json([
+            'scenario' => $scenario,
+            'summary' => $summary
+        ]);
+    }
 }

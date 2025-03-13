@@ -76,7 +76,7 @@ docker-compose exec app php artisan config:clear
 The issue is that Docker's DNS resolution is failing.
 Instead of using the hostname, let's use the internal IP address:
 
-(base) ant@aalenovo:~/projects/laravelorgchart$ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' laravelorgchart-postgres-1
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' laravelorgchart-postgres-1
 172.18.0.2
 
 docker-compose exec app bash -c "sed -i 's/DB_HOST=.*/DB_HOST=172.18.0.2/g' .env"
@@ -111,7 +111,11 @@ docker-compose exec node bash
 npm run test:container
 
 
+docker-compose logs node
 
+ 
+postgres
+docker-compose exec postgres psql -U root -d laravel
 
 
 

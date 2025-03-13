@@ -1,9 +1,11 @@
+// resources/js/router.js
 const { createRouter, createWebHistory } = require('vue-router');
 const Dashboard = require('./components/Dashboard.vue').default;
 const Login = require('./components/Login.vue').default;
 const Register = require('./components/Register.vue').default;
 const OrganizationsList = require('./components/OrganizationsList.vue').default;
 const OrganizationCreate = require('./components/OrganizationCreate.vue').default;
+const ScenarioDetail = require('./components/ScenarioDetail.vue').default;
 const axios = require('axios');
 
 // Create router
@@ -50,6 +52,42 @@ const router = createRouter({
             name: 'organizations.dashboard',
             meta: { requiresAuth: true },
             props: true
+        },
+        // Add these new routes for organization features
+        {
+            path: '/organizations/:id/departments',
+            component: () => import('./components/DepartmentList.vue'),
+            name: 'organizations.departments',
+            meta: { requiresAuth: true },
+            props: true
+        },
+        {
+            path: '/organizations/:id/positions',
+            component: () => import('./components/PositionList.vue'),
+            name: 'organizations.positions',
+            meta: { requiresAuth: true },
+            props: true
+        },
+        {
+            path: '/organizations/:id/scenarios',
+            component: () => import('./components/ScenarioList.vue'),
+            name: 'organizations.scenarios',
+            meta: { requiresAuth: true },
+            props: true
+        },
+        {
+            path: '/organizations/:id/scenarios/:scenarioId',
+            component: () => import('./components/ScenarioDetail.vue'),
+            name: 'organizations.scenarios.show',
+            meta: { requiresAuth: true },
+            props: true
+        },
+        {
+            path: '/organizations/:id/scenarios/:scenarioId/detail',
+            component: ScenarioDetail,
+            name: 'organizations.scenarios.detail',
+            meta: { requiresAuth: true },
+            props: true
         }
     ]
 });
@@ -66,6 +104,7 @@ router.beforeEach(async (to, from, next) => {
                 next({ name: 'login' });
             }
         } catch (error) {
+            console.error('Authentication check failed:', error);
             next({ name: 'login' });
         }
     } else {

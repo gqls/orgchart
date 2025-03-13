@@ -182,3 +182,75 @@ describe('AsIsAnalysis.vue', () => {
                 status: ''
             }
         });
+        await wrapper.vm.$nextTick();
+        expect(wrapper.vm.filteredPositions.length).toBe(1);
+
+        wrapper.setData({
+            filters: {
+                department: '',
+                function: '',
+                status: 'new'
+            }
+        });
+        await wrapper.vm.$nextTick();
+        expect(wrapper.vm.filteredPositions.length).toBe(1);
+    });
+
+    it('initializes charts when tab is changed', async () => {
+        wrapper.setData({ activeTab: 'position' });
+        await wrapper.vm.$nextTick();
+        expect(Chart).toHaveBeenCalledTimes(1);
+
+        wrapper.setData({ activeTab: 'dashboard' });
+        await wrapper.vm.$nextTick();
+        expect(Chart).toHaveBeenCalledTimes(3);
+
+        wrapper.setData({ activeTab: 'spans' });
+        await wrapper.vm.$nextTick();
+        expect(Chart).toHaveBeenCalledTimes(4);
+
+        wrapper.setData({ activeTab: 'cost' });
+        await wrapper.vm.$nextTick();
+        expect(Chart).toHaveBeenCalledTimes(7);
+    });
+
+    it('formats metric values correctly', () => {
+        const metric = {
+            code: 'total_fully_loaded_cost',
+            format: 'currency',
+            pivot: { value: 1234567 }
+        };
+        expect(wrapper.vm.formatMetricValue(metric)).toBe('$1,234,567');
+
+        const numberMetric = {
+            code: 'headcount',
+            format: 'number',
+            pivot: { value: 1000 }
+        };
+        expect(wrapper.vm.formatMetricValue(numberMetric)).toBe('1,000');
+    });
+
+    it('formats trend values correctly', () => {
+        const trend = { value: 10, percentage: 5 };
+        expect(wrapper.vm.formatTrendValue(trend)).toBe('+5.0%');
+
+        const negativeTrend = { value: -5, percentage: -2.5 };
+        expect(wrapper.vm.formatTrendValue(negativeTrend)).toBe('-2.5%');
+
+        const valueOnlyTrend = { value: 8 };
+        expect(wrapper.vm.formatTrendValue(valueOnlyTrend)).toBe('+8');
+    });
+
+    it('calculates goal difference correctly', () => {
+        const metricCode = 'total_fully_loaded_cost';
+        expect(wrapper.vm.getGoalDifference(metricCode)).toBe('+30,000 (5.0%)');
+    });
+
+    it('returns correct goal class', () => {
+        const metricCode = 'total_fully_loaded_cost';
+        expect(wrapper.vm.getGoalClass(metricCode)).toBe('goal-bad'); // Value is above goal
+
+        const headcountCode = 'headcount';
+        expect(wrapper.vm.getGoalClass(headcountCode)).toBe('goal-good'); // Value is equal to goal
+    });
+});

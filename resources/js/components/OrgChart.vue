@@ -194,11 +194,13 @@ export default {
   props: {
     organization: {
       type: Object,
-      required: true
+      required: true,
+      default: () => ({})
     },
     scenario: {
       type: Object,
-      required: true
+      required: true,
+      default: () => ({})
     }
   },
 

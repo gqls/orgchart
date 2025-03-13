@@ -38,7 +38,7 @@ services:
       - app
     # Make sure node_modules permissions are set correctly
     # on prod use node user
-    user: "node"
+    user: "root"
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true # For better file watching in Docker
