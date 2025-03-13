@@ -3,12 +3,11 @@
 // app/Http/Controllers/Api/PositionController.php
 namespace App\Http\Controllers\Api;
 
-use App\app\app\Http\Controllers\Controller;
-use App\app\Models\Organization;
-use App\app\Models\Position;
+use App\Http\Controllers\Controller;
+use App\Models\Organization;
+use App\Models\Position;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use function App\Http\Controllers\Api\response;
 
 class PositionController extends Controller
 {

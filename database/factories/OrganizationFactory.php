@@ -28,7 +28,7 @@ class OrganizationFactory extends Factory
             'name' => $name,
             'slug' => Str::slug($name),
             'description' => $this->faker->paragraph(),
-            'logo_path' => null,
+            'logo_path' => 'img/logo.jpeg',
             'primary_color' => $this->faker->hexColor(),
             'secondary_color' => $this->faker->hexColor(),
         ];

@@ -3,15 +3,14 @@
 // app/Http/Controllers/Api/ScenarioController.php
 namespace App\Http\Controllers\Api;
 
-use App\app\app\Http\Controllers\Controller;
-use App\app\Models\Organization;
-use App\app\Models\Position;
-use App\app\Models\Scenario;
-use App\app\Models\ScenarioRelationship;
+use App\Http\Controllers\Controller;
+use App\Models\Organization;
+use App\Models\Position;
+use App\Models\Scenario;
+use App\Models\ScenarioRelationship;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use function App\Http\Controllers\Api\response;
 
 class ScenarioController extends Controller
 {
@@ -470,6 +469,36 @@ class ScenarioController extends Controller
             'scenario2' => $scenario2,
             'comparison' => $comparison,
         ]);
+    }
+
+    public function setCurrent(Organization $organization, Scenario $scenario)
+    {
+        $this->authorize('update', $organization);
+
+        if ($scenario->organization_id !== $organization->id) {
+            return response()->json(['message' => 'Scenario does not belong to this organization'], 403);
+        }
+
+        // Begin transaction
+        DB::beginTransaction();
+
+        try {
+            // Unset current scenario flag for all other scenarios
+            $organization->scenarios()
+                ->where('id', '!=', $scenario->id)
+                ->update(['is_current' => false]);
+
+            // Set this scenario as current
+            $scenario->is_current = true;
+            $scenario->save();
+
+            DB::commit();
+
+            return response()->json($scenario);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json(['message' => 'Error setting current scenario: ' . $e->getMessage()], 500);
+        }
     }
 
     /**

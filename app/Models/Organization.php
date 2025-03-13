@@ -69,4 +69,12 @@ class Organization extends Model
     {
         return $this->scenarios()->where('is_base', true)->first();
     }
+
+    /**
+     * Get the employees for the organization.
+     */
+    public function employees()
+    {
+        return $this->hasMany(Employee::class);
+    }
 }

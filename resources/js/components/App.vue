@@ -12,6 +12,8 @@
 import HeaderComponent from './Header.vue';
 import axios from 'axios';
 
+
+
 export default {
   components: {
     HeaderComponent
@@ -25,7 +27,19 @@ export default {
   },
 
   created() {
-    this.checkAuth();
+    // Check if we have a token
+    const token = localStorage.getItem('token');
+    const userData = localStorage.getItem('user');
+
+    if (token && userData) {
+      // Set up axios with token
+      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+
+      // Restore user data
+      const user = JSON.parse(userData);
+      this.$emit('login', user);
+    }
+    //this.checkAuth();
   },
 
   methods: {

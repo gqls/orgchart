@@ -16,6 +16,11 @@ class RoleSeeder extends Seeder
     {
         $roles = [
             [
+                'name' => 'Member',
+                'slug' => 'member',
+                'description' => 'Default. Member with limited access',
+            ],
+            [
                 'name' => 'Orgcharts Admin',
                 'slug' => 'orgcharts-admin',
                 'description' => 'OrgChart administrator with full access'

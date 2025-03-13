@@ -45882,7 +45882,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n.dashboard-header[data-v-040e2ab9] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background-color: #fff;\n  border-bottom: 1px solid #ddd;\n}\n.main-container[data-v-040e2ab9] {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n.content[data-v-040e2ab9] {\n  flex: 1;\n  padding: 1rem;\n  overflow-y: auto;\n}\n.metrics-overview[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.metric-card[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n.metric-value[data-v-040e2ab9] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.metric-success[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.metric-warning[data-v-040e2ab9] {\n  color: #ff9800;\n}\n.metric-danger[data-v-040e2ab9] {\n  color: #f44336;\n}\n.metric-label[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  color: #666;\n}\n.trend-indicator[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  display: flex;\n  align-items: center;\n  margin-left: 0.5rem;\n}\n.trend-up[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.trend-down[data-v-040e2ab9] {\n  color: #f44336;\n}\n.error-container[data-v-040e2ab9] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #f5f5f5;\n}\n.error-message[data-v-040e2ab9] {\n  text-align: center;\n  background-color: white;\n  padding: 2rem;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n  max-width: 500px;\n}\n.error-message i[data-v-040e2ab9] {\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1rem;\n}\n.error-message p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  color: #333;\n  font-size: 1.1rem;\n}\n.error-message button[data-v-040e2ab9] {\n  margin-top: 1rem;\n}\n.tab-container[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n}\n.tab-header[data-v-040e2ab9] {\n  display: flex;\n  background-color: #f5f5f5;\n  border-bottom: 1px solid #ddd;\n}\n.tab[data-v-040e2ab9] {\n  padding: 0.75rem 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.tab[data-v-040e2ab9]:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.tab.active[data-v-040e2ab9] {\n  background-color: #fff;\n  border-bottom: 2px solid #4caf50;\n  font-weight: bold;\n}\n.tab-content[data-v-040e2ab9] {\n  padding: 1rem;\n  min-height: 400px;\n}\n.sidebar-open .content[data-v-040e2ab9] {\n  margin-left: 250px;\n}\n@media (max-width: 768px) {\n.sidebar-open .content[data-v-040e2ab9] {\n    margin-left: 0;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n/* Empty Dashboard Styles */\n.empty-dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 2rem;\n  max-width: 1200px;\n  margin: 0 auto;\n  width: 100%;\n}\n.welcome-message[data-v-040e2ab9] {\n  text-align: center;\n  margin-bottom: 3rem;\n}\n.welcome-message h1[data-v-040e2ab9] {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n.welcome-message p[data-v-040e2ab9] {\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n.organization-grid[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 1.5rem;\n  width: 100%;\n}\n.organization-card[data-v-040e2ab9] {\n  display: flex;\n  background-color: white;\n  border-radius: 0.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  padding: 1.5rem;\n  transition: transform 0.2s, box-shadow 0.2s;\n  cursor: pointer;\n}\n.organization-card[data-v-040e2ab9]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);\n}\n.org-logo[data-v-040e2ab9] {\n  width: 60px;\n  height: 60px;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: white;\n  background-size: cover;\n  background-position: center;\n  margin-right: 1rem;\n  flex-shrink: 0;\n}\n.org-info[data-v-040e2ab9] {\n  flex: 1;\n}\n.org-info h3[data-v-040e2ab9] {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.2rem;\n}\n.org-description[data-v-040e2ab9] {\n  color: var(--text-secondary);\n  font-size: 0.9rem;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.empty-state[data-v-040e2ab9] {\n  text-align: center;\n  padding: 3rem;\n  background-color: #f9f9f9;\n  border-radius: 0.75rem;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n  width: 100%;\n}\n.empty-state p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n\n/* Organization Dashboard Styles */\n.dashboard-header[data-v-040e2ab9] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background-color: #fff;\n  border-bottom: 1px solid #ddd;\n}\n.main-container[data-v-040e2ab9] {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n.content[data-v-040e2ab9] {\n  flex: 1;\n  padding: 1rem;\n  overflow-y: auto;\n}\n.metrics-overview[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.metric-card[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n.metric-value[data-v-040e2ab9] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.metric-success[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.metric-warning[data-v-040e2ab9] {\n  color: #ff9800;\n}\n.metric-danger[data-v-040e2ab9] {\n  color: #f44336;\n}\n.metric-label[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  color: #666;\n}\n.trend-indicator[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  display: flex;\n  align-items: center;\n  margin-left: 0.5rem;\n}\n.trend-up[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.trend-down[data-v-040e2ab9] {\n  color: #f44336;\n}\n.loading-indicator[data-v-040e2ab9] {\n  text-align: center;\n  padding: 2rem;\n  color: var(--text-secondary);\n}\n.error-container[data-v-040e2ab9] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #f5f5f5;\n}\n.error-message[data-v-040e2ab9] {\n  text-align: center;\n  background-color: white;\n  padding: 2rem;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n  max-width: 500px;\n}\n.error-message i[data-v-040e2ab9] {\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1rem;\n}\n.error-message p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  color: #333;\n  font-size: 1.1rem;\n}\n.error-message button[data-v-040e2ab9] {\n  margin-top: 1rem;\n}\n.demo-badge[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #3498db;\n  color: white;\n  font-size: 0.7rem;\n  padding: 0.2rem 0.5rem;\n  border-radius: 4px;\n  margin-top: 0.5rem;\n}\n.organization-card.demo-card[data-v-040e2ab9] {\n  border: 2px dashed #3498db;\n  position: relative;\n}\n.demo-info[data-v-040e2ab9] {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: rgba(52, 152, 219, 0.1);\n  padding: 0.5rem;\n  font-size: 0.8rem;\n  color: #666;\n  border-top: 1px solid rgba(52, 152, 219, 0.3);\n}\n.tab-container[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n}\n.tab-header[data-v-040e2ab9] {\n  display: flex;\n  background-color: #f5f5f5;\n  border-bottom: 1px solid #ddd;\n}\n.tab[data-v-040e2ab9] {\n  padding: 0.75rem 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.tab[data-v-040e2ab9]:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.tab.active[data-v-040e2ab9] {\n  background-color: #fff;\n  border-bottom: 2px solid #4caf50;\n  font-weight: bold;\n}\n.tab-content[data-v-040e2ab9] {\n  padding: 1rem;\n  min-height: 400px;\n}\n.sidebar-open .content[data-v-040e2ab9] {\n  margin-left: 250px;\n}\n.btn-primary[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #4caf50;\n  color: white;\n  border: none;\n  padding: 0.75rem 1.5rem;\n  border-radius: 0.25rem;\n  font-weight: 500;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 1rem;\n  transition: background-color 0.2s;\n}\n.btn-primary[data-v-040e2ab9]:hover {\n  background-color: #388e3c;\n  text-decoration: none;\n}\n@media (max-width: 768px) {\n.sidebar-open .content[data-v-040e2ab9] {\n    margin-left: 0;\n}\n.organization-grid[data-v-040e2ab9] {\n    grid-template-columns: 1fr;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -46620,7 +46620,18 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     };
   },
   created: function created() {
-    this.checkAuth();
+    // Check if we have a token
+    var token = localStorage.getItem('token');
+    var userData = localStorage.getItem('user');
+    if (token && userData) {
+      // Set up axios with token
+      axios__WEBPACK_IMPORTED_MODULE_1__["default"].defaults.headers.common['Authorization'] = "Bearer ".concat(token);
+
+      // Restore user data
+      var user = JSON.parse(userData);
+      this.$emit('login', user);
+    }
+    //this.checkAuth();
   },
   methods: {
     checkAuth: function checkAuth() {
@@ -47463,11 +47474,13 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   props: {
     organizationId: {
       type: [Number, String],
-      required: true
+      required: false,
+      "default": null
     }
   },
   data: function data() {
     return {
+      organizations: [],
       organization: {},
       scenarios: [],
       currentScenario: null,
@@ -47490,6 +47503,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         id: 'to-be-modeling',
         name: 'To Be Modeling'
       }],
+      loading: false,
       error: null
     };
   },
@@ -47499,40 +47513,39 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
             if (!_this.organizationId) {
-              _context.next = 8;
+              _context.next = 14;
               break;
             }
+            _context.prev = 1;
             _context.next = 4;
             return _this.fetchOrganization();
           case 4:
             _context.next = 6;
             return _this.fetchScenarios();
           case 6:
-            _context.next = 10;
+            _context.next = 12;
             break;
           case 8:
-            _this.error = "No organization ID provided. Please select an organization from the dashboard.";
-            console.error('No organization ID provided');
-          case 10:
-            _context.next = 16;
-            break;
-          case 12:
-            _context.prev = 12;
-            _context.t0 = _context["catch"](0);
+            _context.prev = 8;
+            _context.t0 = _context["catch"](1);
             _this.error = "Error loading organization data. Please try again.";
             console.error('Error initializing Dashboard:', _context.t0);
+          case 12:
+            _context.next = 16;
+            break;
+          case 14:
+            _context.next = 16;
+            return _this.fetchOrganizations();
           case 16:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 12]]);
+      }, _callee, null, [[1, 8]]);
     }))();
   },
   methods: {
-    fetchOrganization: function fetchOrganization() {
-      var _this2 = this;
+    checkAuth: function checkAuth() {
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
         var response;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
@@ -47540,140 +47553,245 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
             case 0:
               _context2.prev = 0;
               _context2.next = 3;
-              return axios.get("/api/organizations/".concat(_this2.organizationId));
+              return axios.get('/api/user');
             case 3:
               response = _context2.sent;
-              if (response.data && _typeof(response.data) === 'object') {
-                _this2.organization = response.data;
-              } else {
-                console.error('Invalid organization data received:', response.data);
-                _this2.organization = {}; // Fallback to empty object
-              }
-              _context2.next = 11;
-              break;
-            case 7:
-              _context2.prev = 7;
+              console.log('User authentication status:', response.data);
+              return _context2.abrupt("return", true);
+            case 8:
+              _context2.prev = 8;
               _context2.t0 = _context2["catch"](0);
-              console.error('Error fetching organization:', _context2.t0);
-              _this2.organization = {}; // Fallback to empty object
-            case 11:
+              console.error('Authentication check failed:', _context2.t0);
+              return _context2.abrupt("return", false);
+            case 12:
             case "end":
               return _context2.stop();
           }
-        }, _callee2, null, [[0, 7]]);
+        }, _callee2, null, [[0, 8]]);
       }))();
     },
-    fetchScenarios: function fetchScenarios() {
-      var _this3 = this;
+    fetchOrganizations: function fetchOrganizations() {
+      var _this2 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-        var response, currentScenario;
+        var isAuthenticated, response;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              _context3.prev = 0;
-              _context3.next = 3;
-              return axios.get("/api/organizations/".concat(_this3.organizationId, "/scenarios"));
-            case 3:
-              response = _context3.sent;
-              if (Array.isArray(response.data)) {
-                _this3.scenarios = response.data;
-
-                // Find current scenario safely
-                currentScenario = _this3.scenarios.find(function (s) {
-                  return s.is_current;
-                });
-                if (currentScenario) {
-                  _this3.currentScenario = currentScenario;
-                  _this3.selectedScenarioId = currentScenario.id;
-                }
-              } else {
-                console.error('Invalid scenarios data received:', response.data);
-                _this3.scenarios = []; // Fallback to empty array
+              _this2.loading = true;
+              _this2.error = null;
+              _context3.next = 4;
+              return _this2.checkAuth();
+            case 4:
+              isAuthenticated = _context3.sent;
+              if (isAuthenticated) {
+                _context3.next = 10;
+                break;
               }
-              _context3.next = 11;
-              break;
-            case 7:
-              _context3.prev = 7;
-              _context3.t0 = _context3["catch"](0);
-              console.error('Error fetching scenarios:', _context3.t0);
-              _this3.scenarios = []; // Fallback to empty array
+              _this2.error = 'You must be logged in to view organizations';
+              return _context3.abrupt("return");
+            case 10:
+              console.log('you are logged in');
             case 11:
+              _context3.prev = 11;
+              console.log('Fetching organizations...');
+              _context3.next = 15;
+              return axios.get('/api/organizations');
+            case 15:
+              response = _context3.sent;
+              console.log('Raw API response:', response);
+              if (Array.isArray(response.data)) {
+                console.log('Response is an array with length:', response.data.length);
+                _this2.organizations = response.data;
+              } else if (response.data && _typeof(response.data) === 'object') {
+                console.log('Response is an object with keys:', Object.keys(response.data));
+                // Handle case where response might be wrapped
+                _this2.organizations = Array.isArray(response.data.data) ? response.data.data : [response.data];
+              } else {
+                console.error('Unexpected API response format:', response.data);
+                _this2.organizations = [];
+                _this2.error = 'Received unexpected data format from the server';
+              }
+              console.log('Final organizations array:', _this2.organizations);
+              _context3.next = 26;
+              break;
+            case 21:
+              _context3.prev = 21;
+              _context3.t0 = _context3["catch"](11);
+              console.error('Error fetching organizations:', _context3.t0);
+              _this2.error = 'Failed to load your organizations. Please try again.';
+              _this2.organizations = [];
+            case 26:
+              _context3.prev = 26;
+              _this2.loading = false;
+              return _context3.finish(26);
+            case 29:
             case "end":
               return _context3.stop();
           }
-        }, _callee3, null, [[0, 7]]);
+        }, _callee3, null, [[11, 21, 26, 29]]);
       }))();
     },
-    setCurrentScenario: function setCurrentScenario(scenarioId) {
-      var _this4 = this;
+    fetchOrganization: function fetchOrganization() {
+      var _this3 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
         var response;
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
-              _context4.prev = 0;
-              _context4.next = 3;
-              return axios.get("/api/organizations/".concat(_this4.organizationId, "/scenarios/").concat(scenarioId));
-            case 3:
+              _this3.loading = true;
+              _this3.error = null;
+              _context4.prev = 2;
+              _context4.next = 5;
+              return axios.get("/api/organizations/".concat(_this3.organizationId));
+            case 5:
               response = _context4.sent;
-              _this4.currentScenario = response.data;
-              _this4.fetchDashboardMetrics();
-              _context4.next = 11;
+              if (response.data && _typeof(response.data) === 'object') {
+                _this3.organization = response.data;
+              } else {
+                console.error('Invalid organization data received:', response.data);
+                _this3.organization = {}; // Fallback to empty object
+                _this3.error = "Invalid organization data received.";
+              }
+              _context4.next = 14;
               break;
-            case 8:
-              _context4.prev = 8;
-              _context4.t0 = _context4["catch"](0);
-              console.error('Error setting current scenario:', _context4.t0);
-            case 11:
+            case 9:
+              _context4.prev = 9;
+              _context4.t0 = _context4["catch"](2);
+              console.error('Error fetching organization:', _context4.t0);
+              _this3.organization = {}; // Fallback to empty object
+              _this3.error = "Failed to load organization details.";
+            case 14:
+              _context4.prev = 14;
+              _this3.loading = false;
+              return _context4.finish(14);
+            case 17:
             case "end":
               return _context4.stop();
           }
-        }, _callee4, null, [[0, 8]]);
+        }, _callee4, null, [[2, 9, 14, 17]]);
       }))();
     },
-    fetchDashboardMetrics: function fetchDashboardMetrics() {
-      var _this5 = this;
+    fetchScenarios: function fetchScenarios() {
+      var _this4 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-        var response, baseScenario, comparisonResponse, comparison;
+        var response, currentScenario;
         return _regeneratorRuntime().wrap(function _callee5$(_context5) {
           while (1) switch (_context5.prev = _context5.next) {
             case 0:
-              if (_this5.currentScenario) {
-                _context5.next = 2;
+              _context5.prev = 0;
+              _context5.next = 3;
+              return axios.get("/api/organizations/".concat(_this4.organizationId, "/scenarios"));
+            case 3:
+              response = _context5.sent;
+              if (!Array.isArray(response.data)) {
+                _context5.next = 14;
                 break;
               }
-              return _context5.abrupt("return");
+              _this4.scenarios = response.data;
+
+              // Find current scenario safely
+              currentScenario = _this4.scenarios.find(function (s) {
+                return s.is_current;
+              });
+              if (!currentScenario) {
+                _context5.next = 12;
+                break;
+              }
+              _this4.currentScenario = currentScenario;
+              _this4.selectedScenarioId = currentScenario.id;
+              _context5.next = 12;
+              return _this4.fetchDashboardMetrics();
+            case 12:
+              _context5.next = 16;
+              break;
+            case 14:
+              console.error('Invalid scenarios data received:', response.data);
+              _this4.scenarios = []; // Fallback to empty array
+            case 16:
+              _context5.next = 22;
+              break;
+            case 18:
+              _context5.prev = 18;
+              _context5.t0 = _context5["catch"](0);
+              console.error('Error fetching scenarios:', _context5.t0);
+              _this4.scenarios = []; // Fallback to empty array
+            case 22:
+            case "end":
+              return _context5.stop();
+          }
+        }, _callee5, null, [[0, 18]]);
+      }))();
+    },
+    setCurrentScenario: function setCurrentScenario(scenarioId) {
+      var _this5 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+        var response;
+        return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+          while (1) switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.prev = 0;
+              _context6.next = 3;
+              return axios.get("/api/organizations/".concat(_this5.organizationId, "/scenarios/").concat(scenarioId));
+            case 3:
+              response = _context6.sent;
+              _this5.currentScenario = response.data;
+              _this5.fetchDashboardMetrics();
+              _context6.next = 11;
+              break;
+            case 8:
+              _context6.prev = 8;
+              _context6.t0 = _context6["catch"](0);
+              console.error('Error setting current scenario:', _context6.t0);
+            case 11:
+            case "end":
+              return _context6.stop();
+          }
+        }, _callee6, null, [[0, 8]]);
+      }))();
+    },
+    fetchDashboardMetrics: function fetchDashboardMetrics() {
+      var _this6 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+        var response, baseScenario, comparisonResponse, comparison;
+        return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+          while (1) switch (_context7.prev = _context7.next) {
+            case 0:
+              if (_this6.currentScenario) {
+                _context7.next = 2;
+                break;
+              }
+              return _context7.abrupt("return");
             case 2:
-              _context5.prev = 2;
-              _context5.next = 5;
-              return axios.get("/api/organizations/".concat(_this5.organizationId, "/scenarios/").concat(_this5.currentScenario.id, "/metrics"));
+              _context7.prev = 2;
+              _context7.next = 5;
+              return axios.get("/api/organizations/".concat(_this6.organizationId, "/scenarios/").concat(_this6.currentScenario.id, "/metrics"));
             case 5:
-              response = _context5.sent;
-              _this5.dashboardMetrics = response.data;
+              response = _context7.sent;
+              _this6.dashboardMetrics = response.data;
 
               // Add trend data if we have a comparison scenario (e.g., previous month)
-              if (!(_this5.scenarios.length > 1)) {
-                _context5.next = 15;
+              if (!(_this6.scenarios.length > 1)) {
+                _context7.next = 15;
                 break;
               }
-              baseScenario = _this5.scenarios.find(function (s) {
+              baseScenario = _this6.scenarios.find(function (s) {
                 return s.is_base;
               });
-              if (!(baseScenario && baseScenario.id !== _this5.currentScenario.id)) {
-                _context5.next = 15;
+              if (!(baseScenario && baseScenario.id !== _this6.currentScenario.id)) {
+                _context7.next = 15;
                 break;
               }
-              _context5.next = 12;
-              return axios.get("/api/organizations/".concat(_this5.organizationId, "/compare-scenarios"), {
+              _context7.next = 12;
+              return axios.get("/api/organizations/".concat(_this6.organizationId, "/compare-scenarios"), {
                 params: {
-                  scenario1_id: _this5.currentScenario.id,
+                  scenario1_id: _this6.currentScenario.id,
                   scenario2_id: baseScenario.id
                 }
               });
             case 12:
-              comparisonResponse = _context5.sent;
+              comparisonResponse = _context7.sent;
               comparison = comparisonResponse.data.comparison; // Add trend data to metrics
-              _this5.dashboardMetrics.forEach(function (metric) {
+              _this6.dashboardMetrics.forEach(function (metric) {
                 var compMetric = comparison.find(function (m) {
                   return m.code === metric.code;
                 });
@@ -47685,23 +47803,51 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
                 }
               });
             case 15:
-              _context5.next = 20;
+              _context7.next = 20;
               break;
             case 17:
-              _context5.prev = 17;
-              _context5.t0 = _context5["catch"](2);
-              console.error('Error fetching dashboard metrics:', _context5.t0);
+              _context7.prev = 17;
+              _context7.t0 = _context7["catch"](2);
+              console.error('Error fetching dashboard metrics:', _context7.t0);
             case 20:
             case "end":
-              return _context5.stop();
+              return _context7.stop();
           }
-        }, _callee5, null, [[2, 17]]);
+        }, _callee7, null, [[2, 17]]);
       }))();
+    },
+    selectOrganization: function selectOrganization(org) {
+      // Check if org exists and has an id before navigating
+      if (org && org.id) {
+        this.$router.push({
+          name: 'organizations.dashboard',
+          params: {
+            id: org.id
+          }
+        });
+      } else {
+        console.error('Cannot navigate to organization: Invalid organization or missing ID', org);
+        // Optionally show error to user
+        this.error = 'Unable to select organization. Please try again or contact support.';
+      }
+    },
+    getOrgLogoStyle: function getOrgLogoStyle(org) {
+      if (!org) return {};
+      if (org.logo_path) {
+        return {
+          backgroundImage: "url(".concat(org.logo_path, ")")
+        };
+      } else {
+        return {
+          backgroundColor: org.primary_color || '#4caf50'
+        };
+      }
     },
     toggleSidebar: function toggleSidebar() {
       this.sidebarOpen = !this.sidebarOpen;
     },
     formatMetricValue: function formatMetricValue(metric) {
+      if (!metric || !metric.pivot) return 'N/A';
       if (metric.format === 'currency') {
         return new Intl.NumberFormat('en-US', {
           style: 'currency',
@@ -47721,7 +47867,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       return trend.value;
     },
     getMetricClass: function getMetricClass(metric) {
-      if (!metric.pivot.goal) return '';
+      if (!metric.pivot || !metric.pivot.goal) return '';
       var value = metric.pivot.value;
       var goal = metric.pivot.goal;
       if (value >= goal) return 'metric-success';
@@ -48488,63 +48634,121 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     };
   },
   methods: {
-    login: function login() {
-      var _this = this;
+    testAuth: function testAuth() {
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var response;
+        var token, response;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              _this.loading = true;
-              _this.errors = {};
-              _this.loginError = null;
-              _context.prev = 3;
+              _context.prev = 0;
+              token = localStorage.getItem('token');
+              console.log('Stored token:', token);
+              console.log('Headers:', axios__WEBPACK_IMPORTED_MODULE_0__["default"].defaults.headers.common);
               _context.next = 6;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/login', _this.form);
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
             case 6:
               response = _context.sent;
-              // Store token and user info
-              localStorage.setItem('token', response.data.access_token);
-              localStorage.setItem('user', JSON.stringify(response.data.user));
+              console.log('Auth test response:', response.data);
+              alert('Authentication works!');
+              _context.next = 15;
+              break;
+            case 11:
+              _context.prev = 11;
+              _context.t0 = _context["catch"](0);
+              console.error('Auth test failed:', _context.t0);
+              alert('Authentication failed: ' + _context.t0.message);
+            case 15:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, null, [[0, 11]]);
+      }))();
+    },
+    login: function login() {
+      var _this = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+        var response, userCheck;
+        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+          while (1) switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.prev = 0;
+              // Clear any existing auth data first
+              localStorage.removeItem('token');
+              localStorage.removeItem('user');
 
-              // Set axios default headers for future requests
+              // Get CSRF cookie first (important for Laravel Sanctum)
+              _context2.next = 5;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/sanctum/csrf-cookie');
+            case 5:
+              console.log('Login attempt with:', _this.form);
+
+              // Then proceed with login
+              _context2.next = 8;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/login', _this.form);
+            case 8:
+              response = _context2.sent;
+              console.log('Login response:', response.data);
+
+              // Check if login was successful and returned a token
+              if (!(response.data && response.data.access_token)) {
+                _context2.next = 31;
+                break;
+              }
+              // Store token in localStorage
+              localStorage.setItem('token', response.data.access_token);
+
+              // Set the token for future requests
               axios__WEBPACK_IMPORTED_MODULE_0__["default"].defaults.headers.common['Authorization'] = "Bearer ".concat(response.data.access_token);
+
+              // Store user data if returned
+              if (!response.data.user) {
+                _context2.next = 29;
+                break;
+              }
+              localStorage.setItem('user', JSON.stringify(response.data.user));
 
               // Emit login event
               _this.$emit('login', response.data.user);
 
-              // Redirect to dashboard
-              _this.$router.push({
-                name: 'dashboard'
-              });
-              _context.next = 17;
-              break;
-            case 14:
-              _context.prev = 14;
-              _context.t0 = _context["catch"](3);
-              if (_context.t0.response) {
-                if (_context.t0.response.status === 422) {
-                  // Validation errors
-                  _this.errors = _context.t0.response.data.errors || {};
-                } else if (_context.t0.response.status === 401) {
-                  // Invalid credentials
-                  _this.loginError = _context.t0.response.data.message || 'Invalid email or password';
-                } else {
-                  // Other errors
-                  _this.loginError = 'An error occurred. Please try again.';
-                }
-              } else {
-                _this.loginError = 'Network error. Please check your connection.';
-              }
-            case 17:
-              _context.prev = 17;
-              _this.loading = false;
-              return _context.finish(17);
+              // Verify authentication before redirecting
+              _context2.prev = 16;
+              console.log('Testing authentication...');
+              _context2.next = 20;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
             case 20:
+              userCheck = _context2.sent;
+              console.log('Auth test response:', testResponse.data);
+              if (userCheck.data) {
+                console.log('Authentication successful, user:', userCheck.data);
+                _this.$router.push({
+                  name: 'dashboard'
+                });
+              }
+              _context2.next = 29;
+              break;
+            case 25:
+              _context2.prev = 25;
+              _context2.t0 = _context2["catch"](16);
+              console.error('Token verification failed:', _context2.t0);
+              alert('Login appeared successful but authentication failed. Please try again.');
+            case 29:
+              _context2.next = 32;
+              break;
+            case 31:
+              throw new Error('Login response did not contain access token');
+            case 32:
+              _context2.next = 38;
+              break;
+            case 34:
+              _context2.prev = 34;
+              _context2.t1 = _context2["catch"](0);
+              console.error('Login error:', _context2.t1);
+              _this.loginError = 'Login failed. Please check your credentials.';
+            case 38:
             case "end":
-              return _context.stop();
+              return _context2.stop();
           }
-        }, _callee, null, [[3, 14, 17, 20]]);
+        }, _callee2, null, [[0, 34], [16, 25]]);
       }))();
     }
   }
@@ -49542,8 +49746,8 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         email: '',
         password: '',
         password_confirmation: '',
-        role_id: '',
-        terms: false
+        role_id: '1',
+        terms: true
       },
       roles: [],
       errors: {},
@@ -49555,7 +49759,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     };
   },
   created: function created() {
-    this.fetchRoles();
+    //this.fetchRoles();
   },
   methods: {
     fetchRoles: function fetchRoles() {
@@ -49570,31 +49774,35 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
               return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/roles');
             case 3:
               response = _context.sent;
-              _this.roles = response.data.filter(function (role) {
-                return role.slug === 'end-user-client';
-              }); // Filter to only show end-user role
+              console.log('roles');
+              console.log('roles', _this.roles);
+              _this.roles = response.data;
 
               // Set default role if there's only one
               if (_this.roles.length === 1) {
-                _this.form.role_id = _this.roles[0].id;
+                _this.form.role_id = 1;
               }
-              _context.next = 11;
+              _context.next = 14;
               break;
-            case 8:
-              _context.prev = 8;
+            case 10:
+              _context.prev = 10;
               _context.t0 = _context["catch"](0);
               console.error('Error fetching roles:', _context.t0);
-            case 11:
+              if (_context.t0.response) {
+                console.error('Error status:', _context.t0.response.status);
+                console.error('Error data:', _context.t0.response.data);
+              }
+            case 14:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[0, 8]]);
+        }, _callee, null, [[0, 10]]);
       }))();
     },
     register: function register() {
       var _this2 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-        var response;
+        var response, _error$response, _error$response2;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
@@ -49606,45 +49814,54 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
               return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/register', _this2.form);
             case 6:
               response = _context2.sent;
-              // Store token and user info
+              _this2.form.role_id = 1;
+              if (!response.data.access_token) {
+                _context2.next = 20;
+                break;
+              }
               localStorage.setItem('token', response.data.access_token);
-              localStorage.setItem('user', JSON.stringify(response.data.user));
-
-              // Set axios default headers for future requests
               axios__WEBPACK_IMPORTED_MODULE_0__["default"].defaults.headers.common['Authorization'] = "Bearer ".concat(response.data.access_token);
-
-              // Emit login event (since registration automatically logs in)
+              if (!response.data.user) {
+                _context2.next = 17;
+                break;
+              }
+              localStorage.setItem('user', JSON.stringify(response.data.user));
               _this2.$emit('login', response.data.user);
-
-              // Redirect to dashboard
               _this2.$router.push({
                 name: 'dashboard'
               });
-              _context2.next = 17;
+              _context2.next = 18;
               break;
-            case 14:
-              _context2.prev = 14;
-              _context2.t0 = _context2["catch"](3);
-              if (_context2.t0.response) {
-                if (_context2.t0.response.status === 422) {
-                  // Validation errors
-                  _this2.errors = _context2.t0.response.data.errors || {};
-                } else {
-                  // Other errors
-                  _this2.registerError = _context2.t0.response.data.message || 'An error occurred. Please try again.';
-                }
-              } else {
-                _this2.registerError = 'Network error. Please check your connection.';
-              }
             case 17:
-              _context2.prev = 17;
-              _this2.loading = false;
-              return _context2.finish(17);
+              throw new Error('User data not received');
+            case 18:
+              _context2.next = 21;
+              break;
             case 20:
+              throw new Error('Access token not received');
+            case 21:
+              _context2.next = 27;
+              break;
+            case 23:
+              _context2.prev = 23;
+              _context2.t0 = _context2["catch"](3);
+              console.error('Registration error:', _context2.t0);
+              if (((_error$response = _context2.t0.response) === null || _error$response === void 0 ? void 0 : _error$response.status) === 422) {
+                _this2.errors = _context2.t0.response.data.errors || {};
+              } else if ((_error$response2 = _context2.t0.response) !== null && _error$response2 !== void 0 && (_error$response2 = _error$response2.data) !== null && _error$response2 !== void 0 && _error$response2.message) {
+                _this2.registerError = _context2.t0.response.data.message;
+              } else {
+                _this2.registerError = 'An unexpected error occurred. Please try again.';
+              }
+            case 27:
+              _context2.prev = 27;
+              _this2.loading = false;
+              return _context2.finish(27);
+            case 30:
             case "end":
               return _context2.stop();
           }
-        }, _callee2, null, [[3, 14, 17, 20]]);
+        }, _callee2, null, [[3, 23, 27, 30]]);
       }))();
     }
   }
@@ -51815,64 +52032,124 @@ var _hoisted_1 = {
 };
 var _hoisted_2 = {
   key: 0,
-  "class": "error-container"
+  "class": "empty-dashboard"
 };
 var _hoisted_3 = {
-  "class": "error-message"
+  key: 0,
+  "class": "loading-indicator"
 };
 var _hoisted_4 = {
-  "class": "dashboard-header"
+  key: 1,
+  "class": "error-message"
 };
 var _hoisted_5 = {
-  "class": "dashboard-actions"
+  key: 2,
+  "class": "empty-state"
 };
 var _hoisted_6 = {
-  "class": "content"
+  key: 3,
+  "class": "organization-grid"
 };
-var _hoisted_7 = {
-  "class": "metrics-overview"
-};
+var _hoisted_7 = ["onClick"];
 var _hoisted_8 = {
-  "class": "metric-label"
+  "class": "org-info"
 };
 var _hoisted_9 = {
-  "class": "tab-container"
+  key: 0,
+  "class": "org-description"
 };
 var _hoisted_10 = {
-  "class": "tab-header"
+  key: 1,
+  "class": "demo-badge"
 };
-var _hoisted_11 = ["onClick"];
+var _hoisted_11 = {
+  key: 0,
+  "class": "error-container"
+};
 var _hoisted_12 = {
-  "class": "tab-content"
+  "class": "error-message"
 };
 var _hoisted_13 = {
+  "class": "dashboard-header"
+};
+var _hoisted_14 = {
+  "class": "dashboard-actions"
+};
+var _hoisted_15 = {
+  "class": "content"
+};
+var _hoisted_16 = {
+  "class": "metrics-overview"
+};
+var _hoisted_17 = {
+  "class": "metric-label"
+};
+var _hoisted_18 = {
+  "class": "tab-container"
+};
+var _hoisted_19 = {
+  "class": "tab-header"
+};
+var _hoisted_20 = ["onClick"];
+var _hoisted_21 = {
+  "class": "tab-content"
+};
+var _hoisted_22 = {
   key: 0,
   "class": "as-is-analysis"
 };
-var _hoisted_14 = {
+var _hoisted_23 = {
   key: 1,
   "class": "to-be-modeling"
 };
-var _hoisted_15 = {
+var _hoisted_24 = {
   key: 2,
   "class": "org-chart"
 };
-var _hoisted_16 = {
+var _hoisted_25 = {
   key: 3,
   "class": "activity-analysis"
 };
-var _hoisted_17 = {
+var _hoisted_26 = {
   key: 4,
   "class": "hr-data"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   var _component_sidebar = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("sidebar");
   var _component_as_is_analysis = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("as-is-analysis");
   var _component_to_be_modeling = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("to-be-modeling");
   var _component_org_chart = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("org-chart");
   var _component_activity_analysis = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("activity-analysis");
   var _component_hr_data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("hr-data");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[2] || (_cache[2] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" empty dashboard section with demo info "), !$props.organizationId ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "welcome-message"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Welcome to OrgMaps"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Select an organization to get started or create a new one.")], -1 /* HOISTED */)), $data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, _cache[2] || (_cache[2] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading your organizations...", -1 /* HOISTED */)]))) : $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-exclamation-triangle"
+  }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */)])) : $data.organizations.length === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "You don't have any organizations yet.", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: "/organizations/create",
+    "class": "btn-primary"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return _cache[4] || (_cache[4] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+        "class": "fas fa-plus"
+      }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Create Your First Organization ")]);
+    }),
+    _: 1 /* STABLE */
+  })])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.organizations, function (org) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: org.id,
+      "class": "organization-card",
+      onClick: function onClick($event) {
+        return $options.selectOrganization(org);
+      }
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "org-logo",
+      style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)($options.getOrgLogoStyle(org))
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name && !org.logo_path ? org.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name ? org.name : 'Unnamed Organization'), 1 /* TEXT */), org && org.description ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org.description), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), org && org.name === 'Demo Organization' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " Demo ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_7);
+  }), 128 /* KEYED_FRAGMENT */))]))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 1
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Organization dashboard when an organization is selected "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-exclamation-triangle"
   }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn-primary",
@@ -51881,12 +52158,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, " Return to Dashboard ")])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.toggleSidebar && $options.toggleSidebar.apply($options, arguments);
     }),
     "class": "btn-toggle"
-  }, _cache[3] || (_cache[3] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[8] || (_cache[8] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-bars"
   }, null, -1 /* HOISTED */)]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["main-container", {
@@ -51895,7 +52172,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_sidebar, {
     organization: $data.organization,
     open: $data.sidebarOpen
-  }, null, 8 /* PROPS */, ["organization", "open"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.dashboardMetrics, function (metric) {
+  }, null, 8 /* PROPS */, ["organization", "open"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.dashboardMetrics, function (metric) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "metric-card",
       key: metric.id
@@ -51906,8 +52183,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["trend-indicator", $options.getTrendClass(metric.trend)])
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($options.getTrendIcon(metric.trend))
-    }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatTrendValue(metric.trend)), 1 /* TEXT */)], 2 /* CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(metric.name), 1 /* TEXT */)]);
-  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
+    }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatTrendValue(metric.trend)), 1 /* TEXT */)], 2 /* CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(metric.name), 1 /* TEXT */)]);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: tab.id,
       onClick: function onClick($event) {
@@ -51916,23 +52193,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['tab', {
         active: $data.activeTab === tab.id
       }])
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tab.name), 11 /* TEXT, CLASS, PROPS */, _hoisted_11);
-  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [$data.activeTab === 'as-is-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_as_is_analysis, {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tab.name), 11 /* TEXT, CLASS, PROPS */, _hoisted_20);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [$data.activeTab === 'as-is-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_as_is_analysis, {
     organization: $data.organization,
     scenario: $data.currentScenario
-  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'to-be-modeling' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_to_be_modeling, {
+  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'to-be-modeling' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_to_be_modeling, {
     organization: $data.organization,
     scenario: $data.currentScenario
-  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'org-chart' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_org_chart, {
+  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'org-chart' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_org_chart, {
     organization: $data.organization,
     scenario: $data.currentScenario
-  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'activity-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_activity_analysis, {
+  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'activity-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_activity_analysis, {
     organization: $data.organization,
     scenario: $data.currentScenario
-  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'hr-data' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_hr_data, {
+  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.activeTab === 'hr-data' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_hr_data, {
     organization: $data.organization,
     scenario: $data.currentScenario
-  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])], 2 /* CLASS */)], 64 /* STABLE_FRAGMENT */))]);
+  }, null, 8 /* PROPS */, ["organization", "scenario"])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])], 2 /* CLASS */)], 64 /* STABLE_FRAGMENT */))], 64 /* STABLE_FRAGMENT */))]);
 }
 
 /***/ }),
@@ -53237,30 +53514,34 @@ var _hoisted_15 = {
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "auth-header"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Log in to Q5 OrgMaps"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Welcome back. Please enter your credentials to continue.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Log in to Q5 OrgMaps"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Welcome back. Please enter your credentials to continue.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.testAuth && $options.testAuth.apply($options, arguments);
+    })
+  }, "Test Authentication"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.login && $options.login.apply($options, arguments);
     }, ["prevent"])),
     "class": "auth-form"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "email"
   }, "Email", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "email",
     type: "email",
-    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $data.form.email = $event;
     }),
     placeholder: "Enter your email",
     required: "",
     "class": "form-control"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.email[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.email[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "password"
   }, "Password", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "password",
     type: $data.showPassword ? 'text' : 'password',
-    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return $data.form.password = $event;
     }),
     placeholder: "Enter your password",
@@ -53268,7 +53549,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "form-control"
   }, null, 8 /* PROPS */, _hoisted_7), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelDynamic, $data.form.password]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    onClick: _cache[2] || (_cache[2] = function ($event) {
+    onClick: _cache[3] || (_cache[3] = function ($event) {
       return $data.showPassword = !$data.showPassword;
     }),
     "class": "password-toggle"
@@ -53276,28 +53557,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($data.showPassword ? 'fas fa-eye-slash' : 'fas fa-eye')
   }, null, 2 /* CLASS */)])]), $data.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.password[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "checkbox",
-    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
       return $data.form.remember = $event;
     })
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $data.form.remember]]), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Remember me "))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $data.form.remember]]), _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Remember me "))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/forgot-password",
     "class": "forgot-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[8] || (_cache[8] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Forgot password?")]);
+      return _cache[9] || (_cache[9] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Forgot password?")]);
     }),
     _: 1 /* STABLE */
   })]), $data.loginError ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.loginError), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "submit",
     "class": "btn-submit",
     disabled: $data.loading
-  }, [$data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_13, _cache[9] || (_cache[9] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, [$data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_13, _cache[10] || (_cache[10] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-spinner fa-spin"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Logging in... ")]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_14, "Log In"))], 8 /* PROPS */, _hoisted_12)], 32 /* NEED_HYDRATION */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Don't have an account? ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Logging in... ")]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_14, "Log In"))], 8 /* PROPS */, _hoisted_12)], 32 /* NEED_HYDRATION */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Don't have an account? ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/register"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[10] || (_cache[10] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Sign up")]);
+      return _cache[11] || (_cache[11] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Sign up")]);
     }),
     _: 1 /* STABLE */
   })])])])]);
@@ -54264,62 +54545,47 @@ var _hoisted_12 = {
   "class": "form-group"
 };
 var _hoisted_13 = {
-  "class": "form-group"
-};
-var _hoisted_14 = ["value"];
-var _hoisted_15 = {
-  key: 0,
-  "class": "error-message"
-};
-var _hoisted_16 = {
-  "class": "form-group terms-checkbox"
-};
-var _hoisted_17 = {
-  key: 0,
-  "class": "error-message"
-};
-var _hoisted_18 = {
   key: 0,
   "class": "alert alert-danger"
 };
-var _hoisted_19 = ["disabled"];
-var _hoisted_20 = {
+var _hoisted_14 = ["disabled"];
+var _hoisted_15 = {
   key: 0
 };
-var _hoisted_21 = {
+var _hoisted_16 = {
   key: 1
 };
-var _hoisted_22 = {
+var _hoisted_17 = {
   "class": "auth-footer"
 };
-var _hoisted_23 = {
+var _hoisted_18 = {
   "class": "modal-content"
 };
-var _hoisted_24 = {
+var _hoisted_19 = {
   "class": "modal-header"
 };
-var _hoisted_25 = {
+var _hoisted_20 = {
   "class": "modal-footer"
 };
-var _hoisted_26 = {
+var _hoisted_21 = {
   "class": "modal-content"
 };
-var _hoisted_27 = {
+var _hoisted_22 = {
   "class": "modal-header"
 };
-var _hoisted_28 = {
+var _hoisted_23 = {
   "class": "modal-footer"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "auth-header"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Create an Account"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Fill in the form below to create your Q5 OrgMaps account.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
-    onSubmit: _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.register && $options.register.apply($options, arguments);
     }, ["prevent"])),
     "class": "auth-form"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [_cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "name"
   }, "Full Name", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "name",
@@ -54330,7 +54596,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     placeholder: "Enter your full name",
     required: "",
     "class": "form-control"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.name]]), $data.errors.name ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.name[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.name]]), $data.errors.name ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.name[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "email"
   }, "Email", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "email",
@@ -54341,7 +54607,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     placeholder: "Enter your email",
     required: "",
     "class": "form-control"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.email[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.email]]), $data.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.email[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "password"
   }, "Password", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "password",
@@ -54360,7 +54626,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "password-toggle"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($data.showPassword ? 'fas fa-eye-slash' : 'fas fa-eye')
-  }, null, 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Password must contain at least 8 characters", -1 /* HOISTED */)), $data.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.password[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 2 /* CLASS */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Password must contain at least 8 characters", -1 /* HOISTED */)), $data.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.password[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "password_confirmation"
   }, "Confirm Password", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "password_confirmation",
@@ -54371,89 +54637,56 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     placeholder: "Confirm your password",
     required: "",
     "class": "form-control"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password_confirmation]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
-    "for": "role"
-  }, "Account Type", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
-    id: "role",
-    "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
-      return $data.form.role_id = $event;
-    }),
-    required: "",
-    "class": "form-control"
-  }, [_cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
-    value: "",
-    disabled: ""
-  }, "Select your account type", -1 /* HOISTED */)), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.roles, function (role) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
-      key: role.id,
-      value: role.id
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(role.name), 9 /* TEXT, PROPS */, _hoisted_14);
-  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.form.role_id]]), $data.errors.role_id ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.role_id[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    type: "checkbox",
-    "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
-      return $data.form.terms = $event;
-    }),
-    required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $data.form.terms]]), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" I agree to the ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
-    onClick: _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $data.showTerms = true;
-    }, ["prevent"]))
-  }, "Terms of Service"), _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" and ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
-    onClick: _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
-      return $data.showPrivacy = true;
-    }, ["prevent"]))
-  }, "Privacy Policy")]), $data.errors.terms ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.errors.terms[0]), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), $data.registerError ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.registerError), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.form.password_confirmation]])]), $data.registerError ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.registerError), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "submit",
     "class": "btn-submit",
     disabled: $data.loading
-  }, [$data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_20, _cache[25] || (_cache[25] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, [$data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_15, _cache[17] || (_cache[17] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-spinner fa-spin"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Creating Account... ")]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_21, "Create Account"))], 8 /* PROPS */, _hoisted_19)], 32 /* NEED_HYDRATION */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Already have an account? ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Creating Account... ")]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_16, "Create Account"))], 8 /* PROPS */, _hoisted_14)], 32 /* NEED_HYDRATION */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Already have an account? ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/login"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[26] || (_cache[26] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Log in")]);
+      return _cache[18] || (_cache[18] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Log in")]);
     }),
     _: 1 /* STABLE */
   })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Terms of Service Modal "), $data.showTerms ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
     "class": "modal-backdrop",
-    onClick: _cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+    onClick: _cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return $data.showTerms = false;
     }, ["self"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Terms of Service", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    onClick: _cache[10] || (_cache[10] = function ($event) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Terms of Service", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[6] || (_cache[6] = function ($event) {
       return $data.showTerms = false;
     }),
     "class": "btn-close"
-  }, _cache[29] || (_cache[29] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[21] || (_cache[21] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), _cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, null, -1 /* HOISTED */)]))]), _cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "modal-body"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "1. Acceptance of Terms"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "By accessing or using Q5 OrgMaps, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "2. Use License"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Permission is granted to temporarily use Q5 OrgMaps for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "3. Disclaimer"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "The materials on Q5 OrgMaps are provided on an 'as is' basis. Q5 OrgMaps makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "4. Limitations"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "In no event shall Q5 OrgMaps or its suppliers be liable for any damages arising out of the use or inability to use the materials on Q5 OrgMaps, even if Q5 OrgMaps or a Q5 OrgMaps authorized representative has been notified orally or in writing of the possibility of such damage.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    onClick: _cache[11] || (_cache[11] = function ($event) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "1. Acceptance of Terms"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "By accessing or using Q5 OrgMaps, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "2. Use License"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Permission is granted to temporarily use Q5 OrgMaps for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "3. Disclaimer"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "The materials on Q5 OrgMaps are provided on an 'as is' basis. Q5 OrgMaps makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "4. Limitations"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "In no event shall Q5 OrgMaps or its suppliers be liable for any damages arising out of the use or inability to use the materials on Q5 OrgMaps, even if Q5 OrgMaps or a Q5 OrgMaps authorized representative has been notified orally or in writing of the possibility of such damage.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[7] || (_cache[7] = function ($event) {
       return $data.showTerms = false;
     }),
     "class": "btn-secondary"
   }, "Close")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Privacy Policy Modal "), $data.showPrivacy ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 1,
     "class": "modal-backdrop",
-    onClick: _cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+    onClick: _cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
       return $data.showPrivacy = false;
     }, ["self"]))
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[33] || (_cache[33] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Privacy Policy", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    onClick: _cache[13] || (_cache[13] = function ($event) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [_cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Privacy Policy", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[9] || (_cache[9] = function ($event) {
       return $data.showPrivacy = false;
     }),
     "class": "btn-close"
-  }, _cache[32] || (_cache[32] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[24] || (_cache[24] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), _cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, null, -1 /* HOISTED */)]))]), _cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "modal-body"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "1. Information We Collect"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We collect information that you provide directly to us, such as when you create or modify your account, request services, contact customer support, or otherwise communicate with us."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "2. How We Use Information"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We may use the information we collect to provide, maintain, and improve our services, process transactions, send communications, protect our services, and to comply with legal obligations."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "3. Data Sharing"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We do not share your personal information with third parties except as described in this privacy policy or when we have your permission."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "4. Data Security"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    onClick: _cache[14] || (_cache[14] = function ($event) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "1. Information We Collect"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We collect information that you provide directly to us, such as when you create or modify your account, request services, contact customer support, or otherwise communicate with us."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "2. How We Use Information"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We may use the information we collect to provide, maintain, and improve our services, process transactions, send communications, protect our services, and to comply with legal obligations."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "3. Data Sharing"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We do not share your personal information with third parties except as described in this privacy policy or when we have your permission."), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "4. Data Security"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "We take reasonable measures to help protect your personal information from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction.")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[10] || (_cache[10] = function ($event) {
       return $data.showPrivacy = false;
     }),
     "class": "btn-secondary"
@@ -60893,6 +61126,17 @@ var App = (__webpack_require__(/*! ./components/App.vue */ "./resources/js/compo
 var router = __webpack_require__(/*! ./router */ "./resources/js/router.js");
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs");
 
+// Import the auth module
+var auth = __webpack_require__(/*! ./auth */ "./resources/js/auth.js");
+
+// Make sure it's defined before using it
+if (auth) {
+  console.log('Auth module loaded successfully');
+  auth.init();
+} else {
+  console.error('Auth module failed to load');
+}
+
 // Set up Axios
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 axios.defaults.withCredentials = true;
@@ -60901,9 +61145,10 @@ axios.defaults.withCredentials = true;
 axios.interceptors.response.use(function (response) {
   return response;
 }, function (error) {
-  console.error('Axios Error:', error);
-  // Redirect to login if unauthorized
   if (error.response && error.response.status === 401) {
+    // Clear invalid authentication
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
     router.push('/login');
   }
   return Promise.reject(error);
@@ -60938,6 +61183,86 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
+/***/ "./resources/js/auth.js":
+/*!******************************!*\
+  !*** ./resources/js/auth.js ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+// resources/js/auth.js
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs");
+
+// Create the auth object
+var auth = {
+  init: function init() {
+    this.setAuthHeader();
+  },
+  setAuthHeader: function setAuthHeader() {
+    var token = localStorage.getItem('token');
+    if (token) {
+      axios.defaults.headers.common['Authorization'] = "Bearer ".concat(token);
+      return true;
+    }
+    return false;
+  },
+  check: function check() {
+    var _this = this;
+    return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var response;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            if (_this.setAuthHeader()) {
+              _context.next = 2;
+              break;
+            }
+            return _context.abrupt("return", false);
+          case 2:
+            _context.prev = 2;
+            _context.next = 5;
+            return axios.get('/api/user');
+          case 5:
+            response = _context.sent;
+            return _context.abrupt("return", !!response.data);
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](2);
+            _this.logout();
+            return _context.abrupt("return", false);
+          case 13:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[2, 9]]);
+    }))();
+  },
+  getUser: function getUser() {
+    var userData = localStorage.getItem('user');
+    if (userData) {
+      try {
+        return JSON.parse(userData);
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  },
+  logout: function logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    delete axios.defaults.headers.common['Authorization'];
+  }
+};
+
+// Export the auth object directly
+module.exports = auth;
+
+/***/ }),
+
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -60947,7 +61272,33 @@ document.addEventListener('DOMContentLoaded', function () {
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs");
 window.axios = axios;
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-axios.defaults.headers.common['X-CSRF-TOKEN'] = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+window.axios.defaults.withCredentials = true;
+window.axios.defaults.baseURL = '/';
+var token = document.querySelector('meta[name="csrf-token"]');
+if (token) {
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.getAttribute('content');
+} else {
+  console.error('CSRF token not found');
+}
+
+// Add this to bootstrap.js
+var authToken = localStorage.getItem('token');
+if (authToken) {
+  axios.defaults.headers.common['Authorization'] = "Bearer ".concat(authToken);
+}
+
+// Add axios interceptor to handle 401 errors
+axios.interceptors.response.use(function (response) {
+  return response;
+}, function (error) {
+  if (error.response && error.response.status === 401) {
+    // Clear invalid authentication data
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    window.location = '/login';
+  }
+  return Promise.reject(error);
+});
 
 /***/ }),
 
@@ -62085,7 +62436,11 @@ var router = createRouter({
     meta: {
       requiresAuth: true
     },
-    props: true
+    props: function props(route) {
+      return {
+        organizationId: route.params.id
+      };
+    }
   },
   // Add these new routes for organization features
   {
@@ -62149,7 +62504,7 @@ router.beforeEach(/*#__PURE__*/function () {
           if (!to.matched.some(function (record) {
             return record.meta.requiresAuth;
           })) {
-            _context.next = 14;
+            _context.next = 15;
             break;
           }
           _context.prev = 1;
@@ -62157,28 +62512,35 @@ router.beforeEach(/*#__PURE__*/function () {
           return axios.get('/api/user');
         case 4:
           response = _context.sent;
-          if (response.status === 200) {
+          if (response.status === 200 && response.data) {
             next();
           } else {
             next({
-              name: 'login'
+              name: 'login',
+              query: {
+                redirect: to.fullPath
+              }
             });
           }
-          _context.next = 12;
+          _context.next = 13;
           break;
         case 8:
           _context.prev = 8;
           _context.t0 = _context["catch"](1);
           console.error('Authentication check failed:', _context.t0);
+          localStorage.removeItem('token'); // Clear invalid token
           next({
-            name: 'login'
+            name: 'login',
+            query: {
+              redirect: to.fullPath
+            }
           });
-        case 12:
-          _context.next = 15;
+        case 13:
+          _context.next = 16;
           break;
-        case 14:
-          next();
         case 15:
+          next();
+        case 16:
         case "end":
           return _context.stop();
       }

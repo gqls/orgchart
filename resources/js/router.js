@@ -51,7 +51,7 @@ const router = createRouter({
             component: Dashboard,
             name: 'organizations.dashboard',
             meta: { requiresAuth: true },
-            props: true
+            props: (route) => ({ organizationId: route.params.id })
         },
         // Add these new routes for organization features
         {
@@ -96,16 +96,22 @@ const router = createRouter({
 router.beforeEach(async (to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAuth)) {
         try {
-            // Check if user is authenticated
             const response = await axios.get('/api/user');
-            if (response.status === 200) {
+            if (response.status === 200 && response.data) {
                 next();
             } else {
-                next({ name: 'login' });
+                next({
+                    name: 'login',
+                    query: { redirect: to.fullPath }
+                });
             }
         } catch (error) {
             console.error('Authentication check failed:', error);
-            next({ name: 'login' });
+            localStorage.removeItem('token'); // Clear invalid token
+            next({
+                name: 'login',
+                query: { redirect: to.fullPath }
+            });
         }
     } else {
         next();

@@ -59,5 +59,13 @@ class Position extends Model
     {
         return $this->belongsToMany(Scenario::class, 'scenario_positions')->withPivot('status')->withTimestamps();
     }
+
+    /**
+     * Get the employees for the organization.
+     */
+    public function employees()
+    {
+        return $this->hasMany(Employee::class);
+    }
 }
 

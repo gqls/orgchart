@@ -3,12 +3,13 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\app\Models\User;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use function App\Http\Controllers\Api\response;
+
 
 class AuthController extends Controller
 {
@@ -18,7 +19,7 @@ class AuthController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
-            'role_id' => 'required|exists:roles,id',
+            'role_id' => 'nullable|exists:roles,id',
         ]);
 
         if ($validator->fails()) {
@@ -38,19 +39,27 @@ class AuthController extends Controller
             'user' => $user,
             'access_token' => $token,
             'token_type' => 'Bearer',
-        ]);
+        ], 201);
     }
 
     public function login(Request $request)
     {
-        if (!Auth::attempt($request->only('email', 'password'))) {
+        $credentials = $request->only('email', 'password');
+        $attempt = Auth::attempt($credentials);
+
+        if (!$attempt) {
             return response()->json([
-                'message' => 'Invalid login details'
+                'message' => 'Invalid login details',
+                'credentials' => $credentials,  // Remove in production!
+                'attempt_result' => $attempt
             ], 401);
         }
 
         $user = User::where('email', $request->email)->firstOrFail();
         $user->load('role');
+
+        // Clear previous tokens (optional)
+        // $user->tokens()->delete();
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
@@ -58,6 +67,7 @@ class AuthController extends Controller
             'user' => $user,
             'access_token' => $token,
             'token_type' => 'Bearer',
+            'auth_check' => Auth::check()
         ]);
     }
 

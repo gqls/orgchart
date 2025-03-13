@@ -4,11 +4,10 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\app\Models\Department;
-use App\app\Models\Organization;
+use App\Models\Department;
+use App\Models\Organization;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use function App\Http\Controllers\Api\response;
 
 class DepartmentController extends Controller
 {

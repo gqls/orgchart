@@ -71,33 +71,6 @@
           />
         </div>
 
-        <div class="form-group">
-          <label for="role">Account Type</label>
-          <select
-              id="role"
-              v-model="form.role_id"
-              required
-              class="form-control"
-          >
-            <option value="" disabled>Select your account type</option>
-            <option v-for="role in roles" :key="role.id" :value="role.id">
-              {{ role.name }}
-            </option>
-          </select>
-          <div v-if="errors.role_id" class="error-message">{{ errors.role_id[0] }}</div>
-        </div>
-
-        <div class="form-group terms-checkbox">
-          <label>
-            <input type="checkbox" v-model="form.terms" required/>
-            I agree to the
-            <a href="#" @click.prevent="showTerms = true">Terms of Service</a>
-            and
-            <a href="#" @click.prevent="showPrivacy = true">Privacy Policy</a>
-          </label>
-          <div v-if="errors.terms" class="error-message">{{ errors.terms[0] }}</div>
-        </div>
-
         <div v-if="registerError" class="alert alert-danger">
           {{ registerError }}
         </div>
@@ -198,8 +171,8 @@ export default {
         email: '',
         password: '',
         password_confirmation: '',
-        role_id: '',
-        terms: false
+        role_id: '1',
+        terms: true
       },
       roles: [],
       errors: {},
@@ -212,21 +185,27 @@ export default {
   },
 
   created() {
-    this.fetchRoles();
+    //this.fetchRoles();
   },
 
   methods: {
     async fetchRoles() {
       try {
         const response = await axios.get('/api/roles');
-        this.roles = response.data.filter(role => role.slug === 'end-user-client'); // Filter to only show end-user role
+        console.log('roles');
+        console.log('roles', this.roles);
+        this.roles = response.data;
 
         // Set default role if there's only one
         if (this.roles.length === 1) {
-          this.form.role_id = this.roles[0].id;
+          this.form.role_id = 1;
         }
       } catch (error) {
         console.error('Error fetching roles:', error);
+        if (error.response) {
+          console.error('Error status:', error.response.status);
+          console.error('Error data:', error.response.data);
+        }
       }
     },
 
@@ -237,30 +216,29 @@ export default {
 
       try {
         const response = await axios.post('/api/register', this.form);
+        this.form.role_id=1;
+        if (response.data.access_token) {
+          localStorage.setItem('token', response.data.access_token);
+          axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
 
-        // Store token and user info
-        localStorage.setItem('token', response.data.access_token);
-        localStorage.setItem('user', JSON.stringify(response.data.user));
-
-        // Set axios default headers for future requests
-        axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
-
-        // Emit login event (since registration automatically logs in)
-        this.$emit('login', response.data.user);
-
-        // Redirect to dashboard
-        this.$router.push({name: 'dashboard'});
-      } catch (error) {
-        if (error.response) {
-          if (error.response.status === 422) {
-            // Validation errors
-            this.errors = error.response.data.errors || {};
+          if (response.data.user) {
+            localStorage.setItem('user', JSON.stringify(response.data.user));
+            this.$emit('login', response.data.user);
+            this.$router.push({name: 'dashboard'});
           } else {
-            // Other errors
-            this.registerError = error.response.data.message || 'An error occurred. Please try again.';
+            throw new Error('User data not received');
           }
         } else {
-          this.registerError = 'Network error. Please check your connection.';
+          throw new Error('Access token not received');
+        }
+      } catch (error) {
+        console.error('Registration error:', error);
+        if (error.response?.status === 422) {
+          this.errors = error.response.data.errors || {};
+        } else if (error.response?.data?.message) {
+          this.registerError = error.response.data.message;
+        } else {
+          this.registerError = 'An unexpected error occurred. Please try again.';
         }
       } finally {
         this.loading = false;

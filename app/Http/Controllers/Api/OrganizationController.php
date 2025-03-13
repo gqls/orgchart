@@ -3,12 +3,11 @@
 // app/Http/Controllers/Api/OrganizationController.php
 namespace App\Http\Controllers\Api;
 
-use App\app\app\Http\Controllers\Controller;
-use App\app\Models\Organization;
+use App\Http\Controllers\Controller;
+use App\Models\Organization;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use function App\Http\Controllers\Api\response;
 
 class OrganizationController extends Controller
 {

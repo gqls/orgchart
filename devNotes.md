@@ -117,6 +117,11 @@ docker-compose logs node
 postgres
 docker-compose exec postgres psql -U root -d laravel
 
+docker-compose exec app php artisan migrate:fresh --seed
+docker-compose exec app php artisan tinker
+
+
+
 
 
 

@@ -3,12 +3,11 @@
 // app/Http/Controllers/Api/ReportingRelationshipController.php
 namespace App\Http\Controllers\Api;
 
-use App\app\app\Http\Controllers\Controller;
-use App\app\Models\Organization;
-use App\app\Models\ReportingRelationship;
+use App\Http\Controllers\Controller;
+use App\Models\Organization;
+use App\Models\ReportingRelationship;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use function App\Http\Controllers\Api\response;
 
 class ReportingRelationshipController extends Controller
 {
@@ -21,6 +20,19 @@ class ReportingRelationshipController extends Controller
             ->get();
 
         return response()->json($relationships);
+    }
+
+    public function show(Organization $organization, ReportingRelationship $relationship)
+    {
+        $this->authorize('view', $organization);
+
+        if ($relationship->organization_id !== $organization->id) {
+            return response()->json(['message' => 'Relationship does not belong to this organization'], 403);
+        }
+
+        $relationship->load(['manager', 'directReport']);
+
+        return response()->json($relationship);
     }
 
     public function store(Request $request, Organization $organization)

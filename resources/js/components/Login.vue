@@ -6,6 +6,7 @@
         <h1>Log in to Q5 OrgMaps</h1>
         <p>Welcome back. Please enter your credentials to continue.</p>
       </div>
+      <button @click="testAuth">Test Authentication</button>
 
       <form @submit.prevent="login" class="auth-form">
         <div class="form-group">
@@ -89,47 +90,77 @@ export default {
   },
 
   methods: {
-    async login() {
-      this.loading = true;
-      this.errors = {};
-      this.loginError = null;
-
+    async testAuth() {
       try {
+        const token = localStorage.getItem('token');
+        console.log('Stored token:', token);
+
+        console.log('Headers:', axios.defaults.headers.common);
+
+        const response = await axios.get('/api/user');
+        console.log('Auth test response:', response.data);
+        alert('Authentication works!');
+      } catch (error) {
+        console.error('Auth test failed:', error);
+        alert('Authentication failed: ' + error.message);
+      }
+    },
+
+    async login() {
+      try {
+        // Clear any existing auth data first
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+
+        // Get CSRF cookie first (important for Laravel Sanctum)
+        await axios.get('/sanctum/csrf-cookie');
+
+        console.log('Login attempt with:', this.form);
+
+        // Then proceed with login
         const response = await axios.post('/api/login', this.form);
 
-        // Store token and user info
-        localStorage.setItem('token', response.data.access_token);
-        localStorage.setItem('user', JSON.stringify(response.data.user));
+        console.log('Login response:', response.data);
 
-        // Set axios default headers for future requests
-        axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
+        // Check if login was successful and returned a token
+        if (response.data && response.data.access_token) {
+          // Store token in localStorage
+          localStorage.setItem('token', response.data.access_token);
 
-        // Emit login event
-        this.$emit('login', response.data.user);
+          // Set the token for future requests
+          axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
 
-        // Redirect to dashboard
-        this.$router.push({ name: 'dashboard' });
-      } catch (error) {
-        if (error.response) {
-          if (error.response.status === 422) {
-            // Validation errors
-            this.errors = error.response.data.errors || {};
-          } else if (error.response.status === 401) {
-            // Invalid credentials
-            this.loginError = error.response.data.message || 'Invalid email or password';
-          } else {
-            // Other errors
-            this.loginError = 'An error occurred. Please try again.';
+          // Store user data if returned
+          if (response.data.user) {
+            localStorage.setItem('user', JSON.stringify(response.data.user));
+
+            // Emit login event
+            this.$emit('login', response.data.user);
+
+            // Verify authentication before redirecting
+            try {
+              console.log('Testing authentication...');
+              const userCheck = await axios.get('/api/user');
+              console.log('Auth test response:', testResponse.data);
+              if (userCheck.data) {
+                console.log('Authentication successful, user:', userCheck.data);
+                this.$router.push({name: 'dashboard'});
+              }
+            } catch (verifyError) {
+              console.error('Token verification failed:', verifyError);
+              alert('Login appeared successful but authentication failed. Please try again.');
+            }
           }
         } else {
-          this.loginError = 'Network error. Please check your connection.';
+          throw new Error('Login response did not contain access token');
         }
-      } finally {
-        this.loading = false;
+      } catch (error) {
+        console.error('Login error:', error);
+        this.loginError = 'Login failed. Please check your credentials.';
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style scoped>

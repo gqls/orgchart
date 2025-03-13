@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\DepartmentController;
 use App\Http\Controllers\Api\OrganizationController;
@@ -7,15 +8,51 @@ use App\Http\Controllers\Api\PositionController;
 use App\Http\Controllers\Api\ReportingRelationshipController;
 use App\Http\Controllers\Api\ScenarioController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\RoleController;
 
 // Public routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::get('/roles', [RoleController::class, 'index']);
+
+Route::get('/test-binding/{organization}', function (Organization $organization) {
+    return response()->json($organization);
+});
+
+Route::get('/test-login', function () {
+    return view('test-login');
+});
+
+// In routes/api.php
+Route::get('/auth-debug', function (Request $request) {
+    return response()->json([
+        'authenticated' => auth()->check(),
+        'user' => auth()->user(),
+        'token_present' => $request->bearerToken() ? true : false,
+        'token_value' => $request->bearerToken() ? substr($request->bearerToken(), 0, 10).'...' : null,
+    ]);
+});
+
+Route::get('/auth-test', function () {
+    if (auth()->check()) {
+        return response()->json(['authenticated' => true, 'user' => auth()->user()]);
+    }
+    return response()->json(['authenticated' => false], 401);
+})->middleware('auth:sanctum');
+
+Route::get('/test-controller', [App\Http\Controllers\Api\TestController::class, 'index']);
+
+Route::get('/test', function () {
+    return response()->json(['message' => 'API is working']);
+});
 
 // Protected routes
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/user', [AuthController::class, 'user']);
+
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::get('/user', function (Request $request) {
+        return $request->user();
+    });
 
     // Health check route
     Route::get('/health', function () {
@@ -58,9 +95,6 @@ Route::middleware('auth:sanctum')->group(function () {
         // Scenario metrics
         Route::get('scenarios/{scenario}/metrics', [ScenarioController::class, 'metrics']);
         Route::post('scenarios/{scenario}/calculate-metrics', [ScenarioController::class, 'calculateMetrics']);
-
-        // Set scenario as current
-        Route::put('scenarios/{scenario}/set-current', [ScenarioController::class, 'setCurrent']);
 
         // Compare scenarios
         Route::get('compare-scenarios', [ScenarioController::class, 'compareScenarios']);
