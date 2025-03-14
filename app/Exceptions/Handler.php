@@ -1,3 +1,3 @@
 <?php
 
-namespace Exceptions;
+namespace App\Exceptions;

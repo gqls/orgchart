@@ -53,7 +53,6 @@ const router = createRouter({
             meta: { requiresAuth: true },
             props: (route) => ({ organizationId: route.params.id })
         },
-        // Add these new routes for organization features
         {
             path: '/organizations/:id/departments',
             component: () => import('./components/DepartmentList.vue'),

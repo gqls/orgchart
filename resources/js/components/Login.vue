@@ -108,57 +108,63 @@ export default {
 
     async login() {
       try {
-        // Clear any existing auth data first
-        localStorage.removeItem('token');
-        localStorage.removeItem('user');
-
-        // Get CSRF cookie first (important for Laravel Sanctum)
+        // First get CSRF cookie
         await axios.get('/sanctum/csrf-cookie');
 
+        // Log what we're sending
         console.log('Login attempt with:', this.form);
 
-        // Then proceed with login
+        // Attempt login
         const response = await axios.post('/api/login', this.form);
-
         console.log('Login response:', response.data);
 
-        // Check if login was successful and returned a token
-        if (response.data && response.data.access_token) {
-          // Store token in localStorage
+        if (response.data.access_token) {
+          // Save token to localStorage
           localStorage.setItem('token', response.data.access_token);
 
-          // Set the token for future requests
+          // Set authorization header for future requests
           axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
 
-          // Store user data if returned
-          if (response.data.user) {
-            localStorage.setItem('user', JSON.stringify(response.data.user));
+          // Save user data
+          localStorage.setItem('user', JSON.stringify(response.data.user));
+
+          // Test auth
+          try {
+            console.log('Testing authentication...');
+            // Use a different variable name - this was "testResponse" before
+            const authTestResponse = await axios.get('/api/user');
+            console.log('Auth test response:', authTestResponse.data);
 
             // Emit login event
             this.$emit('login', response.data.user);
 
-            // Verify authentication before redirecting
-            try {
-              console.log('Testing authentication...');
-              const userCheck = await axios.get('/api/user');
-              console.log('Auth test response:', testResponse.data);
-              if (userCheck.data) {
-                console.log('Authentication successful, user:', userCheck.data);
-                this.$router.push({name: 'dashboard'});
-              }
-            } catch (verifyError) {
-              console.error('Token verification failed:', verifyError);
-              alert('Login appeared successful but authentication failed. Please try again.');
-            }
+            // Navigate to dashboard
+            this.$router.push({name: 'dashboard'});
+          } catch (testError) {
+            console.error('Token verification failed:', testError);
+            alert('Login successful but authentication failed. Please try again.');
           }
         } else {
-          throw new Error('Login response did not contain access token');
+          throw new Error('No access token received');
         }
       } catch (error) {
-        console.error('Login error:', error);
+        console.error('Login error:', error.response?.data || error.message);
         this.loginError = 'Login failed. Please check your credentials.';
       }
-    },
+      // After successful login, navigate appropriately
+      if (this.intendedRoute && this.intendedRoute.name === 'organizations.dashboard') {
+        // Only navigate to organization dashboard if we have a valid organization ID
+        if (this.intendedRoute.params && this.intendedRoute.params.id) {
+          this.$router.push(this.intendedRoute);
+        } else {
+          // Navigate to the general dashboard if no specific organization
+          this.$router.push({name: 'dashboard'});
+        }
+      } else {
+        // Default navigation if no intended route
+        this.$router.push({name: 'dashboard'});
+      }
+    }
   },
 }
 </script>

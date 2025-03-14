@@ -3,6 +3,9 @@
   <div class="dashboard">
     <!-- empty dashboard section with demo info -->
     <div v-if="!organizationId" class="empty-dashboard">
+      <div class="dashboard-logo"> OrgChart
+        <img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo">
+      </div>
       <div class="welcome-message">
         <h1>Welcome to OrgMaps</h1>
         <p>Select an organization to get started or create a new one.</p>
@@ -52,6 +55,9 @@
       <template v-else>
         <div class="dashboard-header">
           <h1>{{ organization.name }}</h1>
+          <div class="dashboard-logo">
+            <img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo">OrgChart
+          </div>
           <div class="dashboard-actions">
             <button @click="toggleSidebar" class="btn-toggle">
               <i class="fas fa-bars"></i>
@@ -61,7 +67,6 @@
 
         <div class="main-container" :class="{ 'sidebar-open': sidebarOpen }">
           <sidebar :organization="organization" :open="sidebarOpen"/>
-
           <div class="content">
             <div class="metrics-overview">
               <div class="metric-card" v-for="metric in dashboardMetrics" :key="metric.id">
@@ -172,16 +177,29 @@ export default {
 
   async created() {
     if (this.organizationId) {
+      const orgId = parseInt(this.organizationId, 10);
+      if (isNaN(orgId)) {
+        this.error = "Invalid organization ID provided.";
+        return;
+      }
       // If we have an organization ID, fetch that organization's data
       try {
-        await this.fetchOrganization();
-        await this.fetchScenarios();
+        this.loading = true;
+        await this.fetchOrganization(orgId);
+        // Only fetch dependent data after the organization is loaded
+        if (this.organization && this.organization.id) {
+          await this.fetchScenarios(orgId);
+          await this.fetchDepartments(orgId);
+        } else {
+          console.error('Error loading fetchScenarios and fetch Departments in Dashboard.vue')
+        }
       } catch (error) {
         this.error = "Error loading organization data. Please try again.";
         console.error('Error initializing Dashboard:', error);
       }
     } else {
       // If no organization ID, fetch the list of organizations
+      console.log("No organisation Id, so fetching all organisations.")
       await this.fetchOrganizations();
     }
   },
@@ -241,14 +259,15 @@ export default {
       }
     },
 
-    async fetchOrganization() {
+    async fetchOrganization(orgId) {
       this.loading = true;
       this.error = null;
 
       try {
-        const response = await axios.get(`/api/organizations/${this.organizationId}`);
+        const response = await axios.get(`/api/organizations/${orgId}`);
         if (response.data && typeof response.data === 'object') {
           this.organization = response.data;
+          console.log('Organization loaded:', this.organization);
         } else {
           console.error('Invalid organization data received:', response.data);
           this.organization = {}; // Fallback to empty object
@@ -263,9 +282,9 @@ export default {
       }
     },
 
-    async fetchScenarios() {
+    async fetchScenarios(orgId) {
       try {
-        const response = await axios.get(`/api/organizations/${this.organizationId}/scenarios`);
+        const response = await axios.get(`/api/organizations/${orgId}/scenarios`);
         if (Array.isArray(response.data)) {
           this.scenarios = response.data;
 
@@ -293,6 +312,18 @@ export default {
         this.fetchDashboardMetrics();
       } catch (error) {
         console.error('Error setting current scenario:', error);
+      }
+    },
+
+    async fetchDepartments(orgId) {
+
+      try {
+        const response = await axios.get(`/api/organizations/${orgId}/departments`);
+        this.departments = response.data;
+      } catch (error) {
+        console.error('Error fetching departments:', error);
+        this.departments = [];
+        throw error;
       }
     },
 
@@ -347,6 +378,9 @@ export default {
     getOrgLogoStyle(org) {
       if (!org) return {};
       if (org.logo_path) {
+        const logoUrl = org.logo_path.startsWith('http')
+            ? org.logo_path
+            : `/storage/${org.logo_path}`;
         return { backgroundImage: `url(${org.logo_path})` };
       } else {
         return { backgroundColor: org.primary_color || '#4caf50' };
@@ -712,6 +746,31 @@ export default {
 .btn-primary:hover {
   background-color: #388e3c;
   text-decoration: none;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Make sure the header has position relative for absolute positioning of logo */
+.dashboard-header {
+  position: relative;
 }
 
 @media (max-width: 768px) {

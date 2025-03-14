@@ -1,8 +1,5 @@
 const axios = require('axios');
 window.axios = axios;
-
-
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.withCredentials = true;
 window.axios.defaults.baseURL = '/';
@@ -14,13 +11,12 @@ if (token) {
     console.error('CSRF token not found');
 }
 
-// Add this to bootstrap.js
 const authToken = localStorage.getItem('token');
 if (authToken) {
     axios.defaults.headers.common['Authorization'] = `Bearer ${authToken}`;
 }
 
-// Add axios interceptor to handle 401 errors
+// axios interceptor to handle 401 errors
 axios.interceptors.response.use(
     (response) => response,
     (error) => {

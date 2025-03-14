@@ -11,10 +11,6 @@
         </div>
         <div class="org-name">{{ organization.name }}</div>
       </div>
-      <div class="org-info" v-else>
-        <div class="org-logo" style="backgroundColor: '#4caf50'">?</div>
-        <div class="org-name">Loading...</div>
-      </div>
       <button @click="$emit('toggle')" class="btn-toggle-sidebar">
         <i class="fas fa-chevron-left"></i>
       </button>
@@ -209,7 +205,7 @@ export default {
     organization: {
       type: Object,
       required: true,
-      default: () => ({id: null,})
+      default: () => ({id: null})
     },
     open: {
       type: Boolean,
@@ -367,6 +363,12 @@ export default {
         description: '',
         color: '#4caf50'
       };
+    },
+
+    getLogoUrl(path) {
+      if (!path) return null;
+      if (path.startsWith('http')) return path;
+      return `/storage/${path}`;
     },
 
     async logout() {

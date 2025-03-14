@@ -120,9 +120,9 @@ docker-compose exec postgres psql -U root -d laravel
 docker-compose exec app php artisan migrate:fresh --seed
 docker-compose exec app php artisan tinker
 
+docker-compose exec app php artisan route:list
 
-
-
+docker-compose exec app php artisan storage:link
 
 
 

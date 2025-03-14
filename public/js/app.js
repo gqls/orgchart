@@ -45882,7 +45882,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n/* Empty Dashboard Styles */\n.empty-dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 2rem;\n  max-width: 1200px;\n  margin: 0 auto;\n  width: 100%;\n}\n.welcome-message[data-v-040e2ab9] {\n  text-align: center;\n  margin-bottom: 3rem;\n}\n.welcome-message h1[data-v-040e2ab9] {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n.welcome-message p[data-v-040e2ab9] {\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n.organization-grid[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 1.5rem;\n  width: 100%;\n}\n.organization-card[data-v-040e2ab9] {\n  display: flex;\n  background-color: white;\n  border-radius: 0.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  padding: 1.5rem;\n  transition: transform 0.2s, box-shadow 0.2s;\n  cursor: pointer;\n}\n.organization-card[data-v-040e2ab9]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);\n}\n.org-logo[data-v-040e2ab9] {\n  width: 60px;\n  height: 60px;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: white;\n  background-size: cover;\n  background-position: center;\n  margin-right: 1rem;\n  flex-shrink: 0;\n}\n.org-info[data-v-040e2ab9] {\n  flex: 1;\n}\n.org-info h3[data-v-040e2ab9] {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.2rem;\n}\n.org-description[data-v-040e2ab9] {\n  color: var(--text-secondary);\n  font-size: 0.9rem;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.empty-state[data-v-040e2ab9] {\n  text-align: center;\n  padding: 3rem;\n  background-color: #f9f9f9;\n  border-radius: 0.75rem;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n  width: 100%;\n}\n.empty-state p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n\n/* Organization Dashboard Styles */\n.dashboard-header[data-v-040e2ab9] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background-color: #fff;\n  border-bottom: 1px solid #ddd;\n}\n.main-container[data-v-040e2ab9] {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n.content[data-v-040e2ab9] {\n  flex: 1;\n  padding: 1rem;\n  overflow-y: auto;\n}\n.metrics-overview[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.metric-card[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n.metric-value[data-v-040e2ab9] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.metric-success[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.metric-warning[data-v-040e2ab9] {\n  color: #ff9800;\n}\n.metric-danger[data-v-040e2ab9] {\n  color: #f44336;\n}\n.metric-label[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  color: #666;\n}\n.trend-indicator[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  display: flex;\n  align-items: center;\n  margin-left: 0.5rem;\n}\n.trend-up[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.trend-down[data-v-040e2ab9] {\n  color: #f44336;\n}\n.loading-indicator[data-v-040e2ab9] {\n  text-align: center;\n  padding: 2rem;\n  color: var(--text-secondary);\n}\n.error-container[data-v-040e2ab9] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #f5f5f5;\n}\n.error-message[data-v-040e2ab9] {\n  text-align: center;\n  background-color: white;\n  padding: 2rem;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n  max-width: 500px;\n}\n.error-message i[data-v-040e2ab9] {\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1rem;\n}\n.error-message p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  color: #333;\n  font-size: 1.1rem;\n}\n.error-message button[data-v-040e2ab9] {\n  margin-top: 1rem;\n}\n.demo-badge[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #3498db;\n  color: white;\n  font-size: 0.7rem;\n  padding: 0.2rem 0.5rem;\n  border-radius: 4px;\n  margin-top: 0.5rem;\n}\n.organization-card.demo-card[data-v-040e2ab9] {\n  border: 2px dashed #3498db;\n  position: relative;\n}\n.demo-info[data-v-040e2ab9] {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: rgba(52, 152, 219, 0.1);\n  padding: 0.5rem;\n  font-size: 0.8rem;\n  color: #666;\n  border-top: 1px solid rgba(52, 152, 219, 0.3);\n}\n.tab-container[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n}\n.tab-header[data-v-040e2ab9] {\n  display: flex;\n  background-color: #f5f5f5;\n  border-bottom: 1px solid #ddd;\n}\n.tab[data-v-040e2ab9] {\n  padding: 0.75rem 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.tab[data-v-040e2ab9]:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.tab.active[data-v-040e2ab9] {\n  background-color: #fff;\n  border-bottom: 2px solid #4caf50;\n  font-weight: bold;\n}\n.tab-content[data-v-040e2ab9] {\n  padding: 1rem;\n  min-height: 400px;\n}\n.sidebar-open .content[data-v-040e2ab9] {\n  margin-left: 250px;\n}\n.btn-primary[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #4caf50;\n  color: white;\n  border: none;\n  padding: 0.75rem 1.5rem;\n  border-radius: 0.25rem;\n  font-weight: 500;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 1rem;\n  transition: background-color 0.2s;\n}\n.btn-primary[data-v-040e2ab9]:hover {\n  background-color: #388e3c;\n  text-decoration: none;\n}\n@media (max-width: 768px) {\n.sidebar-open .content[data-v-040e2ab9] {\n    margin-left: 0;\n}\n.organization-grid[data-v-040e2ab9] {\n    grid-template-columns: 1fr;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n}\n\n/* Empty Dashboard Styles */\n.empty-dashboard[data-v-040e2ab9] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 2rem;\n  max-width: 1200px;\n  margin: 0 auto;\n  width: 100%;\n}\n.welcome-message[data-v-040e2ab9] {\n  text-align: center;\n  margin-bottom: 3rem;\n}\n.welcome-message h1[data-v-040e2ab9] {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n}\n.welcome-message p[data-v-040e2ab9] {\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n.organization-grid[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 1.5rem;\n  width: 100%;\n}\n.organization-card[data-v-040e2ab9] {\n  display: flex;\n  background-color: white;\n  border-radius: 0.75rem;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  padding: 1.5rem;\n  transition: transform 0.2s, box-shadow 0.2s;\n  cursor: pointer;\n}\n.organization-card[data-v-040e2ab9]:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);\n}\n.org-logo[data-v-040e2ab9] {\n  width: 60px;\n  height: 60px;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: white;\n  background-size: cover;\n  background-position: center;\n  margin-right: 1rem;\n  flex-shrink: 0;\n}\n.org-info[data-v-040e2ab9] {\n  flex: 1;\n}\n.org-info h3[data-v-040e2ab9] {\n  margin: 0 0 0.5rem 0;\n  font-size: 1.2rem;\n}\n.org-description[data-v-040e2ab9] {\n  color: var(--text-secondary);\n  font-size: 0.9rem;\n  margin: 0;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n}\n.empty-state[data-v-040e2ab9] {\n  text-align: center;\n  padding: 3rem;\n  background-color: #f9f9f9;\n  border-radius: 0.75rem;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);\n  width: 100%;\n}\n.empty-state p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  font-size: 1.1rem;\n  color: var(--text-secondary);\n}\n\n/* Organization Dashboard Styles */\n.dashboard-header[data-v-040e2ab9] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background-color: #fff;\n  border-bottom: 1px solid #ddd;\n}\n.main-container[data-v-040e2ab9] {\n  display: flex;\n  flex: 1;\n  overflow: hidden;\n}\n.content[data-v-040e2ab9] {\n  flex: 1;\n  padding: 1rem;\n  overflow-y: auto;\n}\n.metrics-overview[data-v-040e2ab9] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n.metric-card[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  padding: 1rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n.metric-value[data-v-040e2ab9] {\n  font-size: 1.5rem;\n  font-weight: bold;\n  margin-bottom: 0.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.metric-success[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.metric-warning[data-v-040e2ab9] {\n  color: #ff9800;\n}\n.metric-danger[data-v-040e2ab9] {\n  color: #f44336;\n}\n.metric-label[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  color: #666;\n}\n.trend-indicator[data-v-040e2ab9] {\n  font-size: 0.875rem;\n  display: flex;\n  align-items: center;\n  margin-left: 0.5rem;\n}\n.trend-up[data-v-040e2ab9] {\n  color: #4caf50;\n}\n.trend-down[data-v-040e2ab9] {\n  color: #f44336;\n}\n.loading-indicator[data-v-040e2ab9] {\n  text-align: center;\n  padding: 2rem;\n  color: var(--text-secondary);\n}\n.error-container[data-v-040e2ab9] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n  background-color: #f5f5f5;\n}\n.error-message[data-v-040e2ab9] {\n  text-align: center;\n  background-color: white;\n  padding: 2rem;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n  max-width: 500px;\n}\n.error-message i[data-v-040e2ab9] {\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1rem;\n}\n.error-message p[data-v-040e2ab9] {\n  margin-bottom: 1.5rem;\n  color: #333;\n  font-size: 1.1rem;\n}\n.error-message button[data-v-040e2ab9] {\n  margin-top: 1rem;\n}\n.demo-badge[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #3498db;\n  color: white;\n  font-size: 0.7rem;\n  padding: 0.2rem 0.5rem;\n  border-radius: 4px;\n  margin-top: 0.5rem;\n}\n.organization-card.demo-card[data-v-040e2ab9] {\n  border: 2px dashed #3498db;\n  position: relative;\n}\n.demo-info[data-v-040e2ab9] {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: rgba(52, 152, 219, 0.1);\n  padding: 0.5rem;\n  font-size: 0.8rem;\n  color: #666;\n  border-top: 1px solid rgba(52, 152, 219, 0.3);\n}\n.tab-container[data-v-040e2ab9] {\n  background-color: #fff;\n  border-radius: 0.5rem;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  overflow: hidden;\n}\n.tab-header[data-v-040e2ab9] {\n  display: flex;\n  background-color: #f5f5f5;\n  border-bottom: 1px solid #ddd;\n}\n.tab[data-v-040e2ab9] {\n  padding: 0.75rem 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.tab[data-v-040e2ab9]:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.tab.active[data-v-040e2ab9] {\n  background-color: #fff;\n  border-bottom: 2px solid #4caf50;\n  font-weight: bold;\n}\n.tab-content[data-v-040e2ab9] {\n  padding: 1rem;\n  min-height: 400px;\n}\n.sidebar-open .content[data-v-040e2ab9] {\n  margin-left: 250px;\n}\n.btn-primary[data-v-040e2ab9] {\n  display: inline-block;\n  background-color: #4caf50;\n  color: white;\n  border: none;\n  padding: 0.75rem 1.5rem;\n  border-radius: 0.25rem;\n  font-weight: 500;\n  cursor: pointer;\n  text-decoration: none;\n  font-size: 1rem;\n  transition: background-color 0.2s;\n}\n.btn-primary[data-v-040e2ab9]:hover {\n  background-color: #388e3c;\n  text-decoration: none;\n}\n.dashboard-header[data-v-040e2ab9] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 0.5rem 1rem;\n  background-color: #fff;\n  border-bottom: 1px solid #ddd;\n}\n.dashboard-logo[data-v-040e2ab9] {\n  position: absolute;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.header-logo[data-v-040e2ab9] {\n  height: 40px;\n  width: auto;\n}\n\n/* Make sure the header has position relative for absolute positioning of logo */\n.dashboard-header[data-v-040e2ab9] {\n  position: relative;\n}\n@media (max-width: 768px) {\n.sidebar-open .content[data-v-040e2ab9] {\n    margin-left: 0;\n}\n.organization-grid[data-v-040e2ab9] {\n    grid-template-columns: 1fr;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -47510,38 +47510,62 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   created: function created() {
     var _this = this;
     return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var orgId;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             if (!_this.organizationId) {
-              _context.next = 14;
+              _context.next = 25;
               break;
             }
-            _context.prev = 1;
-            _context.next = 4;
-            return _this.fetchOrganization();
-          case 4:
-            _context.next = 6;
-            return _this.fetchScenarios();
-          case 6:
+            orgId = parseInt(_this.organizationId, 10);
+            if (!isNaN(orgId)) {
+              _context.next = 5;
+              break;
+            }
+            _this.error = "Invalid organization ID provided.";
+            return _context.abrupt("return");
+          case 5:
+            _context.prev = 5;
+            _this.loading = true;
+            _context.next = 9;
+            return _this.fetchOrganization(orgId);
+          case 9:
+            if (!(_this.organization && _this.organization.id)) {
+              _context.next = 16;
+              break;
+            }
             _context.next = 12;
+            return _this.fetchScenarios(orgId);
+          case 12:
+            _context.next = 14;
+            return _this.fetchDepartments(orgId);
+          case 14:
+            _context.next = 17;
             break;
-          case 8:
-            _context.prev = 8;
-            _context.t0 = _context["catch"](1);
+          case 16:
+            console.error('Error loading fetchScenarios and fetch Departments in Dashboard.vue');
+          case 17:
+            _context.next = 23;
+            break;
+          case 19:
+            _context.prev = 19;
+            _context.t0 = _context["catch"](5);
             _this.error = "Error loading organization data. Please try again.";
             console.error('Error initializing Dashboard:', _context.t0);
-          case 12:
-            _context.next = 16;
+          case 23:
+            _context.next = 28;
             break;
-          case 14:
-            _context.next = 16;
+          case 25:
+            // If no organization ID, fetch the list of organizations
+            console.log("No organisation Id, so fetching all organisations.");
+            _context.next = 28;
             return _this.fetchOrganizations();
-          case 16:
+          case 28:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[1, 8]]);
+      }, _callee, null, [[5, 19]]);
     }))();
   },
   methods: {
@@ -47631,7 +47655,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         }, _callee3, null, [[11, 21, 26, 29]]);
       }))();
     },
-    fetchOrganization: function fetchOrganization() {
+    fetchOrganization: function fetchOrganization(orgId) {
       var _this3 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
         var response;
@@ -47642,11 +47666,12 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
               _this3.error = null;
               _context4.prev = 2;
               _context4.next = 5;
-              return axios.get("/api/organizations/".concat(_this3.organizationId));
+              return axios.get("/api/organizations/".concat(orgId));
             case 5:
               response = _context4.sent;
               if (response.data && _typeof(response.data) === 'object') {
                 _this3.organization = response.data;
+                console.log('Organization loaded:', _this3.organization);
               } else {
                 console.error('Invalid organization data received:', response.data);
                 _this3.organization = {}; // Fallback to empty object
@@ -47671,7 +47696,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         }, _callee4, null, [[2, 9, 14, 17]]);
       }))();
     },
-    fetchScenarios: function fetchScenarios() {
+    fetchScenarios: function fetchScenarios(orgId) {
       var _this4 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
         var response, currentScenario;
@@ -47680,7 +47705,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
             case 0:
               _context5.prev = 0;
               _context5.next = 3;
-              return axios.get("/api/organizations/".concat(_this4.organizationId, "/scenarios"));
+              return axios.get("/api/organizations/".concat(orgId, "/scenarios"));
             case 3:
               response = _context5.sent;
               if (!Array.isArray(response.data)) {
@@ -47749,49 +47774,77 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         }, _callee6, null, [[0, 8]]);
       }))();
     },
-    fetchDashboardMetrics: function fetchDashboardMetrics() {
+    fetchDepartments: function fetchDepartments(orgId) {
       var _this6 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
-        var response, baseScenario, comparisonResponse, comparison;
+        var response;
         return _regeneratorRuntime().wrap(function _callee7$(_context7) {
           while (1) switch (_context7.prev = _context7.next) {
             case 0:
-              if (_this6.currentScenario) {
-                _context7.next = 2;
+              _context7.prev = 0;
+              _context7.next = 3;
+              return axios.get("/api/organizations/".concat(orgId, "/departments"));
+            case 3:
+              response = _context7.sent;
+              _this6.departments = response.data;
+              _context7.next = 12;
+              break;
+            case 7:
+              _context7.prev = 7;
+              _context7.t0 = _context7["catch"](0);
+              console.error('Error fetching departments:', _context7.t0);
+              _this6.departments = [];
+              throw _context7.t0;
+            case 12:
+            case "end":
+              return _context7.stop();
+          }
+        }, _callee7, null, [[0, 7]]);
+      }))();
+    },
+    fetchDashboardMetrics: function fetchDashboardMetrics() {
+      var _this7 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
+        var response, baseScenario, comparisonResponse, comparison;
+        return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+          while (1) switch (_context8.prev = _context8.next) {
+            case 0:
+              if (_this7.currentScenario) {
+                _context8.next = 2;
                 break;
               }
-              return _context7.abrupt("return");
+              return _context8.abrupt("return");
             case 2:
-              _context7.prev = 2;
-              _context7.next = 5;
-              return axios.get("/api/organizations/".concat(_this6.organizationId, "/scenarios/").concat(_this6.currentScenario.id, "/metrics"));
+              _context8.prev = 2;
+              _context8.next = 5;
+              return axios.get("/api/organizations/".concat(_this7.organizationId, "/scenarios/").concat(_this7.currentScenario.id, "/metrics"));
             case 5:
-              response = _context7.sent;
-              _this6.dashboardMetrics = response.data;
+              response = _context8.sent;
+              _this7.dashboardMetrics = response.data;
 
               // Add trend data if we have a comparison scenario (e.g., previous month)
-              if (!(_this6.scenarios.length > 1)) {
-                _context7.next = 15;
+              if (!(_this7.scenarios.length > 1)) {
+                _context8.next = 15;
                 break;
               }
-              baseScenario = _this6.scenarios.find(function (s) {
+              baseScenario = _this7.scenarios.find(function (s) {
                 return s.is_base;
               });
-              if (!(baseScenario && baseScenario.id !== _this6.currentScenario.id)) {
-                _context7.next = 15;
+              if (!(baseScenario && baseScenario.id !== _this7.currentScenario.id)) {
+                _context8.next = 15;
                 break;
               }
-              _context7.next = 12;
-              return axios.get("/api/organizations/".concat(_this6.organizationId, "/compare-scenarios"), {
+              _context8.next = 12;
+              return axios.get("/api/organizations/".concat(_this7.organizationId, "/compare-scenarios"), {
                 params: {
-                  scenario1_id: _this6.currentScenario.id,
+                  scenario1_id: _this7.currentScenario.id,
                   scenario2_id: baseScenario.id
                 }
               });
             case 12:
-              comparisonResponse = _context7.sent;
+              comparisonResponse = _context8.sent;
               comparison = comparisonResponse.data.comparison; // Add trend data to metrics
-              _this6.dashboardMetrics.forEach(function (metric) {
+              _this7.dashboardMetrics.forEach(function (metric) {
                 var compMetric = comparison.find(function (m) {
                   return m.code === metric.code;
                 });
@@ -47803,17 +47856,17 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
                 }
               });
             case 15:
-              _context7.next = 20;
+              _context8.next = 20;
               break;
             case 17:
-              _context7.prev = 17;
-              _context7.t0 = _context7["catch"](2);
-              console.error('Error fetching dashboard metrics:', _context7.t0);
+              _context8.prev = 17;
+              _context8.t0 = _context8["catch"](2);
+              console.error('Error fetching dashboard metrics:', _context8.t0);
             case 20:
             case "end":
-              return _context7.stop();
+              return _context8.stop();
           }
-        }, _callee7, null, [[2, 17]]);
+        }, _callee8, null, [[2, 17]]);
       }))();
     },
     selectOrganization: function selectOrganization(org) {
@@ -47834,6 +47887,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     getOrgLogoStyle: function getOrgLogoStyle(org) {
       if (!org) return {};
       if (org.logo_path) {
+        var logoUrl = org.logo_path.startsWith('http') ? org.logo_path : "/storage/".concat(org.logo_path);
         return {
           backgroundImage: "url(".concat(org.logo_path, ")")
         };
@@ -48667,88 +48721,96 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     login: function login() {
       var _this = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-        var response, userCheck;
+        var response, authTestResponse, _error$response;
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
               _context2.prev = 0;
-              // Clear any existing auth data first
-              localStorage.removeItem('token');
-              localStorage.removeItem('user');
-
-              // Get CSRF cookie first (important for Laravel Sanctum)
-              _context2.next = 5;
+              _context2.next = 3;
               return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/sanctum/csrf-cookie');
-            case 5:
+            case 3:
+              // Log what we're sending
               console.log('Login attempt with:', _this.form);
 
-              // Then proceed with login
-              _context2.next = 8;
+              // Attempt login
+              _context2.next = 6;
               return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/login', _this.form);
-            case 8:
+            case 6:
               response = _context2.sent;
               console.log('Login response:', response.data);
-
-              // Check if login was successful and returned a token
-              if (!(response.data && response.data.access_token)) {
-                _context2.next = 31;
+              if (!response.data.access_token) {
+                _context2.next = 28;
                 break;
               }
-              // Store token in localStorage
+              // Save token to localStorage
               localStorage.setItem('token', response.data.access_token);
 
-              // Set the token for future requests
+              // Set authorization header for future requests
               axios__WEBPACK_IMPORTED_MODULE_0__["default"].defaults.headers.common['Authorization'] = "Bearer ".concat(response.data.access_token);
 
-              // Store user data if returned
-              if (!response.data.user) {
-                _context2.next = 29;
-                break;
-              }
+              // Save user data
               localStorage.setItem('user', JSON.stringify(response.data.user));
+
+              // Test auth
+              _context2.prev = 12;
+              console.log('Testing authentication...');
+              // Use a different variable name - this was "testResponse" before
+              _context2.next = 16;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
+            case 16:
+              authTestResponse = _context2.sent;
+              console.log('Auth test response:', authTestResponse.data);
 
               // Emit login event
               _this.$emit('login', response.data.user);
 
-              // Verify authentication before redirecting
-              _context2.prev = 16;
-              console.log('Testing authentication...');
-              _context2.next = 20;
-              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
-            case 20:
-              userCheck = _context2.sent;
-              console.log('Auth test response:', testResponse.data);
-              if (userCheck.data) {
-                console.log('Authentication successful, user:', userCheck.data);
+              // Navigate to dashboard
+              _this.$router.push({
+                name: 'dashboard'
+              });
+              _context2.next = 26;
+              break;
+            case 22:
+              _context2.prev = 22;
+              _context2.t0 = _context2["catch"](12);
+              console.error('Token verification failed:', _context2.t0);
+              alert('Login successful but authentication failed. Please try again.');
+            case 26:
+              _context2.next = 29;
+              break;
+            case 28:
+              throw new Error('No access token received');
+            case 29:
+              _context2.next = 35;
+              break;
+            case 31:
+              _context2.prev = 31;
+              _context2.t1 = _context2["catch"](0);
+              console.error('Login error:', ((_error$response = _context2.t1.response) === null || _error$response === void 0 ? void 0 : _error$response.data) || _context2.t1.message);
+              _this.loginError = 'Login failed. Please check your credentials.';
+            case 35:
+              // After successful login, navigate appropriately
+              if (_this.intendedRoute && _this.intendedRoute.name === 'organizations.dashboard') {
+                // Only navigate to organization dashboard if we have a valid organization ID
+                if (_this.intendedRoute.params && _this.intendedRoute.params.id) {
+                  _this.$router.push(_this.intendedRoute);
+                } else {
+                  // Navigate to the general dashboard if no specific organization
+                  _this.$router.push({
+                    name: 'dashboard'
+                  });
+                }
+              } else {
+                // Default navigation if no intended route
                 _this.$router.push({
                   name: 'dashboard'
                 });
               }
-              _context2.next = 29;
-              break;
-            case 25:
-              _context2.prev = 25;
-              _context2.t0 = _context2["catch"](16);
-              console.error('Token verification failed:', _context2.t0);
-              alert('Login appeared successful but authentication failed. Please try again.');
-            case 29:
-              _context2.next = 32;
-              break;
-            case 31:
-              throw new Error('Login response did not contain access token');
-            case 32:
-              _context2.next = 38;
-              break;
-            case 34:
-              _context2.prev = 34;
-              _context2.t1 = _context2["catch"](0);
-              console.error('Login error:', _context2.t1);
-              _this.loginError = 'Login failed. Please check your credentials.';
-            case 38:
+            case 36:
             case "end":
               return _context2.stop();
           }
-        }, _callee2, null, [[0, 34], [16, 25]]);
+        }, _callee2, null, [[0, 31], [12, 22]]);
       }))();
     }
   }
@@ -50385,6 +50447,11 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         description: '',
         color: '#4caf50'
       };
+    },
+    getLogoUrl: function getLogoUrl(path) {
+      if (!path) return null;
+      if (path.startsWith('http')) return path;
+      return "/storage/".concat(path);
     },
     logout: function logout() {
       var _this6 = this;
@@ -52123,6 +52190,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_activity_analysis = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("activity-analysis");
   var _component_hr_data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("hr-data");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" empty dashboard section with demo info "), !$props.organizationId ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "dashboard-logo"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" OrgChart "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: "/img/logo.jpeg",
+    alt: "OrgChart Logo",
+    "class": "header-logo"
+  })], -1 /* HOISTED */)), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "welcome-message"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Welcome to OrgMaps"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Select an organization to get started or create a new one.")], -1 /* HOISTED */)), $data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, _cache[2] || (_cache[2] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading your organizations...", -1 /* HOISTED */)]))) : $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-exclamation-triangle"
@@ -52149,7 +52222,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name && !org.logo_path ? org.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name ? org.name : 'Unnamed Organization'), 1 /* TEXT */), org && org.description ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org.description), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), org && org.name === 'Demo Organization' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " Demo ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_7);
   }), 128 /* KEYED_FRAGMENT */))]))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Organization dashboard when an organization is selected "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Organization dashboard when an organization is selected "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-exclamation-triangle"
   }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn-primary",
@@ -52158,12 +52231,18 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, " Return to Dashboard ")])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), _cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "dashboard-logo"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: "/img/logo.jpeg",
+    alt: "OrgChart Logo",
+    "class": "header-logo"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("OrgChart ")], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.toggleSidebar && $options.toggleSidebar.apply($options, arguments);
     }),
     "class": "btn-toggle"
-  }, _cache[8] || (_cache[8] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[9] || (_cache[9] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-bars"
   }, null, -1 /* HOISTED */)]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["main-container", {
@@ -54926,88 +55005,87 @@ var _hoisted_3 = {
   "class": "org-name"
 };
 var _hoisted_4 = {
-  key: 1,
-  "class": "org-info"
-};
-var _hoisted_5 = {
   "class": "sidebar-content"
 };
-var _hoisted_6 = {
+var _hoisted_5 = {
   "class": "sidebar-section"
 };
-var _hoisted_7 = {
+var _hoisted_6 = {
   "class": "nav-list"
+};
+var _hoisted_7 = {
+  "class": "nav-item"
 };
 var _hoisted_8 = {
   "class": "nav-item"
 };
 var _hoisted_9 = {
-  "class": "nav-item"
-};
-var _hoisted_10 = {
   "class": "sidebar-section"
 };
-var _hoisted_11 = {
+var _hoisted_10 = {
   key: 0,
   "class": "empty-state"
 };
-var _hoisted_12 = {
+var _hoisted_11 = {
   key: 1,
   "class": "scenario-list"
 };
-var _hoisted_13 = ["onClick"];
-var _hoisted_14 = {
+var _hoisted_12 = ["onClick"];
+var _hoisted_13 = {
   "class": "scenario-name"
 };
-var _hoisted_15 = {
+var _hoisted_14 = {
   "class": "scenario-badges"
 };
-var _hoisted_16 = {
+var _hoisted_15 = {
   key: 0,
   "class": "badge badge-primary"
 };
-var _hoisted_17 = {
+var _hoisted_16 = {
   key: 1,
   "class": "badge badge-secondary"
 };
-var _hoisted_18 = {
+var _hoisted_17 = {
   "class": "sidebar-section"
 };
-var _hoisted_19 = {
+var _hoisted_18 = {
   key: 0,
   "class": "empty-state"
 };
-var _hoisted_20 = {
+var _hoisted_19 = {
   key: 1,
   "class": "department-list"
 };
-var _hoisted_21 = {
+var _hoisted_20 = {
   "class": "department-name"
 };
-var _hoisted_22 = {
+var _hoisted_21 = {
   "class": "sidebar-footer"
 };
-var _hoisted_23 = {
+var _hoisted_22 = {
   "class": "user-info"
 };
-var _hoisted_24 = {
+var _hoisted_23 = {
   "class": "user-avatar"
 };
-var _hoisted_25 = {
+var _hoisted_24 = {
   "class": "user-name"
 };
-var _hoisted_26 = {
+var _hoisted_25 = {
   key: 0,
   "class": "modal-backdrop"
 };
-var _hoisted_27 = {
+var _hoisted_26 = {
   "class": "modal-content"
 };
-var _hoisted_28 = {
+var _hoisted_27 = {
   "class": "modal-header"
 };
-var _hoisted_29 = {
+var _hoisted_28 = {
   "class": "modal-body"
+};
+var _hoisted_29 = {
+  "class": "form-group"
 };
 var _hoisted_30 = {
   "class": "form-group"
@@ -55015,26 +55093,26 @@ var _hoisted_30 = {
 var _hoisted_31 = {
   "class": "form-group"
 };
-var _hoisted_32 = {
-  "class": "form-group"
-};
-var _hoisted_33 = ["value"];
-var _hoisted_34 = {
+var _hoisted_32 = ["value"];
+var _hoisted_33 = {
   "class": "modal-footer"
 };
-var _hoisted_35 = ["disabled"];
-var _hoisted_36 = {
+var _hoisted_34 = ["disabled"];
+var _hoisted_35 = {
   key: 1,
   "class": "modal-backdrop"
 };
-var _hoisted_37 = {
+var _hoisted_36 = {
   "class": "modal-content"
 };
-var _hoisted_38 = {
+var _hoisted_37 = {
   "class": "modal-header"
 };
-var _hoisted_39 = {
+var _hoisted_38 = {
   "class": "modal-body"
+};
+var _hoisted_39 = {
+  "class": "form-group"
 };
 var _hoisted_40 = {
   "class": "form-group"
@@ -55046,12 +55124,9 @@ var _hoisted_42 = {
   "class": "form-group"
 };
 var _hoisted_43 = {
-  "class": "form-group"
-};
-var _hoisted_44 = {
   "class": "modal-footer"
 };
-var _hoisted_45 = ["disabled"];
+var _hoisted_44 = ["disabled"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
@@ -55065,45 +55140,38 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     } : {
       backgroundColor: $props.organization.primary_color || '#4caf50'
     })
-  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(!$props.organization.logo_path ? $props.organization.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.organization.name), 1 /* TEXT */)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, _cache[17] || (_cache[17] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "org-logo",
-    style: {
-      "backgroundColor": "'#4caf50'"
-    }
-  }, "?", -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "org-name"
-  }, "Loading...", -1 /* HOISTED */)]))), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(!$props.organization.logo_path ? $props.organization.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.organization.name), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return _ctx.$emit('toggle');
     }),
     "class": "btn-toggle-sidebar"
-  }, _cache[18] || (_cache[18] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[17] || (_cache[17] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-chevron-left"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Navigation", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, "Navigation", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/organizations/".concat($props.organization.id, "/dashboard"),
     "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[19] || (_cache[19] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      return _cache[18] || (_cache[18] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
         "class": "fas fa-tachometer-alt"
       }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Dashboard", -1 /* HOISTED */)]);
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/organizations/".concat($props.organization.id, "/settings"),
     "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[20] || (_cache[20] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      return _cache[19] || (_cache[19] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
         "class": "fas fa-cog"
       }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Settings", -1 /* HOISTED */)]);
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["to"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, 8 /* PROPS */, ["to"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Scenarios", -1 /* HOISTED */)), !$data.scenarios.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, " No scenarios created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_12, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.scenarios, function (scenario) {
+  }, "Scenarios", -1 /* HOISTED */)), !$data.scenarios.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " No scenarios created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_11, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.scenarios, function (scenario) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: scenario.id,
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["scenario-item", {
@@ -55115,17 +55183,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       onClick: function onClick($event) {
         return $options.selectScenario(scenario);
       }
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [scenario.is_current ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_16, "Current")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), scenario.is_base ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_17, "Base")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_13)], 2 /* CLASS */);
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [scenario.is_current ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_15, "Current")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), scenario.is_base ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_16, "Base")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_12)], 2 /* CLASS */);
   }), 128 /* KEYED_FRAGMENT */))])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.createNewScenario && $options.createNewScenario.apply($options, arguments);
     }),
     "class": "btn btn-secondary btn-block mt-2"
-  }, _cache[22] || (_cache[22] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[21] || (_cache[21] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-plus"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Scenario ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Scenario ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Departments", -1 /* HOISTED */)), !$data.departments.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_19, " No departments created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_20, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (department) {
+  }, "Departments", -1 /* HOISTED */)), !$data.departments.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, " No departments created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (department) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: department.id,
       "class": "department-item"
@@ -55134,29 +55202,29 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
         backgroundColor: department.color || '#4caf50'
       })
-    }, null, 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.name), 1 /* TEXT */)]);
+    }, null, 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.name), 1 /* TEXT */)]);
   }), 128 /* KEYED_FRAGMENT */))])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[2] || (_cache[2] = function () {
       return $options.createNewDepartment && $options.createNewDepartment.apply($options, arguments);
     }),
     "class": "btn btn-secondary btn-block mt-2"
-  }, _cache[24] || (_cache[24] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[23] || (_cache[23] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-plus"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Department ")]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name.charAt(0) : ''), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name : ''), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Department ")]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name.charAt(0) : ''), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name : ''), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[3] || (_cache[3] = function () {
       return $options.logout && $options.logout.apply($options, arguments);
     }),
     "class": "btn-logout"
-  }, _cache[26] || (_cache[26] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[25] || (_cache[25] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-sign-out-alt"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Scenario Modal "), $data.showNewScenarioModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [_cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Scenario", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Scenario Modal "), $data.showNewScenarioModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Scenario", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[4] || (_cache[4] = function () {
       return $options.cancelNewScenario && $options.cancelNewScenario.apply($options, arguments);
     }),
     "class": "btn-close"
-  }, _cache[27] || (_cache[27] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[26] || (_cache[26] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "scenario-name"
   }, "Scenario Name:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "scenario-name",
@@ -55164,7 +55232,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newScenario.name = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "scenario-description"
   }, "Description:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     id: "scenario-description",
@@ -55172,7 +55240,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newScenario.description = $event;
     }),
     rows: "3"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [_cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "base-scenario"
   }, "Base Scenario:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     id: "base-scenario",
@@ -55183,28 +55251,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       key: scenario.id,
       value: scenario.id
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 9 /* TEXT, PROPS */, _hoisted_33);
-  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.newScenario.baseScenarioId]]), _cache[32] || (_cache[32] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 9 /* TEXT, PROPS */, _hoisted_32);
+  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.newScenario.baseScenarioId]]), _cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "form-help"
-  }, "New scenario will copy structure and data from the selected base scenario", -1 /* HOISTED */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "New scenario will copy structure and data from the selected base scenario", -1 /* HOISTED */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[8] || (_cache[8] = function () {
       return $options.saveNewScenario && $options.saveNewScenario.apply($options, arguments);
     }),
     "class": "btn-primary",
     disabled: !$data.newScenario.name
-  }, "Create Scenario", 8 /* PROPS */, _hoisted_35), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Create Scenario", 8 /* PROPS */, _hoisted_34), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[9] || (_cache[9] = function () {
       return $options.cancelNewScenario && $options.cancelNewScenario.apply($options, arguments);
     }),
     "class": "btn-secondary"
-  }, "Cancel")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Department Modal "), $data.showNewDepartmentModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [_cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Cancel")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Department Modal "), $data.showNewDepartmentModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [_cache[33] || (_cache[33] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[10] || (_cache[10] = function () {
       return $options.cancelNewDepartment && $options.cancelNewDepartment.apply($options, arguments);
     }),
     "class": "btn-close"
-  }, _cache[33] || (_cache[33] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[32] || (_cache[32] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[35] || (_cache[35] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [_cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-name"
   }, "Department Name:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-name",
@@ -55212,7 +55280,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.name = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[35] || (_cache[35] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-code"
   }, "Department Code:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-code",
@@ -55220,7 +55288,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.code = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.code]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [_cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.code]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-description"
   }, "Description:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     id: "department-description",
@@ -55228,7 +55296,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.description = $event;
     }),
     rows: "3"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [_cache[38] || (_cache[38] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [_cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-color"
   }, "Color:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-color",
@@ -55236,13 +55304,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.color = $event;
     }),
     type: "color"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.color]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.color]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[15] || (_cache[15] = function () {
       return $options.saveNewDepartment && $options.saveNewDepartment.apply($options, arguments);
     }),
     "class": "btn-primary",
     disabled: !$data.newDepartment.name
-  }, "Create Department", 8 /* PROPS */, _hoisted_45), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Create Department", 8 /* PROPS */, _hoisted_44), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[16] || (_cache[16] = function () {
       return $options.cancelNewDepartment && $options.cancelNewDepartment.apply($options, arguments);
     }),
@@ -61280,14 +61348,12 @@ if (token) {
 } else {
   console.error('CSRF token not found');
 }
-
-// Add this to bootstrap.js
 var authToken = localStorage.getItem('token');
 if (authToken) {
   axios.defaults.headers.common['Authorization'] = "Bearer ".concat(authToken);
 }
 
-// Add axios interceptor to handle 401 errors
+// axios interceptor to handle 401 errors
 axios.interceptors.response.use(function (response) {
   return response;
 }, function (error) {
@@ -62441,9 +62507,7 @@ var router = createRouter({
         organizationId: route.params.id
       };
     }
-  },
-  // Add these new routes for organization features
-  {
+  }, {
     path: '/organizations/:id/departments',
     component: function component() {
       return __webpack_require__.e(/*! import() */ "resources_js_components_DepartmentList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/DepartmentList.vue */ "./resources/js/components/DepartmentList.vue"));
