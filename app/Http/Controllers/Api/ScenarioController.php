@@ -541,4 +541,25 @@ class ScenarioController extends Controller
             'summary' => $summary
         ]);
     }
+
+    /**
+     * Get metrics for a specific scenario.
+     *
+     * @param \App\Models\Organization $organization
+     * @param \App\Models\Scenario $scenario
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function metrics(Organization $organization, Scenario $scenario)
+    {
+        $this->authorize('view', $organization);
+
+        if ($scenario->organization_id !== $organization->id) {
+            return response()->json(['message' => 'Scenario does not belong to this organization'], 403);
+        }
+
+        // Load metrics with pivot data
+        $metrics = $scenario->metrics()->get();
+
+        return response()->json($metrics);
+    }
 }

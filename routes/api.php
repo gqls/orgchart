@@ -9,6 +9,9 @@ use App\Http\Controllers\Api\ReportingRelationshipController;
 use App\Http\Controllers\Api\ScenarioController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\RoleController;
+use App\Http\Controllers\Api\UserSettingsController;
+use App\Http\Controllers\Api\OrganizationUserController;
+use App\Models\Organization;
 
 // Public routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -101,5 +104,24 @@ Route::middleware('auth:sanctum')->group(function () {
 
         // Organization metrics
         Route::get('metrics', [OrganizationController::class, 'metrics']);
+
     });
+
+    // User Settings
+    Route::post('user/two-factor-authentication', [UserSettingsController::class, 'updateTwoFactorAuth']);
+    Route::get('user/tokens', [UserSettingsController::class, 'listTokens']);
+    Route::post('user/tokens', [UserSettingsController::class, 'createToken']);
+    Route::delete('user/tokens/{token}', [UserSettingsController::class, 'revokeToken']);
+    Route::post('user/notification-preferences', [UserSettingsController::class, 'updateNotificationPreferences']);
+
+    // Organization Users
+    Route::get('organizations/{organization}/users', [OrganizationUserController::class, 'index']);
+    Route::post('organizations/{organization}/users/invite', [OrganizationUserController::class, 'invite']);
+    Route::put('organizations/{organization}/users/{user}', [OrganizationUserController::class, 'update']);
+    Route::delete('organizations/{organization}/users/{user}', [OrganizationUserController::class, 'remove']);
+
+    // Activity Logs
+    Route::get('organizations/{organization}/activity-logs', [ActivityLogController::class, 'index']);
+    Route::get('organizations/{organization}/activity-logs/{activityLog}', [ActivityLogController::class, 'show']);
+
 });

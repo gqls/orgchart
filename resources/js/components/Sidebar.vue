@@ -5,11 +5,15 @@
       <div class="org-info" v-if="organization && organization.name">
         <div
             class="org-logo"
-            :style="organization.logo_path ? { backgroundImage: `url(${organization.logo_path})` } : { backgroundColor: organization.primary_color || '#4caf50' }"
+            :style="organization.logo_path ? { backgroundImage: `url(${getLogoUrl(organization.logo_path)})` } : { backgroundColor: organization.primary_color || '#4caf50' }"
         >
           {{ !organization.logo_path ? organization.name.charAt(0) : '' }}
         </div>
         <div class="org-name">{{ organization.name }}</div>
+      </div>
+      <div class="org-info" v-else>
+        <div class="org-logo" style="backgroundColor: '#4caf50'">?</div>
+        <div class="org-name">Loading...</div>
       </div>
       <button @click="$emit('toggle')" class="btn-toggle-sidebar">
         <i class="fas fa-chevron-left"></i>
@@ -21,13 +25,13 @@
         <h3 class="section-title">Navigation</h3>
         <ul class="nav-list">
           <li class="nav-item">
-            <router-link :to="`/organizations/${organization.id}/dashboard`" class="nav-link">
+            <router-link :to="organization.id ? `/organizations/${organization.id}/dashboard` : '/dashboard'" class="nav-link">
               <i class="fas fa-tachometer-alt"></i>
               <span>Dashboard</span>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="`/organizations/${organization.id}/settings`" class="nav-link">
+            <router-link :to="organization.id ? `/organizations/${organization.id}/settings` : '/dashboard'" class="nav-link">
               <i class="fas fa-cog"></i>
               <span>Settings</span>
             </router-link>
@@ -176,31 +180,8 @@
 
 <script>
 import axios from 'axios';
-import ToBeModeling from './ToBeModeling.vue';
-import ActivityAnalysis from "./ActivityAnalysis.vue";
-import AsIsAnalysis from "./AsIsAnalysis.vue";
-import Header from "./Header.vue";
-import HrData from "./HrData.vue";
-import Login from "./Login.vue";
-import OrganizationCreate from "./OrganizationCreate.vue";
-import OrganizationsList from "./OrganizationsList.vue";
-import Register from "./Register.vue";
-import OrgChart from "./OrgChart.vue";
 
 export default {
-  components: {
-    ToBeModeling,
-    ActivityAnalysis,
-    AsIsAnalysis,
-    Header,
-    HrData,
-    Login,
-    OrganizationCreate,
-    OrganizationsList,
-    OrgChart,
-    Register,
-  },
-
   props: {
     organization: {
       type: Object,
@@ -236,11 +217,34 @@ export default {
 
   created() {
     this.fetchUserData();
-    this.fetchScenarios();
-    this.fetchDepartments();
+
+    // Safely fetch data only if organization exists
+    if (this.organization && this.organization.id) {
+      this.fetchScenarios();
+      this.fetchDepartments();
+    }
+  },
+
+  watch: {
+    // Watch for changes to organization to reload data
+    'organization.id': {
+      immediate: true,
+      handler(newId) {
+        if (newId) {
+          this.fetchScenarios();
+          this.fetchDepartments();
+        }
+      }
+    }
   },
 
   methods: {
+    getLogoUrl(path) {
+      if (!path) return null;
+      if (path.startsWith('http')) return path;
+      return `/storage/${path}`;
+    },
+
     async fetchUserData() {
       try {
         const response = await axios.get('/api/user');
@@ -251,6 +255,11 @@ export default {
     },
 
     async fetchScenarios() {
+      if (!this.organization || !this.organization.id) {
+        console.log('No valid organization ID, skipping scenario fetch');
+        return;
+      }
+
       try {
         const response = await axios.get(`/api/organizations/${this.organization.id}/scenarios`);
         this.scenarios = response.data;
@@ -266,15 +275,22 @@ export default {
         }
       } catch (error) {
         console.error('Error fetching scenarios:', error);
+        this.$emit('error', 'Failed to load scenarios. Please try again.');
       }
     },
 
     async fetchDepartments() {
+      if (!this.organization || !this.organization.id) {
+        console.log('No valid organization ID, skipping department fetch');
+        return;
+      }
+
       try {
         const response = await axios.get(`/api/organizations/${this.organization.id}/departments`);
         this.departments = response.data;
       } catch (error) {
         console.error('Error fetching departments:', error);
+        this.$emit('error', 'Failed to load departments. Please try again.');
       }
     },
 
@@ -287,6 +303,11 @@ export default {
     },
 
     async saveNewScenario() {
+      if (!this.organization || !this.organization.id) {
+        console.error('Cannot create scenario without valid organization');
+        return;
+      }
+
       try {
         const response = await axios.post(`/api/organizations/${this.organization.id}/scenarios`, {
           name: this.newScenario.name,
@@ -310,6 +331,7 @@ export default {
 
       } catch (error) {
         console.error('Error creating scenario:', error);
+        this.$emit('error', 'Failed to create scenario. Please try again.');
       }
     },
 
@@ -318,7 +340,8 @@ export default {
       this.newScenario = {
         name: '',
         description: '',
-        baseScenarioId: null
+        baseScenarioId: this.scenarios.length > 0 ?
+            (this.scenarios.find(s => s.is_current)?.id || this.scenarios[0].id) : null
       };
     },
 
@@ -327,6 +350,11 @@ export default {
     },
 
     async saveNewDepartment() {
+      if (!this.organization || !this.organization.id) {
+        console.error('Cannot create department without valid organization');
+        return;
+      }
+
       try {
         const response = await axios.post(`/api/organizations/${this.organization.id}/departments`, {
           name: this.newDepartment.name,

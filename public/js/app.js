@@ -46009,6 +46009,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.create-org-container[data-v-084a5b8
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.settings-container[data-v-73b37061] {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 2rem;\n}\n.settings-header[data-v-73b37061] {\n  margin-bottom: 2rem;\n}\n.settings-header h1[data-v-73b37061] {\n  font-size: 2rem;\n  margin-bottom: 0.5rem;\n  color: var(--primary-color, #4caf50);\n}\n.settings-header .subtitle[data-v-73b37061] {\n  color: var(--text-secondary, #666);\n  font-size: 1.1rem;\n}\n.settings-content[data-v-73b37061] {\n  display: flex;\n  flex: 1;\n}\n.tab-navigation[data-v-73b37061] {\n  width: 250px;\n  margin-right: 2rem;\n  border-right: 1px solid var(--border-color, #ddd);\n  padding-right: 1rem;\n  flex-shrink: 0;\n}\n.tab-button[data-v-73b37061] {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  text-align: left;\n  padding: 0.75rem 1rem;\n  margin-bottom: 0.5rem;\n  border: none;\n  background-color: transparent;\n  border-radius: 0.25rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n  color: var(--text-color, #333);\n  font-weight: 500;\n}\n.tab-button[data-v-73b37061]:hover {\n  background-color: rgba(0, 0, 0, 0.05);\n}\n.tab-button.active[data-v-73b37061] {\n  background-color: var(--primary-light, #e8f5e9);\n  color: var(--primary-color, #4caf50);\n}\n.tab-button i[data-v-73b37061] {\n  margin-right: 0.75rem;\n  width: 20px;\n  text-align: center;\n}\n.tab-content[data-v-73b37061] {\n  flex: 1;\n  padding: 0 1rem;\n}\n\n/* Form styling */\n.form-group[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n}\n.form-group label[data-v-73b37061] {\n  display: block;\n  margin-bottom: 0.5rem;\n  font-weight: 500;\n}\n.form-control[data-v-73b37061] {\n  width: 100%;\n  padding: 0.75rem;\n  border: 1px solid var(--border-color, #ddd);\n  border-radius: 0.25rem;\n  font-size: 1rem;\n}\n.form-control[data-v-73b37061]:focus {\n  outline: none;\n  border-color: var(--primary-color, #4caf50);\n  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);\n}\n.form-row[data-v-73b37061] {\n  display: flex;\n  gap: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n.form-row .form-group[data-v-73b37061] {\n  flex: 1;\n  margin-bottom: 0;\n}\n.color-picker-group[data-v-73b37061] {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n.color-picker[data-v-73b37061] {\n  width: 50px;\n  height: 40px;\n  padding: 0;\n  border: 1px solid var(--border-color, #ddd);\n  border-radius: 0.25rem;\n  cursor: pointer;\n}\n.color-text[data-v-73b37061] {\n  flex: 1;\n}\n.form-actions[data-v-73b37061] {\n  margin-top: 2rem;\n}\n.btn-primary[data-v-73b37061] {\n  padding: 0.75rem 1.5rem;\n  background-color: var(--primary-color, #4caf50);\n  color: white;\n  border: none;\n  border-radius: 0.25rem;\n  font-size: 1rem;\n  font-weight: 500;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.btn-primary[data-v-73b37061]:hover {\n  background-color: var(--primary-dark, #388e3c);\n}\n.btn-secondary[data-v-73b37061] {\n  padding: 0.75rem 1.5rem;\n  background-color: #f5f5f5;\n  color: #333;\n  border: 1px solid #ddd;\n  border-radius: 0.25rem;\n  font-size: 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.btn-secondary[data-v-73b37061]:hover {\n  background-color: #e0e0e0;\n}\n.btn-danger[data-v-73b37061] {\n  padding: 0.75rem 1.5rem;\n  background-color: #f44336;\n  color: white;\n  border: none;\n  border-radius: 0.25rem;\n  font-size: 1rem;\n  cursor: pointer;\n  transition: background-color 0.2s;\n}\n.btn-danger[data-v-73b37061]:hover {\n  background-color: #d32f2f;\n}\n.btn-danger-outline[data-v-73b37061] {\n  padding: 0.5rem 1rem;\n  background-color: white;\n  color: #f44336;\n  border: 1px solid #f44336;\n  border-radius: 0.25rem;\n  font-size: 0.9rem;\n  cursor: pointer;\n  transition: all 0.2s;\n}\n.btn-danger-outline[data-v-73b37061]:hover {\n  background-color: #ffebee;\n}\n.btn-retry[data-v-73b37061] {\n  padding: 0.5rem 1rem;\n  background-color: #f5f5f5;\n  border: 1px solid #ddd;\n  border-radius: 0.25rem;\n  cursor: pointer;\n  margin-top: 1rem;\n}\n.setting-section[data-v-73b37061] {\n  margin-bottom: 3rem;\n  padding-bottom: 2rem;\n  border-bottom: 1px solid var(--border-color, #eee);\n}\n.setting-section h2[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n  color: var(--text-color, #333);\n  font-size: 1.5rem;\n}\n.setting-section h3[data-v-73b37061] {\n  margin-bottom: 1rem;\n  color: var(--text-color, #333);\n  font-size: 1.2rem;\n}\n.section-description[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n  color: var(--text-secondary, #666);\n}\n\n/* Danger zone */\n.danger-zone[data-v-73b37061] {\n  margin-top: 3rem;\n  padding: 1.5rem;\n  border: 1px solid #ffcdd2;\n  border-radius: 0.5rem;\n  background-color: #ffebee;\n}\n.danger-zone h2[data-v-73b37061] {\n  color: #d32f2f;\n}\n.warning-text[data-v-73b37061] {\n  color: #d32f2f;\n  margin-bottom: 1.5rem;\n}\n\n/* Users table */\n.users-table-wrapper[data-v-73b37061] {\n  overflow-x: auto;\n  margin-bottom: 2rem;\n}\n.users-table[data-v-73b37061] {\n  width: 100%;\n  border-collapse: collapse;\n}\n.users-table th[data-v-73b37061],\n.users-table td[data-v-73b37061] {\n  padding: 0.75rem 1rem;\n  text-align: left;\n  border-bottom: 1px solid var(--border-color, #eee);\n}\n.users-table th[data-v-73b37061] {\n  font-weight: 600;\n  background-color: #f5f5f5;\n}\n.admin-badge[data-v-73b37061] {\n  display: inline-flex;\n  align-items: center;\n  padding: 0.25rem 0.5rem;\n  background-color: #fff8e1;\n  color: #ff8f00;\n  border-radius: 1rem;\n  font-size: 0.8rem;\n  font-weight: 500;\n}\n.admin-badge i[data-v-73b37061] {\n  margin-right: 0.25rem;\n}\n.tab-actions[data-v-73b37061] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 1.5rem;\n}\n.tab-actions h2[data-v-73b37061] {\n  margin: 0;\n}\n.btn-action[data-v-73b37061] {\n  background: none;\n  border: none;\n  color: #666;\n  cursor: pointer;\n  padding: 0.25rem;\n  border-radius: 0.25rem;\n  transition: background-color 0.2s;\n}\n.btn-action[data-v-73b37061]:hover {\n  background-color: #f5f5f5;\n  color: #333;\n}\n\n/* Departments */\n.departments-grid[data-v-73b37061] {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n  gap: 1.5rem;\n}\n.department-card[data-v-73b37061] {\n  background-color: white;\n  border-radius: 0.5rem;\n  overflow: hidden;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);\n}\n.card-header[data-v-73b37061] {\n  padding: 1rem;\n  color: white;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n.card-content[data-v-73b37061] {\n  padding: 1rem;\n}\n.card-content p[data-v-73b37061] {\n  margin-bottom: 0.75rem;\n}\n.card-content p[data-v-73b37061]:last-child {\n  margin-bottom: 0;\n}\n.empty-state-card[data-v-73b37061] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 2rem;\n  background-color: #f9f9f9;\n  border-radius: 0.5rem;\n  text-align: center;\n}\n.empty-state-card i[data-v-73b37061] {\n  font-size: 3rem;\n  color: #ccc;\n  margin-bottom: 1rem;\n}\n.empty-state-card p[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n  color: #666;\n}\n\n/* Toggle switch */\n.toggle-setting[data-v-73b37061] {\n  display: flex;\n  align-items: center;\n  margin-bottom: 1.5rem;\n}\n.setting-label[data-v-73b37061] {\n  flex: 1;\n  font-weight: 500;\n}\n.setting-status[data-v-73b37061] {\n  margin-left: 1rem;\n  font-size: 0.9rem;\n  color: #666;\n}\n.toggle[data-v-73b37061] {\n  position: relative;\n  display: inline-block;\n  width: 50px;\n  height: 24px;\n}\n.toggle input[data-v-73b37061] {\n  opacity: 0;\n  width: 0;\n  height: 0;\n}\n.toggle-slider[data-v-73b37061] {\n  position: absolute;\n  cursor: pointer;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: #ccc;\n  transition: .4s;\n  border-radius: 24px;\n}\n.toggle-slider[data-v-73b37061]:before {\n  position: absolute;\n  content: \"\";\n  height: 18px;\n  width: 18px;\n  left: 3px;\n  bottom: 3px;\n  background-color: white;\n  transition: .4s;\n  border-radius: 50%;\n}\ninput:checked + .toggle-slider[data-v-73b37061] {\n  background-color: var(--primary-color, #4caf50);\n}\ninput:focus + .toggle-slider[data-v-73b37061] {\n  box-shadow: 0 0 1px var(--primary-color, #4caf50);\n}\ninput:checked + .toggle-slider[data-v-73b37061]:before {\n  transform: translateX(26px);\n}\n\n/* API Tokens */\n.api-tokens-list[data-v-73b37061] {\n  margin-top: 1.5rem;\n}\n.token-item[data-v-73b37061] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem;\n  border: 1px solid var(--border-color, #eee);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n.token-name[data-v-73b37061] {\n  font-weight: 500;\n  margin-bottom: 0.25rem;\n}\n.token-created[data-v-73b37061] {\n  font-size: 0.875rem;\n  color: #666;\n}\n\n/* Notification options */\n.notification-options[data-v-73b37061] {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 2rem;\n}\n.notification-group h3[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n}\n.notification-option[data-v-73b37061] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem;\n  border: 1px solid var(--border-color, #eee);\n  border-radius: 0.5rem;\n  margin-bottom: 1rem;\n}\n.option-name[data-v-73b37061] {\n  font-weight: 500;\n  margin-bottom: 0.25rem;\n}\n.option-description[data-v-73b37061] {\n  font-size: 0.875rem;\n  color: #666;\n}\n\n/* Modal styles */\n.modal-backdrop[data-v-73b37061] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1000;\n}\n.modal-content[data-v-73b37061] {\n  background-color: white;\n  border-radius: 0.5rem;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  width: 90%;\n  max-width: 600px;\n  max-height: 90vh;\n  overflow-y: auto;\n  display: flex;\n  flex-direction: column;\n}\n.modal-content.modal-sm[data-v-73b37061] {\n  max-width: 400px;\n}\n.modal-header[data-v-73b37061] {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem 1.5rem;\n  border-bottom: 1px solid var(--border-color, #eee);\n}\n.modal-header h3[data-v-73b37061] {\n  margin: 0;\n  font-size: 1.25rem;\n}\n.btn-close[data-v-73b37061] {\n  background: none;\n  border: none;\n  font-size: 1.25rem;\n  cursor: pointer;\n  color: #666;\n}\n.modal-body[data-v-73b37061] {\n  padding: 1.5rem;\n  flex: 1;\n  overflow-y: auto;\n}\n.modal-footer[data-v-73b37061] {\n  display: flex;\n  justify-content: flex-end;\n  gap: 1rem;\n  padding: 1rem 1.5rem;\n  border-top: 1px solid var(--border-color, #eee);\n}\n.warning-icon[data-v-73b37061] {\n  text-align: center;\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1.5rem;\n}\n.warning-message[data-v-73b37061] {\n  font-weight: 500;\n  margin-bottom: 1rem;\n}\n.warning-details[data-v-73b37061] {\n  margin-bottom: 1.5rem;\n}\n.confirm-input[data-v-73b37061] {\n  margin-top: 1.5rem;\n}\n.checkbox-group[data-v-73b37061] {\n  display: flex;\n  align-items: flex-start;\n}\n.checkbox-label[data-v-73b37061] {\n  display: flex;\n  align-items: flex-start;\n  cursor: pointer;\n}\n.checkbox-label input[data-v-73b37061] {\n  margin-right: 0.5rem;\n  margin-top: 0.25rem;\n}\n.help-text[data-v-73b37061] {\n  font-size: 0.875rem;\n  color: #666;\n  margin-top: 0.5rem;\n}\n.loading-container[data-v-73b37061] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  padding: 4rem 0;\n}\n.spinner[data-v-73b37061] {\n  font-size: 2rem;\n  color: var(--primary-color, #4caf50);\n  margin-bottom: 1rem;\n}\n.error-message[data-v-73b37061] {\n  text-align: center;\n  padding: 2rem;\n  max-width: 600px;\n  margin: 0 auto;\n}\n.error-message i[data-v-73b37061] {\n  font-size: 3rem;\n  color: #f44336;\n  margin-bottom: 1rem;\n}\n\n/* Media queries */\n@media (max-width: 768px) {\n.settings-content[data-v-73b37061] {\n    flex-direction: column;\n}\n.tab-navigation[data-v-73b37061] {\n    width: 100%;\n    margin-right: 0;\n    margin-bottom: 2rem;\n    padding-right: 0;\n    border-right: none;\n    border-bottom: 1px solid var(--border-color, #ddd);\n    padding-bottom: 1rem;\n    display: flex;\n    overflow-x: auto;\n}\n.tab-button[data-v-73b37061] {\n    flex-shrink: 0;\n    width: auto;\n    margin-right: 0.5rem;\n}\n.form-row[data-v-73b37061] {\n    flex-direction: column;\n    gap: 1rem;\n}\n.notification-options[data-v-73b37061] {\n    grid-template-columns: 1fr;\n}\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=style&index=0&id=00e97c83&scoped=true&lang=css":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=style&index=0&id=00e97c83&scoped=true&lang=css ***!
@@ -46695,6 +46719,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var chart_js_auto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! chart.js/auto */ "./node_modules/chart.js/auto/auto.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -46715,6 +46740,7 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     organization: {
@@ -46734,6 +46760,8 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   },
   data: function data() {
     return {
+      loading: true,
+      error: null,
       activeTab: 'dashboard',
       tabs: [{
         id: 'dashboard',
@@ -46789,13 +46817,19 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         }
         return true;
       });
+    },
+    isReady: function isReady() {
+      return !!this.organization && !!this.organization.id && !!this.scenario && !!this.scenario.id;
+    },
+    isDataReady: function isDataReady() {
+      return this.organization && this.organization.id && this.scenario && this.scenario.id && !this.loading;
     }
   },
   watch: {
     scenario: {
       immediate: true,
       handler: function handler(newVal) {
-        if (newVal) {
+        if (newVal && newVal.id) {
           this.loadData();
         }
       }
@@ -46811,21 +46845,31 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
     loadData: function loadData() {
       var _this3 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var _this3$organization, _this3$scenario;
         var positionsResponse, departmentsResponse, metricsResponse;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              _context.prev = 0;
-              _context.next = 3;
-              return axios.get("/api/organizations/".concat(_this3.organization.id, "/scenarios/").concat(_this3.scenario.id, "/positions"));
+              if (!(!((_this3$organization = _this3.organization) !== null && _this3$organization !== void 0 && _this3$organization.id) || !((_this3$scenario = _this3.scenario) !== null && _this3$scenario !== void 0 && _this3$scenario.id))) {
+                _context.next = 3;
+                break;
+              }
+              console.log('Cannot load data - missing required organization or scenario');
+              return _context.abrupt("return");
             case 3:
+              _this3.loading = true;
+              _this3.error = null;
+              _context.prev = 5;
+              _context.next = 8;
+              return axios.get("/api/organizations/".concat(_this3.organization.id, "/scenarios/").concat(_this3.scenario.id, "/positions"));
+            case 8:
               positionsResponse = _context.sent;
               _this3.positions = positionsResponse.data;
 
               // Fetch departments
-              _context.next = 7;
+              _context.next = 12;
               return axios.get("/api/organizations/".concat(_this3.organization.id, "/departments"));
-            case 7:
+            case 12:
               departmentsResponse = _context.sent;
               _this3.departments = departmentsResponse.data;
 
@@ -46837,9 +46881,9 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
               })));
 
               // Fetch metrics
-              _context.next = 12;
+              _context.next = 17;
               return axios.get("/api/organizations/".concat(_this3.organization.id, "/scenarios/").concat(_this3.scenario.id, "/metrics"));
-            case 12:
+            case 17:
               metricsResponse = _context.sent;
               _this3.metrics = metricsResponse.data;
 
@@ -46850,17 +46894,22 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
               _this3.$nextTick(function () {
                 _this3.initCharts();
               });
-              _context.next = 21;
+              _context.next = 27;
               break;
-            case 18:
-              _context.prev = 18;
-              _context.t0 = _context["catch"](0);
+            case 23:
+              _context.prev = 23;
+              _context.t0 = _context["catch"](5);
               console.error('Error loading analysis data:', _context.t0);
-            case 21:
+              _this3.error = 'Failed to load analysis data. Please try again.';
+            case 27:
+              _context.prev = 27;
+              _this3.loading = false;
+              return _context.finish(27);
+            case 30:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[0, 18]]);
+        }, _callee, null, [[5, 23, 27, 30]]);
       }))();
     },
     calculateLayerData: function calculateLayerData() {
@@ -47442,10 +47491,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OrganizationCreate_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./OrganizationCreate.vue */ "./resources/js/components/OrganizationCreate.vue");
 /* harmony import */ var _OrganizationsList_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./OrganizationsList.vue */ "./resources/js/components/OrganizationsList.vue");
 /* harmony import */ var _Register_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Register.vue */ "./resources/js/components/Register.vue");
+/* harmony import */ var _services_ThemeService__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../services/ThemeService */ "./resources/js/services/ThemeService.js");
+/* harmony import */ var _services_ThemeService__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_services_ThemeService__WEBPACK_IMPORTED_MODULE_11__);
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+
 
 
 
@@ -47507,68 +47559,88 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       error: null
     };
   },
+  watch: {
+    organizationId: {
+      immediate: true,
+      handler: function handler(newVal, oldVal) {
+        var _this = this;
+        if (newVal && newVal !== oldVal) {
+          console.log("organizationId changed from", oldVal, "to", newVal);
+          this.loading = true;
+          this.error = null;
+          this.organization = {};
+          this.fetchOrganization().then(function () {
+            if (_this.organization && _this.organization.id) {
+              return Promise.all([_this.fetchScenarios(), _this.fetchDepartments()]);
+            }
+          })["catch"](function (error) {
+            console.error("Error loading organization data:", error);
+            _this.error = "Error loading organization data. Please try again.";
+          })["finally"](function () {
+            _this.loading = false;
+          });
+        } else if (!newVal) {
+          // If no organization ID, fetch the list of organizations
+          this.fetchOrganizations();
+        }
+      }
+    }
+  },
   created: function created() {
-    var _this = this;
+    var _this2 = this;
     return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var orgId;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
-            if (!_this.organizationId) {
-              _context.next = 25;
+            console.log("Component created with organizationId:", _this2.organizationId);
+            if (!_this2.organizationId) {
+              _context.next = 21;
               break;
             }
-            orgId = parseInt(_this.organizationId, 10);
-            if (!isNaN(orgId)) {
-              _context.next = 5;
+            _context.prev = 2;
+            _this2.loading = true;
+            _context.next = 6;
+            return _this2.fetchOrganization();
+          case 6:
+            if (!(_this2.organization && _this2.organization.id)) {
+              _context.next = 11;
               break;
             }
-            _this.error = "Invalid organization ID provided.";
-            return _context.abrupt("return");
-          case 5:
-            _context.prev = 5;
-            _this.loading = true;
             _context.next = 9;
-            return _this.fetchOrganization(orgId);
+            return _this2.fetchScenarios();
           case 9:
-            if (!(_this.organization && _this.organization.id)) {
-              _context.next = 16;
-              break;
-            }
-            _context.next = 12;
-            return _this.fetchScenarios(orgId);
-          case 12:
-            _context.next = 14;
-            return _this.fetchDepartments(orgId);
-          case 14:
-            _context.next = 17;
+            _context.next = 11;
+            return _this2.fetchDepartments();
+          case 11:
+            _context.next = 16;
             break;
+          case 13:
+            _context.prev = 13;
+            _context.t0 = _context["catch"](2);
+            _this2.error = "Error loading organization data. Please try again.";
           case 16:
-            console.error('Error loading fetchScenarios and fetch Departments in Dashboard.vue');
-          case 17:
-            _context.next = 23;
-            break;
+            _context.prev = 16;
+            _this2.loading = false;
+            return _context.finish(16);
           case 19:
-            _context.prev = 19;
-            _context.t0 = _context["catch"](5);
-            _this.error = "Error loading organization data. Please try again.";
-            console.error('Error initializing Dashboard:', _context.t0);
-          case 23:
-            _context.next = 28;
+            _context.next = 24;
             break;
-          case 25:
+          case 21:
             // If no organization ID, fetch the list of organizations
             console.log("No organisation Id, so fetching all organisations.");
-            _context.next = 28;
-            return _this.fetchOrganizations();
-          case 28:
+            _context.next = 24;
+            return _this2.fetchOrganizations();
+          case 24:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[5, 19]]);
+      }, _callee, null, [[2, 13, 16, 19]]);
     }))();
   },
   methods: {
+    handleError: function handleError(error) {
+      this.error = error;
+    },
     checkAuth: function checkAuth() {
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
         var response;
@@ -47595,278 +47667,331 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       }))();
     },
     fetchOrganizations: function fetchOrganizations() {
-      var _this2 = this;
+      var _this3 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
         var isAuthenticated, response;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              _this2.loading = true;
-              _this2.error = null;
+              _this3.loading = true;
+              _this3.error = null;
               _context3.next = 4;
-              return _this2.checkAuth();
+              return _this3.checkAuth();
             case 4:
               isAuthenticated = _context3.sent;
               if (isAuthenticated) {
-                _context3.next = 10;
+                _context3.next = 11;
                 break;
               }
-              _this2.error = 'You must be logged in to view organizations';
+              _this3.error = 'You must be logged in to view organizations';
+              _this3.loading = false;
               return _context3.abrupt("return");
-            case 10:
-              console.log('you are logged in');
             case 11:
-              _context3.prev = 11;
+              console.log('you are logged in');
+            case 12:
+              _context3.prev = 12;
               console.log('Fetching organizations...');
-              _context3.next = 15;
+              _context3.next = 16;
               return axios.get('/api/organizations');
-            case 15:
+            case 16:
               response = _context3.sent;
               console.log('Raw API response:', response);
               if (Array.isArray(response.data)) {
                 console.log('Response is an array with length:', response.data.length);
-                _this2.organizations = response.data;
+                _this3.organizations = response.data;
               } else if (response.data && _typeof(response.data) === 'object') {
                 console.log('Response is an object with keys:', Object.keys(response.data));
                 // Handle case where response might be wrapped
-                _this2.organizations = Array.isArray(response.data.data) ? response.data.data : [response.data];
+                _this3.organizations = Array.isArray(response.data.data) ? response.data.data : [response.data];
               } else {
                 console.error('Unexpected API response format:', response.data);
-                _this2.organizations = [];
-                _this2.error = 'Received unexpected data format from the server';
+                _this3.organizations = [];
+                _this3.error = 'Received unexpected data format from the server';
               }
-              console.log('Final organizations array:', _this2.organizations);
-              _context3.next = 26;
+              console.log('Final organizations array:', _this3.organizations);
+              _context3.next = 27;
               break;
-            case 21:
-              _context3.prev = 21;
-              _context3.t0 = _context3["catch"](11);
+            case 22:
+              _context3.prev = 22;
+              _context3.t0 = _context3["catch"](12);
               console.error('Error fetching organizations:', _context3.t0);
-              _this2.error = 'Failed to load your organizations. Please try again.';
-              _this2.organizations = [];
-            case 26:
-              _context3.prev = 26;
-              _this2.loading = false;
-              return _context3.finish(26);
-            case 29:
+              _this3.error = 'Failed to load your organizations. Please try again.';
+              _this3.organizations = [];
+            case 27:
+              _context3.prev = 27;
+              _this3.loading = false;
+              return _context3.finish(27);
+            case 30:
             case "end":
               return _context3.stop();
           }
-        }, _callee3, null, [[11, 21, 26, 29]]);
+        }, _callee3, null, [[12, 22, 27, 30]]);
       }))();
     },
-    fetchOrganization: function fetchOrganization(orgId) {
-      var _this3 = this;
+    fetchOrganization: function fetchOrganization() {
+      var _this4 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
         var response;
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
-              _this3.loading = true;
-              _this3.error = null;
-              _context4.prev = 2;
-              _context4.next = 5;
-              return axios.get("/api/organizations/".concat(orgId));
+              console.log("Fetching organization data for ID:", _this4.organizationId);
+              if (_this4.organizationId) {
+                _context4.next = 5;
+                break;
+              }
+              console.error('No organization ID provided');
+              _this4.error = "Invalid organization ID";
+              return _context4.abrupt("return");
             case 5:
+              _context4.prev = 5;
+              _context4.next = 8;
+              return axios.get("/api/organizations/".concat(_this4.organizationId));
+            case 8:
               response = _context4.sent;
               if (response.data && _typeof(response.data) === 'object') {
-                _this3.organization = response.data;
-                console.log('Organization loaded:', _this3.organization);
+                _this4.organization = response.data;
+
+                // Apply theming if the service exists
+                if (typeof (_services_ThemeService__WEBPACK_IMPORTED_MODULE_11___default()) !== 'undefined' && (_services_ThemeService__WEBPACK_IMPORTED_MODULE_11___default().setTheme)) {
+                  _services_ThemeService__WEBPACK_IMPORTED_MODULE_11___default().setTheme(_this4.organization);
+                }
               } else {
                 console.error('Invalid organization data received:', response.data);
-                _this3.organization = {}; // Fallback to empty object
-                _this3.error = "Invalid organization data received.";
+                _this4.organization = {}; // Fallback to empty object
+                _this4.error = "Invalid organization data received.";
               }
-              _context4.next = 14;
+              _context4.next = 17;
               break;
-            case 9:
-              _context4.prev = 9;
-              _context4.t0 = _context4["catch"](2);
+            case 12:
+              _context4.prev = 12;
+              _context4.t0 = _context4["catch"](5);
               console.error('Error fetching organization:', _context4.t0);
-              _this3.organization = {}; // Fallback to empty object
-              _this3.error = "Failed to load organization details.";
-            case 14:
-              _context4.prev = 14;
-              _this3.loading = false;
-              return _context4.finish(14);
+              _this4.organization = {}; // Fallback to empty object
+              _this4.error = "Failed to load organization details.";
             case 17:
+              _context4.prev = 17;
+              _this4.loading = false;
+              return _context4.finish(17);
+            case 20:
             case "end":
               return _context4.stop();
           }
-        }, _callee4, null, [[2, 9, 14, 17]]);
+        }, _callee4, null, [[5, 12, 17, 20]]);
       }))();
     },
-    fetchScenarios: function fetchScenarios(orgId) {
-      var _this4 = this;
+    fetchScenarios: function fetchScenarios() {
+      var _this5 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
         var response, currentScenario;
         return _regeneratorRuntime().wrap(function _callee5$(_context5) {
           while (1) switch (_context5.prev = _context5.next) {
             case 0:
-              _context5.prev = 0;
-              _context5.next = 3;
-              return axios.get("/api/organizations/".concat(orgId, "/scenarios"));
-            case 3:
-              response = _context5.sent;
-              if (!Array.isArray(response.data)) {
-                _context5.next = 14;
+              if (!(!_this5.organization || !_this5.organization.id)) {
+                _context5.next = 3;
                 break;
               }
-              _this4.scenarios = response.data;
+              console.error('Cannot fetch scenarios without a valid organization');
+              return _context5.abrupt("return");
+            case 3:
+              _context5.prev = 3;
+              _context5.next = 6;
+              return axios.get("/api/organizations/".concat(_this5.organization.id, "/scenarios"));
+            case 6:
+              response = _context5.sent;
+              if (!Array.isArray(response.data)) {
+                _context5.next = 17;
+                break;
+              }
+              _this5.scenarios = response.data;
 
               // Find current scenario safely
-              currentScenario = _this4.scenarios.find(function (s) {
+              currentScenario = _this5.scenarios.find(function (s) {
                 return s.is_current;
               });
               if (!currentScenario) {
-                _context5.next = 12;
+                _context5.next = 15;
                 break;
               }
-              _this4.currentScenario = currentScenario;
-              _this4.selectedScenarioId = currentScenario.id;
-              _context5.next = 12;
-              return _this4.fetchDashboardMetrics();
-            case 12:
-              _context5.next = 16;
+              _this5.currentScenario = currentScenario;
+              _this5.selectedScenarioId = currentScenario.id;
+              _context5.next = 15;
+              return _this5.fetchDashboardMetrics();
+            case 15:
+              _context5.next = 19;
               break;
-            case 14:
+            case 17:
               console.error('Invalid scenarios data received:', response.data);
-              _this4.scenarios = []; // Fallback to empty array
-            case 16:
-              _context5.next = 22;
+              _this5.scenarios = []; // Fallback to empty array
+            case 19:
+              _context5.next = 25;
               break;
-            case 18:
-              _context5.prev = 18;
-              _context5.t0 = _context5["catch"](0);
+            case 21:
+              _context5.prev = 21;
+              _context5.t0 = _context5["catch"](3);
               console.error('Error fetching scenarios:', _context5.t0);
-              _this4.scenarios = []; // Fallback to empty array
-            case 22:
+              _this5.scenarios = []; // Fallback to empty array
+            case 25:
             case "end":
               return _context5.stop();
           }
-        }, _callee5, null, [[0, 18]]);
+        }, _callee5, null, [[3, 21]]);
       }))();
     },
     setCurrentScenario: function setCurrentScenario(scenarioId) {
-      var _this5 = this;
+      var _this6 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
         var response;
         return _regeneratorRuntime().wrap(function _callee6$(_context6) {
           while (1) switch (_context6.prev = _context6.next) {
             case 0:
-              _context6.prev = 0;
-              _context6.next = 3;
-              return axios.get("/api/organizations/".concat(_this5.organizationId, "/scenarios/").concat(scenarioId));
+              if (!(!_this6.organization || !_this6.organization.id)) {
+                _context6.next = 3;
+                break;
+              }
+              console.error('Cannot set current scenario without a valid organization');
+              return _context6.abrupt("return");
             case 3:
+              _context6.prev = 3;
+              _context6.next = 6;
+              return axios.get("/api/organizations/".concat(_this6.organization.id, "/scenarios/").concat(scenarioId));
+            case 6:
               response = _context6.sent;
-              _this5.currentScenario = response.data;
-              _this5.fetchDashboardMetrics();
-              _context6.next = 11;
+              _this6.currentScenario = response.data;
+              _this6.fetchDashboardMetrics();
+              _context6.next = 14;
               break;
-            case 8:
-              _context6.prev = 8;
-              _context6.t0 = _context6["catch"](0);
-              console.error('Error setting current scenario:', _context6.t0);
             case 11:
+              _context6.prev = 11;
+              _context6.t0 = _context6["catch"](3);
+              console.error('Error setting current scenario:', _context6.t0);
+            case 14:
             case "end":
               return _context6.stop();
           }
-        }, _callee6, null, [[0, 8]]);
+        }, _callee6, null, [[3, 11]]);
       }))();
     },
-    fetchDepartments: function fetchDepartments(orgId) {
-      var _this6 = this;
+    fetchDepartments: function fetchDepartments() {
+      var _this7 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
         var response;
         return _regeneratorRuntime().wrap(function _callee7$(_context7) {
           while (1) switch (_context7.prev = _context7.next) {
             case 0:
-              _context7.prev = 0;
-              _context7.next = 3;
-              return axios.get("/api/organizations/".concat(orgId, "/departments"));
+              if (!(!_this7.organization || !_this7.organization.id)) {
+                _context7.next = 3;
+                break;
+              }
+              console.error('Cannot fetch departments without a valid organization');
+              return _context7.abrupt("return");
             case 3:
+              _context7.prev = 3;
+              _context7.next = 6;
+              return axios.get("/api/organizations/".concat(_this7.organization.id, "/departments"));
+            case 6:
               response = _context7.sent;
-              _this6.departments = response.data;
-              _context7.next = 12;
+              _this7.departments = response.data;
+              _context7.next = 15;
               break;
-            case 7:
-              _context7.prev = 7;
-              _context7.t0 = _context7["catch"](0);
+            case 10:
+              _context7.prev = 10;
+              _context7.t0 = _context7["catch"](3);
               console.error('Error fetching departments:', _context7.t0);
-              _this6.departments = [];
+              _this7.departments = [];
               throw _context7.t0;
-            case 12:
+            case 15:
             case "end":
               return _context7.stop();
           }
-        }, _callee7, null, [[0, 7]]);
+        }, _callee7, null, [[3, 10]]);
       }))();
     },
     fetchDashboardMetrics: function fetchDashboardMetrics() {
-      var _this7 = this;
+      var _this8 = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
         var response, baseScenario, comparisonResponse, comparison;
         return _regeneratorRuntime().wrap(function _callee8$(_context8) {
           while (1) switch (_context8.prev = _context8.next) {
             case 0:
-              if (_this7.currentScenario) {
-                _context8.next = 2;
+              if (!(!_this8.organization || !_this8.organization.id || !_this8.currentScenario || !_this8.currentScenario.id)) {
+                _context8.next = 4;
                 break;
               }
+              console.error('Cannot fetch metrics without a valid organization and scenario');
+              _this8.dashboardMetrics = [];
               return _context8.abrupt("return");
-            case 2:
-              _context8.prev = 2;
-              _context8.next = 5;
-              return axios.get("/api/organizations/".concat(_this7.organizationId, "/scenarios/").concat(_this7.currentScenario.id, "/metrics"));
-            case 5:
+            case 4:
+              _context8.prev = 4;
+              _context8.next = 7;
+              return axios.get("/api/organizations/".concat(_this8.organization.id, "/scenarios/").concat(_this8.currentScenario.id, "/metrics"));
+            case 7:
               response = _context8.sent;
-              _this7.dashboardMetrics = response.data;
+              if (Array.isArray(response.data)) {
+                _context8.next = 12;
+                break;
+              }
+              console.warn('Unexpected metrics data format:', response.data);
+              _this8.dashboardMetrics = [];
+              return _context8.abrupt("return");
+            case 12:
+              _this8.dashboardMetrics = response.data;
 
               // Add trend data if we have a comparison scenario (e.g., previous month)
-              if (!(_this7.scenarios.length > 1)) {
-                _context8.next = 15;
+              if (!(_this8.scenarios.length > 1)) {
+                _context8.next = 26;
                 break;
               }
-              baseScenario = _this7.scenarios.find(function (s) {
+              baseScenario = _this8.scenarios.find(function (s) {
                 return s.is_base;
               });
-              if (!(baseScenario && baseScenario.id !== _this7.currentScenario.id)) {
-                _context8.next = 15;
+              if (!(baseScenario && baseScenario.id !== _this8.currentScenario.id)) {
+                _context8.next = 26;
                 break;
               }
-              _context8.next = 12;
-              return axios.get("/api/organizations/".concat(_this7.organizationId, "/compare-scenarios"), {
+              _context8.prev = 16;
+              _context8.next = 19;
+              return axios.get("/api/organizations/".concat(_this8.organization.id, "/compare-scenarios"), {
                 params: {
-                  scenario1_id: _this7.currentScenario.id,
+                  scenario1_id: _this8.currentScenario.id,
                   scenario2_id: baseScenario.id
                 }
               });
-            case 12:
+            case 19:
               comparisonResponse = _context8.sent;
-              comparison = comparisonResponse.data.comparison; // Add trend data to metrics
-              _this7.dashboardMetrics.forEach(function (metric) {
-                var compMetric = comparison.find(function (m) {
-                  return m.code === metric.code;
+              if (comparisonResponse.data && comparisonResponse.data.comparison) {
+                comparison = comparisonResponse.data.comparison; // Add trend data to metrics
+                _this8.dashboardMetrics.forEach(function (metric) {
+                  var compMetric = comparison.find(function (m) {
+                    return m.code === metric.code;
+                  });
+                  if (compMetric) {
+                    metric.trend = {
+                      value: compMetric.difference,
+                      percentage: compMetric.difference_percentage
+                    };
+                  }
                 });
-                if (compMetric) {
-                  metric.trend = {
-                    value: compMetric.difference,
-                    percentage: compMetric.difference_percentage
-                  };
-                }
-              });
-            case 15:
-              _context8.next = 20;
+              }
+              _context8.next = 26;
               break;
-            case 17:
-              _context8.prev = 17;
-              _context8.t0 = _context8["catch"](2);
-              console.error('Error fetching dashboard metrics:', _context8.t0);
-            case 20:
+            case 23:
+              _context8.prev = 23;
+              _context8.t0 = _context8["catch"](16);
+              console.error('Error comparing scenarios:', _context8.t0);
+            case 26:
+              _context8.next = 32;
+              break;
+            case 28:
+              _context8.prev = 28;
+              _context8.t1 = _context8["catch"](4);
+              console.error('Error fetching dashboard metrics:', _context8.t1);
+              _this8.dashboardMetrics = [];
+            case 32:
             case "end":
               return _context8.stop();
           }
-        }, _callee8, null, [[2, 17]]);
+        }, _callee8, null, [[4, 28], [16, 23]]);
       }))();
     },
     selectOrganization: function selectOrganization(org) {
@@ -47889,7 +48014,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       if (org.logo_path) {
         var logoUrl = org.logo_path.startsWith('http') ? org.logo_path : "/storage/".concat(org.logo_path);
         return {
-          backgroundImage: "url(".concat(org.logo_path, ")")
+          backgroundImage: "url(".concat(logoUrl, ")")
         };
       } else {
         return {
@@ -47901,39 +48026,62 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
       this.sidebarOpen = !this.sidebarOpen;
     },
     formatMetricValue: function formatMetricValue(metric) {
-      if (!metric || !metric.pivot) return 'N/A';
-      if (metric.format === 'currency') {
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD'
-        }).format(metric.pivot.value);
-      } else if (metric.format === 'percentage') {
-        return "".concat(metric.pivot.value, "%");
-      } else if (metric.format === 'number') {
-        return new Intl.NumberFormat('en-US').format(metric.pivot.value);
+      if (!metric || !metric.pivot || metric.pivot.value === undefined || metric.pivot.value === null) return 'N/A';
+      try {
+        if (metric.format === 'currency') {
+          return new Intl.NumberFormat('en-UK', {
+            style: 'currency',
+            currency: 'GBP'
+          }).format(metric.pivot.value);
+        } else if (metric.format === 'percentage') {
+          return "".concat(metric.pivot.value, "%");
+        } else if (metric.format === 'number') {
+          return new Intl.NumberFormat('en-UK').format(metric.pivot.value);
+        }
+        return metric.pivot.value.toString();
+      } catch (e) {
+        console.error('Error formatting metric value:', e);
+        return 'Error';
       }
-      return metric.pivot.value;
     },
     formatTrendValue: function formatTrendValue(trend) {
-      if (trend.percentage) {
-        return "".concat(trend.percentage.toFixed(1), "%");
+      if (!trend || trend.percentage === undefined || trend.percentage === null) {
+        return '';
       }
-      return trend.value;
+      try {
+        if (typeof trend.percentage === 'number') {
+          return "".concat(trend.percentage.toFixed(1), "%");
+        } else if (typeof trend.value !== 'undefined') {
+          return trend.value.toString();
+        }
+        return '';
+      } catch (e) {
+        console.error('Error formatting trend value:', e);
+        return '';
+      }
     },
     getMetricClass: function getMetricClass(metric) {
-      if (!metric.pivot || !metric.pivot.goal) return '';
-      var value = metric.pivot.value;
-      var goal = metric.pivot.goal;
-      if (value >= goal) return 'metric-success';
-      if (value >= goal * 0.9) return 'metric-warning';
-      return 'metric-danger';
+      if (!metric || !metric.pivot || !metric.pivot.goal) return '';
+      try {
+        var value = parseFloat(metric.pivot.value);
+        var goal = parseFloat(metric.pivot.goal);
+        if (isNaN(value) || isNaN(goal)) return '';
+        if (value >= goal) return 'metric-success';
+        if (value >= goal * 0.9) return 'metric-warning';
+        return 'metric-danger';
+      } catch (e) {
+        console.error('Error determining metric class:', e);
+        return '';
+      }
     },
     getTrendClass: function getTrendClass(trend) {
+      if (!trend) return '';
       if (trend.value > 0) return 'trend-up';
       if (trend.value < 0) return 'trend-down';
       return '';
     },
     getTrendIcon: function getTrendIcon(trend) {
+      if (!trend) return '';
       if (trend.value > 0) return 'fas fa-arrow-up';
       if (trend.value < 0) return 'fas fa-arrow-down';
       return 'fas fa-equals';
@@ -49534,6 +49682,693 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    id: {
+      type: [Number, String],
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      organization: {},
+      departments: [],
+      users: [],
+      currentUser: {},
+      roles: [],
+      positions: [],
+      activeTab: 'general',
+      tabs: [{
+        id: 'general',
+        name: 'General',
+        icon: 'fas fa-cog'
+      }, {
+        id: 'users',
+        name: 'Users & Permissions',
+        icon: 'fas fa-users'
+      }, {
+        id: 'departments',
+        name: 'Departments',
+        icon: 'fas fa-building'
+      }, {
+        id: 'security',
+        name: 'Security',
+        icon: 'fas fa-shield-alt'
+      }, {
+        id: 'notifications',
+        name: 'Notifications',
+        icon: 'fas fa-bell'
+      }],
+      loading: true,
+      error: null,
+      saving: false,
+      // Organization form
+      organizationForm: {
+        name: '',
+        description: '',
+        primary_color: '#4caf50',
+        secondary_color: '#2196f3',
+        logo_path: null
+      },
+      logoFile: null,
+      logoPreview: null,
+      // Invite user form
+      showInviteUserModal: false,
+      inviteForm: {
+        email: '',
+        role_id: null,
+        is_admin: false,
+        message: ''
+      },
+      // Department modal
+      showDepartmentModal: false,
+      editingDepartment: null,
+      departmentForm: {
+        name: '',
+        code: '',
+        description: '',
+        color: '#4caf50'
+      },
+      // Delete confirmation
+      showDeleteConfirmation: false,
+      deleteConfirmType: '',
+      deleteConfirmId: null,
+      deleteConfirmName: '',
+      deleteConfirmInput: '',
+      // Security settings
+      twoFactorEnabled: false,
+      apiTokens: [],
+      showCreateTokenModal: false,
+      // Notification settings
+      emailNotifications: [{
+        name: 'Organization Updates',
+        description: 'Receive updates about organization changes',
+        enabled: true
+      }, {
+        name: 'New Users',
+        description: 'Be notified when new users join the organization',
+        enabled: true
+      }, {
+        name: 'Scenario Changes',
+        description: 'Get notifications when scenarios are created or updated',
+        enabled: true
+      }],
+      appNotifications: [{
+        name: 'Organization Activity',
+        description: 'See activity notifications in-app',
+        enabled: true
+      }, {
+        name: 'Position Changes',
+        description: 'Get notified about position changes',
+        enabled: true
+      }, {
+        name: 'Department Updates',
+        description: 'Receive notifications about department changes',
+        enabled: false
+      }]
+    };
+  },
+  created: function created() {
+    this.fetchOrganizationData();
+    this.fetchCurrentUser();
+  },
+  methods: {
+    fetchOrganizationData: function fetchOrganizationData() {
+      var _this = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var orgResponse, deptResponse, usersResponse, positionsResponse, rolesResponse, tokensResponse;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              _this.loading = true;
+              _this.error = null;
+              _context.prev = 2;
+              _context.next = 5;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this.id));
+            case 5:
+              orgResponse = _context.sent;
+              _this.organization = orgResponse.data;
+
+              // Copy to form data
+              _this.organizationForm = {
+                name: _this.organization.name,
+                description: _this.organization.description || '',
+                primary_color: _this.organization.primary_color || '#4caf50',
+                secondary_color: _this.organization.secondary_color || '#2196f3',
+                logo_path: _this.organization.logo_path
+              };
+              if (_this.organization.logo_path) {
+                _this.logoPreview = _this.getLogoUrl(_this.organization.logo_path);
+              }
+
+              // Fetch departments
+              _context.next = 11;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this.id, "/departments"));
+            case 11:
+              deptResponse = _context.sent;
+              _this.departments = deptResponse.data;
+
+              // Fetch organization users
+              _context.next = 15;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this.id, "/users"));
+            case 15:
+              usersResponse = _context.sent;
+              _this.users = usersResponse.data;
+
+              // Fetch positions
+              _context.next = 19;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this.id, "/positions"));
+            case 19:
+              positionsResponse = _context.sent;
+              _this.positions = positionsResponse.data;
+
+              // Fetch roles
+              _context.next = 23;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/roles");
+            case 23:
+              rolesResponse = _context.sent;
+              _this.roles = rolesResponse.data;
+
+              // Fetch API tokens
+              _context.next = 27;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/user/tokens");
+            case 27:
+              tokensResponse = _context.sent;
+              _this.apiTokens = tokensResponse.data || [];
+              _context.next = 35;
+              break;
+            case 31:
+              _context.prev = 31;
+              _context.t0 = _context["catch"](2);
+              console.error('Error fetching organization data:', _context.t0);
+              _this.error = 'Failed to load organization data. Please try again.';
+            case 35:
+              _context.prev = 35;
+              _this.loading = false;
+              return _context.finish(35);
+            case 38:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, null, [[2, 31, 35, 38]]);
+      }))();
+    },
+    fetchCurrentUser: function fetchCurrentUser() {
+      var _this2 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+        var response;
+        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+          while (1) switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.prev = 0;
+              _context2.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
+            case 3:
+              response = _context2.sent;
+              _this2.currentUser = response.data;
+              _context2.next = 10;
+              break;
+            case 7:
+              _context2.prev = 7;
+              _context2.t0 = _context2["catch"](0);
+              console.error('Error fetching current user:', _context2.t0);
+            case 10:
+            case "end":
+              return _context2.stop();
+          }
+        }, _callee2, null, [[0, 7]]);
+      }))();
+    },
+    /*** Organization Update ***/triggerLogoUpload: function triggerLogoUpload() {
+      this.$refs.logoInput.click();
+    },
+    handleLogoUpload: function handleLogoUpload(event) {
+      var _this3 = this;
+      var file = event.target.files[0];
+      if (!file) return;
+      this.logoFile = file;
+
+      // Create preview
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        _this3.logoPreview = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    },
+    updateOrganizationDetails: function updateOrganizationDetails() {
+      var _this4 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+        var formData;
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              _this4.saving = true;
+              _context3.prev = 1;
+              formData = new FormData();
+              formData.append('name', _this4.organizationForm.name);
+              formData.append('description', _this4.organizationForm.description);
+              formData.append('primary_color', _this4.organizationForm.primary_color);
+              formData.append('secondary_color', _this4.organizationForm.secondary_color);
+              if (_this4.logoFile) {
+                formData.append('logo', _this4.logoFile);
+              }
+
+              // Use FormData with multipart/form-data for file upload
+              _context3.next = 10;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/organizations/".concat(_this4.id, "?_method=PUT"), formData, {
+                headers: {
+                  'Content-Type': 'multipart/form-data'
+                }
+              });
+            case 10:
+              _context3.next = 12;
+              return _this4.fetchOrganizationData();
+            case 12:
+              _this4.$toaster.success('Organization details saved successfully');
+              _context3.next = 19;
+              break;
+            case 15:
+              _context3.prev = 15;
+              _context3.t0 = _context3["catch"](1);
+              console.error('Error updating organization:', _context3.t0);
+              _this4.$toaster.error('Failed to save organization details');
+            case 19:
+              _context3.prev = 19;
+              _this4.saving = false;
+              return _context3.finish(19);
+            case 22:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3, null, [[1, 15, 19, 22]]);
+      }))();
+    },
+    /*** User Management ***/inviteUser: function inviteUser() {
+      var _this5 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+        var usersResponse;
+        return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+          while (1) switch (_context4.prev = _context4.next) {
+            case 0:
+              if (_this5.inviteForm.email) {
+                _context4.next = 2;
+                break;
+              }
+              return _context4.abrupt("return");
+            case 2:
+              _context4.prev = 2;
+              _context4.next = 5;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/organizations/".concat(_this5.id, "/users/invite"), _this5.inviteForm);
+            case 5:
+              _context4.next = 7;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this5.id, "/users"));
+            case 7:
+              usersResponse = _context4.sent;
+              _this5.users = usersResponse.data;
+              _this5.showInviteUserModal = false;
+              _this5.inviteForm = {
+                email: '',
+                role_id: null,
+                is_admin: false,
+                message: ''
+              };
+              _this5.$toaster.success('Invitation sent successfully');
+              _context4.next = 18;
+              break;
+            case 14:
+              _context4.prev = 14;
+              _context4.t0 = _context4["catch"](2);
+              console.error('Error inviting user:', _context4.t0);
+              _this5.$toaster.error('Failed to send invitation');
+            case 18:
+            case "end":
+              return _context4.stop();
+          }
+        }, _callee4, null, [[2, 14]]);
+      }))();
+    },
+    editUser: function editUser(user) {
+      // Implementation would depend on your user management system
+      alert('Edit user functionality would go here');
+    },
+    confirmRemoveUser: function confirmRemoveUser(user) {
+      var _this6 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+        return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+          while (1) switch (_context5.prev = _context5.next) {
+            case 0:
+              if (!confirm("Are you sure you want to remove ".concat(user.name, " from this organization?"))) {
+                _context5.next = 12;
+                break;
+              }
+              _context5.prev = 1;
+              _context5.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/organizations/".concat(_this6.id, "/users/").concat(user.id));
+            case 4:
+              // Remove from local list
+              _this6.users = _this6.users.filter(function (u) {
+                return u.id !== user.id;
+              });
+              _this6.$toaster.success('User removed successfully');
+              _context5.next = 12;
+              break;
+            case 8:
+              _context5.prev = 8;
+              _context5.t0 = _context5["catch"](1);
+              console.error('Error removing user:', _context5.t0);
+              _this6.$toaster.error('Failed to remove user');
+            case 12:
+            case "end":
+              return _context5.stop();
+          }
+        }, _callee5, null, [[1, 8]]);
+      }))();
+    },
+    /*** Department Management ***/addDepartment: function addDepartment() {
+      this.editingDepartment = null;
+      this.departmentForm = {
+        name: '',
+        code: '',
+        description: '',
+        color: '#4caf50'
+      };
+      this.showDepartmentModal = true;
+    },
+    editDepartment: function editDepartment(department) {
+      this.editingDepartment = department;
+      this.departmentForm = {
+        name: department.name,
+        code: department.code || '',
+        description: department.description || '',
+        color: department.color || '#4caf50'
+      };
+      this.showDepartmentModal = true;
+    },
+    saveDepartment: function saveDepartment() {
+      var _this7 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+        var index, response;
+        return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+          while (1) switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.prev = 0;
+              if (!_this7.editingDepartment) {
+                _context6.next = 9;
+                break;
+              }
+              _context6.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].put("/api/organizations/".concat(_this7.id, "/departments/").concat(_this7.editingDepartment.id), _this7.departmentForm);
+            case 4:
+              // Update local data
+              index = _this7.departments.findIndex(function (d) {
+                return d.id === _this7.editingDepartment.id;
+              });
+              if (index !== -1) {
+                _this7.departments.splice(index, 1, _objectSpread(_objectSpread({}, _this7.editingDepartment), _this7.departmentForm));
+              }
+              _this7.$toaster.success('Department updated successfully');
+              _context6.next = 14;
+              break;
+            case 9:
+              _context6.next = 11;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/organizations/".concat(_this7.id, "/departments"), _this7.departmentForm);
+            case 11:
+              response = _context6.sent;
+              // Add to local data
+              _this7.departments.push(response.data);
+              _this7.$toaster.success('Department created successfully');
+            case 14:
+              _this7.showDepartmentModal = false;
+              _context6.next = 21;
+              break;
+            case 17:
+              _context6.prev = 17;
+              _context6.t0 = _context6["catch"](0);
+              console.error('Error saving department:', _context6.t0);
+              _this7.$toaster.error('Failed to save department');
+            case 21:
+            case "end":
+              return _context6.stop();
+          }
+        }, _callee6, null, [[0, 17]]);
+      }))();
+    },
+    confirmDeleteDepartment: function confirmDeleteDepartment(department) {
+      this.deleteConfirmType = 'department';
+      this.deleteConfirmId = department.id;
+      this.deleteConfirmName = department.name;
+      this.showDeleteConfirmation = true;
+    },
+    /*** Delete Organization ***/showDeleteOrganizationConfirmation: function showDeleteOrganizationConfirmation() {
+      this.deleteConfirmType = 'organization';
+      this.deleteConfirmId = this.organization.id;
+      this.deleteConfirmName = this.organization.name;
+      this.deleteConfirmInput = '';
+      this.showDeleteConfirmation = true;
+    },
+    confirmDelete: function confirmDelete() {
+      var _this8 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+        return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+          while (1) switch (_context7.prev = _context7.next) {
+            case 0:
+              _context7.prev = 0;
+              if (!(_this8.deleteConfirmType === 'organization')) {
+                _context7.next = 10;
+                break;
+              }
+              if (!(_this8.deleteConfirmInput !== _this8.deleteConfirmName)) {
+                _context7.next = 4;
+                break;
+              }
+              return _context7.abrupt("return");
+            case 4:
+              _context7.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/organizations/".concat(_this8.deleteConfirmId));
+            case 6:
+              // Redirect to dashboard
+              _this8.$router.push('/dashboard');
+              _this8.$toaster.success('Organization deleted successfully');
+              _context7.next = 16;
+              break;
+            case 10:
+              if (!(_this8.deleteConfirmType === 'department')) {
+                _context7.next = 16;
+                break;
+              }
+              _context7.next = 13;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/organizations/".concat(_this8.id, "/departments/").concat(_this8.deleteConfirmId));
+            case 13:
+              // Remove from local list
+              _this8.departments = _this8.departments.filter(function (d) {
+                return d.id !== _this8.deleteConfirmId;
+              });
+              _this8.showDeleteConfirmation = false;
+              _this8.$toaster.success('Department deleted successfully');
+            case 16:
+              _context7.next = 22;
+              break;
+            case 18:
+              _context7.prev = 18;
+              _context7.t0 = _context7["catch"](0);
+              console.error('Error deleting:', _context7.t0);
+              _this8.$toaster.error("Failed to delete ".concat(_this8.deleteConfirmType));
+            case 22:
+            case "end":
+              return _context7.stop();
+          }
+        }, _callee7, null, [[0, 18]]);
+      }))();
+    },
+    /*** Security Management ***/toggleTwoFactor: function toggleTwoFactor() {
+      var _this9 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
+        return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+          while (1) switch (_context8.prev = _context8.next) {
+            case 0:
+              _context8.prev = 0;
+              _context8.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/user/two-factor-authentication", {
+                enabled: _this9.twoFactorEnabled
+              });
+            case 3:
+              _this9.$toaster.success("Two-factor authentication ".concat(_this9.twoFactorEnabled ? 'enabled' : 'disabled'));
+              _context8.next = 11;
+              break;
+            case 6:
+              _context8.prev = 6;
+              _context8.t0 = _context8["catch"](0);
+              console.error('Error toggling two-factor auth:', _context8.t0);
+              _this9.twoFactorEnabled = !_this9.twoFactorEnabled; // Revert toggle
+              _this9.$toaster.error('Failed to update two-factor authentication');
+            case 11:
+            case "end":
+              return _context8.stop();
+          }
+        }, _callee8, null, [[0, 6]]);
+      }))();
+    },
+    createApiToken: function createApiToken() {
+      var _this10 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
+        var response, tokensResponse;
+        return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+          while (1) switch (_context9.prev = _context9.next) {
+            case 0:
+              if (!(!_this10.tokenForm || !_this10.tokenForm.name)) {
+                _context9.next = 2;
+                break;
+              }
+              return _context9.abrupt("return");
+            case 2:
+              _context9.prev = 2;
+              _context9.next = 5;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/user/tokens", _this10.tokenForm);
+            case 5:
+              response = _context9.sent;
+              // Show token to user (only shown once)
+              alert("Your new token is: ".concat(response.data.token, "\n\nPlease copy this now as it won't be shown again."));
+
+              // Refresh token list
+              _context9.next = 9;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/user/tokens");
+            case 9:
+              tokensResponse = _context9.sent;
+              _this10.apiTokens = tokensResponse.data || [];
+              _this10.showCreateTokenModal = false;
+              _this10.tokenForm = {
+                name: '',
+                abilities: ['read']
+              };
+              _context9.next = 19;
+              break;
+            case 15:
+              _context9.prev = 15;
+              _context9.t0 = _context9["catch"](2);
+              console.error('Error creating token:', _context9.t0);
+              _this10.$toaster.error('Failed to create API token');
+            case 19:
+            case "end":
+              return _context9.stop();
+          }
+        }, _callee9, null, [[2, 15]]);
+      }))();
+    },
+    revokeToken: function revokeToken(token) {
+      var _this11 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+        return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+          while (1) switch (_context10.prev = _context10.next) {
+            case 0:
+              if (!confirm("Are you sure you want to revoke the token \"".concat(token.name, "\"?"))) {
+                _context10.next = 12;
+                break;
+              }
+              _context10.prev = 1;
+              _context10.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"]["delete"]("/api/user/tokens/".concat(token.id));
+            case 4:
+              // Remove from local list
+              _this11.apiTokens = _this11.apiTokens.filter(function (t) {
+                return t.id !== token.id;
+              });
+              _this11.$toaster.success('Token revoked successfully');
+              _context10.next = 12;
+              break;
+            case 8:
+              _context10.prev = 8;
+              _context10.t0 = _context10["catch"](1);
+              console.error('Error revoking token:', _context10.t0);
+              _this11.$toaster.error('Failed to revoke token');
+            case 12:
+            case "end":
+              return _context10.stop();
+          }
+        }, _callee10, null, [[1, 8]]);
+      }))();
+    },
+    /*** Notification Settings ***/updateNotificationPreferences: function updateNotificationPreferences() {
+      var _this12 = this;
+      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee11() {
+        var preferences;
+        return _regeneratorRuntime().wrap(function _callee11$(_context11) {
+          while (1) switch (_context11.prev = _context11.next) {
+            case 0:
+              _context11.prev = 0;
+              preferences = {
+                email: _this12.emailNotifications.reduce(function (obj, pref) {
+                  obj[pref.name.toLowerCase().replace(/\s+/g, '_')] = pref.enabled;
+                  return obj;
+                }, {}),
+                app: _this12.appNotifications.reduce(function (obj, pref) {
+                  obj[pref.name.toLowerCase().replace(/\s+/g, '_')] = pref.enabled;
+                  return obj;
+                }, {})
+              };
+              _context11.next = 4;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/user/notification-preferences", preferences);
+            case 4:
+              _this12.$toaster.success('Notification preferences updated');
+              _context11.next = 11;
+              break;
+            case 7:
+              _context11.prev = 7;
+              _context11.t0 = _context11["catch"](0);
+              console.error('Error updating notification preferences:', _context11.t0);
+              _this12.$toaster.error('Failed to update notification preferences');
+            case 11:
+            case "end":
+              return _context11.stop();
+          }
+        }, _callee11, null, [[0, 7]]);
+      }))();
+    },
+    /*** Helper Methods ***/getLogoUrl: function getLogoUrl(path) {
+      if (!path) return null;
+      if (path.startsWith('http')) return path;
+      return "/storage/".concat(path);
+    },
+    getDepartmentPositionCount: function getDepartmentPositionCount(department) {
+      return this.positions.filter(function (p) {
+        return p.department_id === department.id;
+      }).length;
+    },
+    formatDate: function formatDate(dateStr) {
+      if (!dateStr) return '';
+      var date = new Date(dateStr);
+      return new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }).format(date);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=script&lang=js":
 /*!************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=script&lang=js ***!
@@ -50164,45 +50999,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
-/* harmony import */ var _ToBeModeling_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ToBeModeling.vue */ "./resources/js/components/ToBeModeling.vue");
-/* harmony import */ var _ActivityAnalysis_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ActivityAnalysis.vue */ "./resources/js/components/ActivityAnalysis.vue");
-/* harmony import */ var _AsIsAnalysis_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AsIsAnalysis.vue */ "./resources/js/components/AsIsAnalysis.vue");
-/* harmony import */ var _Header_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header.vue */ "./resources/js/components/Header.vue");
-/* harmony import */ var _HrData_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HrData.vue */ "./resources/js/components/HrData.vue");
-/* harmony import */ var _Login_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Login.vue */ "./resources/js/components/Login.vue");
-/* harmony import */ var _OrganizationCreate_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./OrganizationCreate.vue */ "./resources/js/components/OrganizationCreate.vue");
-/* harmony import */ var _OrganizationsList_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./OrganizationsList.vue */ "./resources/js/components/OrganizationsList.vue");
-/* harmony import */ var _Register_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Register.vue */ "./resources/js/components/Register.vue");
-/* harmony import */ var _OrgChart_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./OrgChart.vue */ "./resources/js/components/OrgChart.vue");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/lib/axios.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
-
-
-
-
-
-
-
-
-
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    ToBeModeling: _ToBeModeling_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    ActivityAnalysis: _ActivityAnalysis_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-    AsIsAnalysis: _AsIsAnalysis_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Header: _Header_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    HrData: _HrData_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
-    Login: _Login_vue__WEBPACK_IMPORTED_MODULE_5__["default"],
-    OrganizationCreate: _OrganizationCreate_vue__WEBPACK_IMPORTED_MODULE_6__["default"],
-    OrganizationsList: _OrganizationsList_vue__WEBPACK_IMPORTED_MODULE_7__["default"],
-    OrgChart: _OrgChart_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
-    Register: _Register_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
-  },
   props: {
     organization: {
       type: Object,
@@ -50240,10 +51046,31 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
   },
   created: function created() {
     this.fetchUserData();
-    this.fetchScenarios();
-    this.fetchDepartments();
+
+    // Safely fetch data only if organization exists
+    if (this.organization && this.organization.id) {
+      this.fetchScenarios();
+      this.fetchDepartments();
+    }
   },
-  methods: {
+  watch: {
+    // Watch for changes to organization to reload data
+    'organization.id': {
+      immediate: true,
+      handler: function handler(newId) {
+        if (newId) {
+          this.fetchScenarios();
+          this.fetchDepartments();
+        }
+      }
+    }
+  },
+  methods: _defineProperty(_defineProperty({
+    getLogoUrl: function getLogoUrl(path) {
+      if (!path) return null;
+      if (path.startsWith('http')) return path;
+      return "/storage/".concat(path);
+    },
     fetchUserData: function fetchUserData() {
       var _this = this;
       return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -50253,7 +51080,7 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
             case 0:
               _context.prev = 0;
               _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].get('/api/user');
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get('/api/user');
             case 3:
               response = _context.sent;
               _this.user = response.data;
@@ -50277,10 +51104,17 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
-              _context2.prev = 0;
-              _context2.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].get("/api/organizations/".concat(_this2.organization.id, "/scenarios"));
+              if (!(!_this2.organization || !_this2.organization.id)) {
+                _context2.next = 3;
+                break;
+              }
+              console.log('No valid organization ID, skipping scenario fetch');
+              return _context2.abrupt("return");
             case 3:
+              _context2.prev = 3;
+              _context2.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this2.organization.id, "/scenarios"));
+            case 6:
               response = _context2.sent;
               _this2.scenarios = response.data;
 
@@ -50297,17 +51131,18 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
                   _this2.newScenario.baseScenarioId = _this2.scenarios[0].id;
                 }
               }
-              _context2.next = 11;
+              _context2.next = 15;
               break;
-            case 8:
-              _context2.prev = 8;
-              _context2.t0 = _context2["catch"](0);
-              console.error('Error fetching scenarios:', _context2.t0);
             case 11:
+              _context2.prev = 11;
+              _context2.t0 = _context2["catch"](3);
+              console.error('Error fetching scenarios:', _context2.t0);
+              _this2.$emit('error', 'Failed to load scenarios. Please try again.');
+            case 15:
             case "end":
               return _context2.stop();
           }
-        }, _callee2, null, [[0, 8]]);
+        }, _callee2, null, [[3, 11]]);
       }))();
     },
     fetchDepartments: function fetchDepartments() {
@@ -50317,23 +51152,31 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              _context3.prev = 0;
-              _context3.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].get("/api/organizations/".concat(_this3.organization.id, "/departments"));
+              if (!(!_this3.organization || !_this3.organization.id)) {
+                _context3.next = 3;
+                break;
+              }
+              console.log('No valid organization ID, skipping department fetch');
+              return _context3.abrupt("return");
             case 3:
+              _context3.prev = 3;
+              _context3.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].get("/api/organizations/".concat(_this3.organization.id, "/departments"));
+            case 6:
               response = _context3.sent;
               _this3.departments = response.data;
-              _context3.next = 10;
+              _context3.next = 14;
               break;
-            case 7:
-              _context3.prev = 7;
-              _context3.t0 = _context3["catch"](0);
-              console.error('Error fetching departments:', _context3.t0);
             case 10:
+              _context3.prev = 10;
+              _context3.t0 = _context3["catch"](3);
+              console.error('Error fetching departments:', _context3.t0);
+              _this3.$emit('error', 'Failed to load departments. Please try again.');
+            case 14:
             case "end":
               return _context3.stop();
           }
-        }, _callee3, null, [[0, 7]]);
+        }, _callee3, null, [[3, 10]]);
       }))();
     },
     selectScenario: function selectScenario(scenario) {
@@ -50349,14 +51192,21 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
-              _context4.prev = 0;
-              _context4.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].post("/api/organizations/".concat(_this4.organization.id, "/scenarios"), {
+              if (!(!_this4.organization || !_this4.organization.id)) {
+                _context4.next = 3;
+                break;
+              }
+              console.error('Cannot create scenario without valid organization');
+              return _context4.abrupt("return");
+            case 3:
+              _context4.prev = 3;
+              _context4.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/organizations/".concat(_this4.organization.id, "/scenarios"), {
                 name: _this4.newScenario.name,
                 description: _this4.newScenario.description,
                 base_scenario_id: _this4.newScenario.baseScenarioId
               });
-            case 3:
+            case 6:
               response = _context4.sent;
               // Add the new scenario to the list
               _this4.scenarios.push(response.data);
@@ -50371,25 +51221,29 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
               // Emit event to parent for potential scenario change
               _this4.$emit('scenario-created', response.data);
-              _context4.next = 13;
+              _context4.next = 17;
               break;
-            case 10:
-              _context4.prev = 10;
-              _context4.t0 = _context4["catch"](0);
-              console.error('Error creating scenario:', _context4.t0);
             case 13:
+              _context4.prev = 13;
+              _context4.t0 = _context4["catch"](3);
+              console.error('Error creating scenario:', _context4.t0);
+              _this4.$emit('error', 'Failed to create scenario. Please try again.');
+            case 17:
             case "end":
               return _context4.stop();
           }
-        }, _callee4, null, [[0, 10]]);
+        }, _callee4, null, [[3, 13]]);
       }))();
     },
     cancelNewScenario: function cancelNewScenario() {
+      var _this$scenarios$find;
       this.showNewScenarioModal = false;
       this.newScenario = {
         name: '',
         description: '',
-        baseScenarioId: null
+        baseScenarioId: this.scenarios.length > 0 ? ((_this$scenarios$find = this.scenarios.find(function (s) {
+          return s.is_current;
+        })) === null || _this$scenarios$find === void 0 ? void 0 : _this$scenarios$find.id) || this.scenarios[0].id : null
       };
     },
     createNewDepartment: function createNewDepartment() {
@@ -50402,15 +51256,22 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         return _regeneratorRuntime().wrap(function _callee5$(_context5) {
           while (1) switch (_context5.prev = _context5.next) {
             case 0:
-              _context5.prev = 0;
-              _context5.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].post("/api/organizations/".concat(_this5.organization.id, "/departments"), {
+              if (!(!_this5.organization || !_this5.organization.id)) {
+                _context5.next = 3;
+                break;
+              }
+              console.error('Cannot create department without valid organization');
+              return _context5.abrupt("return");
+            case 3:
+              _context5.prev = 3;
+              _context5.next = 6;
+              return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post("/api/organizations/".concat(_this5.organization.id, "/departments"), {
                 name: _this5.newDepartment.name,
                 code: _this5.newDepartment.code,
                 description: _this5.newDepartment.description,
                 color: _this5.newDepartment.color
               });
-            case 3:
+            case 6:
               response = _context5.sent;
               // Add the new department to the list
               _this5.departments.push(response.data);
@@ -50426,17 +51287,17 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
               // Emit event to parent
               _this5.$emit('department-created', response.data);
-              _context5.next = 13;
+              _context5.next = 16;
               break;
-            case 10:
-              _context5.prev = 10;
-              _context5.t0 = _context5["catch"](0);
-              console.error('Error creating department:', _context5.t0);
             case 13:
+              _context5.prev = 13;
+              _context5.t0 = _context5["catch"](3);
+              console.error('Error creating department:', _context5.t0);
+            case 16:
             case "end":
               return _context5.stop();
           }
-        }, _callee5, null, [[0, 10]]);
+        }, _callee5, null, [[3, 13]]);
       }))();
     },
     cancelNewDepartment: function cancelNewDepartment() {
@@ -50447,37 +51308,35 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
         description: '',
         color: '#4caf50'
       };
-    },
-    getLogoUrl: function getLogoUrl(path) {
-      if (!path) return null;
-      if (path.startsWith('http')) return path;
-      return "/storage/".concat(path);
-    },
-    logout: function logout() {
-      var _this6 = this;
-      return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-        return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-          while (1) switch (_context6.prev = _context6.next) {
-            case 0:
-              _context6.prev = 0;
-              _context6.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_10__["default"].post('/api/logout');
-            case 3:
-              _this6.$router.push('/login');
-              _context6.next = 9;
-              break;
-            case 6:
-              _context6.prev = 6;
-              _context6.t0 = _context6["catch"](0);
-              console.error('Error logging out:', _context6.t0);
-            case 9:
-            case "end":
-              return _context6.stop();
-          }
-        }, _callee6, null, [[0, 6]]);
-      }))();
     }
-  }
+  }, "getLogoUrl", function getLogoUrl(path) {
+    if (!path) return null;
+    if (path.startsWith('http')) return path;
+    return "/storage/".concat(path);
+  }), "logout", function logout() {
+    var _this6 = this;
+    return _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+        while (1) switch (_context6.prev = _context6.next) {
+          case 0:
+            _context6.prev = 0;
+            _context6.next = 3;
+            return axios__WEBPACK_IMPORTED_MODULE_0__["default"].post('/api/logout');
+          case 3:
+            _this6.$router.push('/login');
+            _context6.next = 9;
+            break;
+          case 6:
+            _context6.prev = 6;
+            _context6.t0 = _context6["catch"](0);
+            console.error('Error logging out:', _context6.t0);
+          case 9:
+          case "end":
+            return _context6.stop();
+        }
+      }, _callee6, null, [[0, 6]]);
+    }))();
+  })
 });
 
 /***/ }),
@@ -51803,200 +52662,209 @@ var _hoisted_1 = {
   "class": "as-is-analysis"
 };
 var _hoisted_2 = {
+  key: 0,
+  "class": "loading-state"
+};
+var _hoisted_3 = {
+  key: 1,
   "class": "metrics-tabs"
 };
-var _hoisted_3 = ["onClick"];
-var _hoisted_4 = {
+var _hoisted_4 = ["onClick"];
+var _hoisted_5 = {
   "class": "metrics-content"
 };
-var _hoisted_5 = {
+var _hoisted_6 = {
   key: 0,
   "class": "dashboard-view"
 };
-var _hoisted_6 = {
+var _hoisted_7 = {
   "class": "key-metrics"
 };
-var _hoisted_7 = {
+var _hoisted_8 = {
   "class": "metric-header"
 };
-var _hoisted_8 = {
+var _hoisted_9 = {
   "class": "metric-value"
 };
-var _hoisted_9 = {
+var _hoisted_10 = {
   key: 0,
   "class": "metric-goal"
 };
-var _hoisted_10 = {
-  "class": "chart-container"
-};
 var _hoisted_11 = {
-  ref: "costByDeptChart"
+  "class": "chart-container"
 };
 var _hoisted_12 = {
-  "class": "chart-container"
+  ref: "costByDeptChart"
 };
 var _hoisted_13 = {
-  ref: "fteCostTrendChart"
+  "class": "chart-container"
 };
 var _hoisted_14 = {
+  ref: "fteCostTrendChart"
+};
+var _hoisted_15 = {
   key: 1,
   "class": "position-view"
 };
-var _hoisted_15 = {
+var _hoisted_16 = {
   "class": "filter-row"
 };
-var _hoisted_16 = {
+var _hoisted_17 = {
   "class": "filter-group"
 };
-var _hoisted_17 = ["value"];
-var _hoisted_18 = {
+var _hoisted_18 = ["value"];
+var _hoisted_19 = {
   "class": "filter-group"
 };
-var _hoisted_19 = ["value"];
-var _hoisted_20 = {
-  "class": "filter-group"
-};
+var _hoisted_20 = ["value"];
 var _hoisted_21 = {
-  "class": "position-tracking"
+  "class": "filter-group"
 };
 var _hoisted_22 = {
-  "class": "tracking-summary"
+  "class": "position-tracking"
 };
 var _hoisted_23 = {
-  "class": "summary-item"
+  "class": "tracking-summary"
 };
 var _hoisted_24 = {
-  "class": "summary-value"
+  "class": "summary-item"
 };
 var _hoisted_25 = {
-  "class": "summary-item new"
+  "class": "summary-value"
 };
 var _hoisted_26 = {
-  "class": "summary-value"
+  "class": "summary-item new"
 };
 var _hoisted_27 = {
-  "class": "summary-item changed"
+  "class": "summary-value"
 };
 var _hoisted_28 = {
-  "class": "summary-value"
+  "class": "summary-item changed"
 };
 var _hoisted_29 = {
-  "class": "summary-item removed"
-};
-var _hoisted_30 = {
   "class": "summary-value"
 };
+var _hoisted_30 = {
+  "class": "summary-item removed"
+};
 var _hoisted_31 = {
-  "class": "position-diagram"
+  "class": "summary-value"
 };
 var _hoisted_32 = {
-  ref: "positionTrackingChart"
+  "class": "position-diagram"
 };
 var _hoisted_33 = {
-  "class": "positions-table"
+  ref: "positionTrackingChart"
 };
 var _hoisted_34 = {
+  "class": "positions-table"
+};
+var _hoisted_35 = {
   key: 2,
   "class": "spans-view"
 };
-var _hoisted_35 = {
+var _hoisted_36 = {
   "class": "spans-summary"
 };
-var _hoisted_36 = {
-  "class": "summary-card"
-};
 var _hoisted_37 = {
-  "class": "summary-content"
+  "class": "summary-card"
 };
 var _hoisted_38 = {
-  "class": "summary-main"
+  "class": "summary-content"
 };
 var _hoisted_39 = {
-  "class": "summary-details"
+  "class": "summary-main"
 };
 var _hoisted_40 = {
-  "class": "summary-card"
+  "class": "summary-details"
 };
 var _hoisted_41 = {
-  "class": "summary-content"
-};
-var _hoisted_42 = {
-  "class": "summary-main"
-};
-var _hoisted_43 = {
-  "class": "summary-details"
-};
-var _hoisted_44 = {
   "class": "summary-card"
 };
-var _hoisted_45 = {
+var _hoisted_42 = {
   "class": "summary-content"
 };
-var _hoisted_46 = {
+var _hoisted_43 = {
   "class": "summary-main"
 };
-var _hoisted_47 = {
+var _hoisted_44 = {
   "class": "summary-details"
 };
+var _hoisted_45 = {
+  "class": "summary-card"
+};
+var _hoisted_46 = {
+  "class": "summary-content"
+};
+var _hoisted_47 = {
+  "class": "summary-main"
+};
 var _hoisted_48 = {
-  "class": "spans-charts"
+  "class": "summary-details"
 };
 var _hoisted_49 = {
-  "class": "chart-container"
+  "class": "spans-charts"
 };
 var _hoisted_50 = {
+  "class": "chart-container"
+};
+var _hoisted_51 = {
   ref: "spansLayersChart",
   height: "300"
 };
-var _hoisted_51 = {
+var _hoisted_52 = {
   "class": "chart-container"
 };
-var _hoisted_52 = {
+var _hoisted_53 = {
   "class": "spans-table"
 };
-var _hoisted_53 = {
+var _hoisted_54 = {
   key: 3,
   "class": "cost-view"
 };
-var _hoisted_54 = {
+var _hoisted_55 = {
   "class": "cost-summary"
 };
-var _hoisted_55 = {
+var _hoisted_56 = {
   "class": "summary-card"
 };
-var _hoisted_56 = {
+var _hoisted_57 = {
   "class": "summary-value"
 };
-var _hoisted_57 = {
+var _hoisted_58 = {
   key: 0,
   "class": "summary-comparison"
 };
-var _hoisted_58 = {
+var _hoisted_59 = {
   "class": "summary-card"
 };
-var _hoisted_59 = {
+var _hoisted_60 = {
   "class": "summary-value"
 };
-var _hoisted_60 = {
-  "class": "chart-container"
-};
 var _hoisted_61 = {
-  ref: "costByDepartmentChart"
+  "class": "chart-container"
 };
 var _hoisted_62 = {
-  "class": "chart-container"
+  ref: "costByDepartmentChart"
 };
 var _hoisted_63 = {
-  ref: "costByFunctionChart"
-};
-var _hoisted_64 = {
   "class": "chart-container"
 };
+var _hoisted_64 = {
+  ref: "costByFunctionChart"
+};
 var _hoisted_65 = {
+  "class": "chart-container"
+};
+var _hoisted_66 = {
   ref: "costByGradeChart"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [!$options.isDataReady ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, _cache[3] || (_cache[3] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "loading-spinner"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-circle-notch fa-spin"
+  })], -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading analysis data...", -1 /* HOISTED */)]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: tab.id,
       onClick: function onClick($event) {
@@ -52005,78 +52873,78 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['tab', {
         active: $data.activeTab === tab.id
       }])
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tab.name), 11 /* TEXT, CLASS, PROPS */, _hoisted_3);
-  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Dashboard Overview "), $data.activeTab === 'dashboard' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.keyMetrics, function (metric) {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tab.name), 11 /* TEXT, CLASS, PROPS */, _hoisted_4);
+  }), 128 /* KEYED_FRAGMENT */))])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Dashboard Overview "), $data.activeTab === 'dashboard' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.keyMetrics, function (metric) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "metric-card",
       key: metric.code
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(metric.name), 1 /* TEXT */), metric.trend ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(metric.name), 1 /* TEXT */), metric.trend ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: 0,
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["metric-trend", $options.getTrendClass(metric.trend)])
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($options.getTrendIcon(metric.trend))
-    }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatTrendValue(metric.trend)), 1 /* TEXT */)], 2 /* CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatMetricValue(metric)), 1 /* TEXT */), metric.pivot && metric.pivot.goal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, " Goal: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatMetricGoal(metric)), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
-  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Department Cost Breakdown", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_11, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "FTE vs. Fully Loaded Cost Trends", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_13, null, 512 /* NEED_PATCH */)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Position Analysis "), $data.activeTab === 'position' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatTrendValue(metric.trend)), 1 /* TEXT */)], 2 /* CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatMetricValue(metric)), 1 /* TEXT */), metric.pivot && metric.pivot.goal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " Goal: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatMetricGoal(metric)), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [_cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Department Cost Breakdown", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_12, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "FTE vs. Fully Loaded Cost Trends", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_14, null, 512 /* NEED_PATCH */)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Position Analysis "), $data.activeTab === 'position' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "position-department-filter"
   }, "Department:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     id: "position-department-filter",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $data.filters.department = $event;
     })
-  }, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: ""
   }, "All Departments", -1 /* HOISTED */)), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (dept) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       key: dept.id,
       value: dept.id
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(dept.name), 9 /* TEXT, PROPS */, _hoisted_17);
-  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters.department]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(dept.name), 9 /* TEXT, PROPS */, _hoisted_18);
+  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters.department]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [_cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "position-function-filter"
   }, "Function:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     id: "position-function-filter",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $data.filters["function"] = $event;
     })
-  }, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: ""
   }, "All Functions", -1 /* HOISTED */)), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.functions, function (func) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       key: func,
       value: func
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(func), 9 /* TEXT, PROPS */, _hoisted_19);
-  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters["function"]]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(func), 9 /* TEXT, PROPS */, _hoisted_20);
+  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters["function"]]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "position-status-filter"
   }, "Status:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     id: "position-status-filter",
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return $data.filters.status = $event;
     })
-  }, _cache[9] || (_cache[9] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<option value=\"\" data-v-6f5263e3>All Statuses</option><option value=\"unchanged\" data-v-6f5263e3>Unchanged</option><option value=\"new\" data-v-6f5263e3>New</option><option value=\"changed\" data-v-6f5263e3>Changed</option><option value=\"removed\" data-v-6f5263e3>Removed</option>", 5)]), 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters.status]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [_cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, _cache[10] || (_cache[10] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<option value=\"\" data-v-6f5263e3>All Statuses</option><option value=\"unchanged\" data-v-6f5263e3>Unchanged</option><option value=\"new\" data-v-6f5263e3>New</option><option value=\"changed\" data-v-6f5263e3>Changed</option><option value=\"removed\" data-v-6f5263e3>Removed</option>", 5)]), 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.filters.status]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "summary-title"
-  }, "Unchanged Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('unchanged')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [_cache[12] || (_cache[12] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, "Unchanged Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('unchanged')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "summary-title"
-  }, "New Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('new')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[13] || (_cache[13] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, "New Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('new')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [_cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "summary-title"
-  }, "Changed Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('changed')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_cache[14] || (_cache[14] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, "Changed Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('changed')), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "summary-title"
-  }, "Removed Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('removed')), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_32, null, 512 /* NEED_PATCH */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", null, [_cache[15] || (_cache[15] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Title"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Name"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Department"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Function"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Grade"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Cost"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Status")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.filteredPositions, function (position) {
+  }, "Removed Positions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getStatusCount('removed')), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_33, null, 512 /* NEED_PATCH */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", null, [_cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Title"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Name"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Department"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Function"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Grade"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Cost"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Status")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.filteredPositions, function (position) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", {
       key: position.id,
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(position.pivot ? position.pivot.status : '')
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(position.title), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(position.name || 'Vacant'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getDepartmentName(position.department_id)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(position["function"] || '-'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(position.grade || '-'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency(position.fully_loaded_cost)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["status-badge", position.pivot ? position.pivot.status : ''])
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(position.pivot ? position.pivot.status : 'unchanged'), 3 /* TEXT, CLASS */)])], 2 /* CLASS */);
-  }), 128 /* KEYED_FRAGMENT */))])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Spans & Layers "), $data.activeTab === 'spans' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [_cache[16] || (_cache[16] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Average Span of Control", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('avg_span').toFixed(2)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Total People: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('headcount')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Total Managers: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('total_managers')), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Organizational Layers", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('total_layers')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Roles per Layer (avg): " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(($options.getMetricValue('headcount') / $options.getMetricValue('total_layers')).toFixed(1)), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [_cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Layer Efficiency", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)((($options.getMetricValue('headcount') - $options.getMetricValue('total_managers')) / $options.getMetricValue('headcount') * 100).toFixed(1)) + "%", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Individual Contributors: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('headcount') - $options.getMetricValue('total_managers')), 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [_cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Spans & Layers Structure", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_50, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_51, [_cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Summary of Spans and Layers", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_52, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Layer"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "No. of Roles"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Avg. Span")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.layerData, function (layer, index) {
+  }), 128 /* KEYED_FRAGMENT */))])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Spans & Layers "), $data.activeTab === 'spans' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [_cache[17] || (_cache[17] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Average Span of Control", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('avg_span').toFixed(2)), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Total People: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('headcount')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Total Managers: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('total_managers')), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_cache[18] || (_cache[18] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Organizational Layers", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('total_layers')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Roles per Layer (avg): " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(($options.getMetricValue('headcount') / $options.getMetricValue('total_layers')).toFixed(1)), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [_cache[19] || (_cache[19] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Layer Efficiency", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)((($options.getMetricValue('headcount') - $options.getMetricValue('total_managers')) / $options.getMetricValue('headcount') * 100).toFixed(1)) + "%", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Individual Contributors: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getMetricValue('headcount') - $options.getMetricValue('total_managers')), 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Spans & Layers Structure", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_51, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_52, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Summary of Spans and Layers", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_53, [_cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Layer"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "No. of Roles"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Avg. Span")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.layerData, function (layer, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", {
       key: index
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(index + 1), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(layer.roles), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(layer.avgSpan.toFixed(2)), 1 /* TEXT */)]);
-  }), 128 /* KEYED_FRAGMENT */))])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Cost Analysis "), $data.activeTab === 'cost' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_54, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_55, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Total Fully Loaded Cost", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($options.getMetricValue('total_fully_loaded_cost'))), 1 /* TEXT */), $data.metrics.find(function (m) {
+  }), 128 /* KEYED_FRAGMENT */))])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Cost Analysis "), $data.activeTab === 'cost' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_54, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [_cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Total Fully Loaded Cost", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($options.getMetricValue('total_fully_loaded_cost'))), 1 /* TEXT */), $data.metrics.find(function (m) {
     return m.code === 'total_fully_loaded_cost';
-  }).pivot.goal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" vs Goal: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($data.metrics.find(function (m) {
+  }).pivot.goal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" vs Goal: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($data.metrics.find(function (m) {
     return m.code === 'total_fully_loaded_cost';
   }).pivot.goal)) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($options.getGoalClass('total_fully_loaded_cost'))
-  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getGoalDifference('total_fully_loaded_cost')), 3 /* TEXT, CLASS */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, [_cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Average Cost per FTE", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($options.getMetricValue('avg_cost_per_fte'))), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_60, [_cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_61, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_62, [_cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Function", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_63, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [_cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Grade", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_65, null, 512 /* NEED_PATCH */)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]);
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getGoalDifference('total_fully_loaded_cost')), 3 /* TEXT, CLASS */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, [_cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Average Cost per FTE", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_60, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatCurrency($options.getMetricValue('avg_cost_per_fte'))), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_61, [_cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_62, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [_cache[26] || (_cache[26] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Function", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_64, null, 512 /* NEED_PATCH */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_65, [_cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Cost Distribution by Grade", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("canvas", _hoisted_66, null, 512 /* NEED_PATCH */)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]);
 }
 
 /***/ }),
@@ -52146,6 +53014,7 @@ var _hoisted_15 = {
   "class": "content"
 };
 var _hoisted_16 = {
+  key: 0,
   "class": "metrics-overview"
 };
 var _hoisted_17 = {
@@ -52190,14 +53059,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_activity_analysis = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("activity-analysis");
   var _component_hr_data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("hr-data");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" empty dashboard section with demo info "), !$props.organizationId ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [_cache[6] || (_cache[6] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "dashboard-logo"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: "/img/logo.jpeg",
-    alt: "OrgChart Logo",
-    "class": "header-logo"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" OrgChart")])], -1 /* HOISTED */)), _cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "welcome-message"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Welcome to OrgChart "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Select an organization to get started or create a new one.")], -1 /* HOISTED */)), $data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, _cache[2] || (_cache[2] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading your organizations...", -1 /* HOISTED */)]))) : $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Welcome to OrgChart"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Select an organization to get started or create a new one.")], -1 /* HOISTED */)), $data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, _cache[2] || (_cache[2] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading your organizations...", -1 /* HOISTED */)]))) : $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_cache[3] || (_cache[3] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-exclamation-triangle"
   }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */)])) : $data.organizations.length === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [_cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "You don't have any organizations yet.", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: "/organizations/create",
@@ -52222,7 +53085,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name && !org.logo_path ? org.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org && org.name ? org.name : 'Unnamed Organization'), 1 /* TEXT */), org && org.description ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(org.description), 1 /* TEXT */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), org && org.name === 'Demo Organization' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " Demo ")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_7);
   }), 128 /* KEYED_FRAGMENT */))]))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Organization dashboard when an organization is selected "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[8] || (_cache[8] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Organization dashboard when an organization is selected "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Show error message if there is one "), $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[7] || (_cache[7] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-exclamation-triangle"
   }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "btn-primary",
@@ -52231,18 +53094,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, " Return to Dashboard ")])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 1
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), _cache[10] || (_cache[10] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "dashboard-logo"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: "/img/logo.jpeg",
-    alt: "OrgChart Logo",
-    "class": "header-logo"
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" OrgChart")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.organization.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.toggleSidebar && $options.toggleSidebar.apply($options, arguments);
     }),
     "class": "btn-toggle"
-  }, _cache[9] || (_cache[9] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[8] || (_cache[8] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-bars"
   }, null, -1 /* HOISTED */)]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["main-container", {
@@ -52250,8 +53107,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_sidebar, {
     organization: $data.organization,
-    open: $data.sidebarOpen
-  }, null, 8 /* PROPS */, ["organization", "open"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.dashboardMetrics, function (metric) {
+    open: $data.sidebarOpen,
+    onError: $options.handleError
+  }, null, 8 /* PROPS */, ["organization", "open", "onError"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [$data.dashboardMetrics.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.dashboardMetrics, function (metric) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "metric-card",
       key: metric.id
@@ -52263,7 +53121,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($options.getTrendIcon(metric.trend))
     }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatTrendValue(metric.trend)), 1 /* TEXT */)], 2 /* CLASS */)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(metric.name), 1 /* TEXT */)]);
-  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
+  }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: tab.id,
       onClick: function onClick($event) {
@@ -54188,6 +55046,756 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+
+var _hoisted_1 = {
+  "class": "settings-container"
+};
+var _hoisted_2 = {
+  key: 0,
+  "class": "loading-container"
+};
+var _hoisted_3 = {
+  key: 1,
+  "class": "error-message"
+};
+var _hoisted_4 = {
+  key: 2,
+  "class": "settings-content"
+};
+var _hoisted_5 = {
+  "class": "tab-navigation"
+};
+var _hoisted_6 = ["onClick"];
+var _hoisted_7 = {
+  "class": "tab-content"
+};
+var _hoisted_8 = {
+  key: 0,
+  "class": "general-settings"
+};
+var _hoisted_9 = {
+  "class": "form-group"
+};
+var _hoisted_10 = {
+  "class": "form-group"
+};
+var _hoisted_11 = {
+  "class": "form-row"
+};
+var _hoisted_12 = {
+  "class": "form-group"
+};
+var _hoisted_13 = {
+  "class": "color-picker-group"
+};
+var _hoisted_14 = {
+  "class": "form-group"
+};
+var _hoisted_15 = {
+  "class": "color-picker-group"
+};
+var _hoisted_16 = {
+  "class": "form-group"
+};
+var _hoisted_17 = {
+  "class": "file-upload"
+};
+var _hoisted_18 = {
+  key: 0,
+  "class": "file-name"
+};
+var _hoisted_19 = {
+  key: 1,
+  "class": "file-name"
+};
+var _hoisted_20 = {
+  key: 2,
+  "class": "file-name placeholder"
+};
+var _hoisted_21 = {
+  key: 0,
+  "class": "logo-preview"
+};
+var _hoisted_22 = ["src"];
+var _hoisted_23 = {
+  "class": "form-actions"
+};
+var _hoisted_24 = ["disabled"];
+var _hoisted_25 = {
+  key: 0
+};
+var _hoisted_26 = {
+  key: 1
+};
+var _hoisted_27 = {
+  "class": "setting-section danger-zone"
+};
+var _hoisted_28 = {
+  "class": "danger-actions"
+};
+var _hoisted_29 = {
+  key: 1,
+  "class": "users-management"
+};
+var _hoisted_30 = {
+  "class": "tab-actions"
+};
+var _hoisted_31 = {
+  "class": "users-table-wrapper"
+};
+var _hoisted_32 = {
+  "class": "users-table"
+};
+var _hoisted_33 = {
+  key: 0,
+  "class": "admin-badge"
+};
+var _hoisted_34 = {
+  key: 1
+};
+var _hoisted_35 = {
+  "class": "actions"
+};
+var _hoisted_36 = ["onClick"];
+var _hoisted_37 = ["onClick", "disabled"];
+var _hoisted_38 = {
+  key: 0
+};
+var _hoisted_39 = {
+  key: 2,
+  "class": "departments-settings"
+};
+var _hoisted_40 = {
+  "class": "tab-actions"
+};
+var _hoisted_41 = {
+  "class": "departments-grid"
+};
+var _hoisted_42 = {
+  "class": "card-actions"
+};
+var _hoisted_43 = ["onClick"];
+var _hoisted_44 = ["onClick"];
+var _hoisted_45 = {
+  "class": "card-content"
+};
+var _hoisted_46 = {
+  key: 0
+};
+var _hoisted_47 = {
+  key: 1
+};
+var _hoisted_48 = {
+  key: 0,
+  "class": "empty-state-card"
+};
+var _hoisted_49 = {
+  key: 3,
+  "class": "security-settings"
+};
+var _hoisted_50 = {
+  "class": "setting-section"
+};
+var _hoisted_51 = {
+  "class": "toggle-setting"
+};
+var _hoisted_52 = {
+  "class": "toggle"
+};
+var _hoisted_53 = {
+  "class": "setting-status"
+};
+var _hoisted_54 = {
+  "class": "setting-section"
+};
+var _hoisted_55 = {
+  key: 0,
+  "class": "api-tokens-list"
+};
+var _hoisted_56 = {
+  "class": "token-details"
+};
+var _hoisted_57 = {
+  "class": "token-name"
+};
+var _hoisted_58 = {
+  "class": "token-created"
+};
+var _hoisted_59 = ["onClick"];
+var _hoisted_60 = {
+  key: 1,
+  "class": "empty-state"
+};
+var _hoisted_61 = {
+  key: 4,
+  "class": "notification-settings"
+};
+var _hoisted_62 = {
+  "class": "notification-options"
+};
+var _hoisted_63 = {
+  "class": "notification-group"
+};
+var _hoisted_64 = {
+  "class": "option-details"
+};
+var _hoisted_65 = {
+  "class": "option-name"
+};
+var _hoisted_66 = {
+  "class": "option-description"
+};
+var _hoisted_67 = {
+  "class": "toggle"
+};
+var _hoisted_68 = ["onUpdate:modelValue"];
+var _hoisted_69 = {
+  "class": "notification-group"
+};
+var _hoisted_70 = {
+  "class": "option-details"
+};
+var _hoisted_71 = {
+  "class": "option-name"
+};
+var _hoisted_72 = {
+  "class": "option-description"
+};
+var _hoisted_73 = {
+  "class": "toggle"
+};
+var _hoisted_74 = ["onUpdate:modelValue"];
+var _hoisted_75 = {
+  "class": "modal-content"
+};
+var _hoisted_76 = {
+  "class": "modal-header"
+};
+var _hoisted_77 = {
+  "class": "modal-body"
+};
+var _hoisted_78 = {
+  "class": "form-group"
+};
+var _hoisted_79 = {
+  "class": "form-group"
+};
+var _hoisted_80 = ["value"];
+var _hoisted_81 = {
+  "class": "form-group checkbox-group"
+};
+var _hoisted_82 = {
+  "class": "checkbox-label"
+};
+var _hoisted_83 = {
+  "class": "form-group"
+};
+var _hoisted_84 = {
+  "class": "modal-footer"
+};
+var _hoisted_85 = ["disabled"];
+var _hoisted_86 = {
+  "class": "modal-content"
+};
+var _hoisted_87 = {
+  "class": "modal-header"
+};
+var _hoisted_88 = {
+  "class": "modal-body"
+};
+var _hoisted_89 = {
+  "class": "form-group"
+};
+var _hoisted_90 = {
+  "class": "form-group"
+};
+var _hoisted_91 = {
+  "class": "form-group"
+};
+var _hoisted_92 = {
+  "class": "form-group"
+};
+var _hoisted_93 = {
+  "class": "color-picker-group"
+};
+var _hoisted_94 = {
+  "class": "modal-footer"
+};
+var _hoisted_95 = ["disabled"];
+var _hoisted_96 = {
+  key: 5,
+  "class": "modal-backdrop"
+};
+var _hoisted_97 = {
+  "class": "modal-content modal-sm"
+};
+var _hoisted_98 = {
+  "class": "modal-header"
+};
+var _hoisted_99 = {
+  "class": "modal-body"
+};
+var _hoisted_100 = {
+  "class": "warning-message"
+};
+var _hoisted_101 = {
+  "class": "warning-details"
+};
+var _hoisted_102 = {
+  key: 0,
+  "class": "confirm-input"
+};
+var _hoisted_103 = {
+  "class": "modal-footer"
+};
+var _hoisted_104 = ["disabled"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_cache[104] || (_cache[104] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "settings-header"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, "Organization Settings"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "subtitle"
+  }, "Manage your organization details, users, and preferences")], -1 /* HOISTED */)), $data.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, _cache[42] || (_cache[42] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "spinner"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-circle-notch fa-spin"
+  })], -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Loading organization settings...", -1 /* HOISTED */)]))) : $data.error ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [_cache[43] || (_cache[43] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-exclamation-circle"
+  }, null, -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.error), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.fetchOrganizationData && $options.fetchOrganizationData.apply($options, arguments);
+    }),
+    "class": "btn-retry"
+  }, "Retry")])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.tabs, function (tab) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", {
+      key: tab.id,
+      onClick: function onClick($event) {
+        return $data.activeTab = tab.id;
+      },
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(['tab-button', {
+        active: $data.activeTab === tab.id
+      }])
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(tab.icon)
+    }, null, 2 /* CLASS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(tab.name), 1 /* TEXT */)], 10 /* CLASS, PROPS */, _hoisted_6);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" General Settings Tab "), $data.activeTab === 'general' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8, [_cache[54] || (_cache[54] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Organization Details", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.updateOrganizationDetails && $options.updateOrganizationDetails.apply($options, arguments);
+    }, ["prevent"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_cache[44] || (_cache[44] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "org-name"
+  }, "Organization Name", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "org-name",
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+      return $data.organizationForm.name = $event;
+    }),
+    type: "text",
+    required: "",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[45] || (_cache[45] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "org-description"
+  }, "Description", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+    id: "org-description",
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+      return $data.organizationForm.description = $event;
+    }),
+    rows: "3",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_cache[46] || (_cache[46] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "primary-color"
+  }, "Primary Color", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "primary-color",
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+      return $data.organizationForm.primary_color = $event;
+    }),
+    type: "color",
+    "class": "color-picker"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.primary_color]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+      return $data.organizationForm.primary_color = $event;
+    }),
+    type: "text",
+    "class": "form-control color-text"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.primary_color]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_cache[47] || (_cache[47] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "secondary-color"
+  }, "Secondary Color", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "secondary-color",
+    "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
+      return $data.organizationForm.secondary_color = $event;
+    }),
+    type: "color",
+    "class": "color-picker"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.secondary_color]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
+      return $data.organizationForm.secondary_color = $event;
+    }),
+    type: "text",
+    "class": "form-control color-text"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.organizationForm.secondary_color]])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [_cache[49] || (_cache[49] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "org-logo"
+  }, "Organization Logo", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "file",
+    id: "org-logo",
+    ref: "logoInput",
+    onChange: _cache[7] || (_cache[7] = function () {
+      return $options.handleLogoUpload && $options.handleLogoUpload.apply($options, arguments);
+    }),
+    accept: "image/*",
+    "class": "file-input"
+  }, null, 544 /* NEED_HYDRATION, NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    onClick: _cache[8] || (_cache[8] = function () {
+      return $options.triggerLogoUpload && $options.triggerLogoUpload.apply($options, arguments);
+    }),
+    "class": "btn-secondary"
+  }, _cache[48] || (_cache[48] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-upload"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Choose File ")])), $data.logoFile ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.logoFile.name), 1 /* TEXT */)) : $data.organizationForm.logo_path ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_19, "Current logo")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_20, "No file chosen"))]), $data.logoPreview ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: $data.logoPreview,
+    alt: "Logo preview"
+  }, null, 8 /* PROPS */, _hoisted_22)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "submit",
+    "class": "btn-primary",
+    disabled: $data.saving
+  }, [$data.saving ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_25, _cache[50] || (_cache[50] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-spinner fa-spin"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Saving... ")]))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_26, "Save Changes"))], 8 /* PROPS */, _hoisted_24)])], 32 /* NEED_HYDRATION */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[52] || (_cache[52] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Danger Zone", -1 /* HOISTED */)), _cache[53] || (_cache[53] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "warning-text"
+  }, "The following actions are destructive and cannot be reversed.", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[10] || (_cache[10] = function () {
+      return $options.showDeleteOrganizationConfirmation && $options.showDeleteOrganizationConfirmation.apply($options, arguments);
+    }),
+    "class": "btn-danger"
+  }, _cache[51] || (_cache[51] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-trash"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Delete Organization ")]))])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" User Management Tab "), $data.activeTab === 'users' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[56] || (_cache[56] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Users & Permissions", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[11] || (_cache[11] = function ($event) {
+      return $data.showInviteUserModal = true;
+    }),
+    "class": "btn-primary"
+  }, _cache[55] || (_cache[55] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-user-plus"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Invite User ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_32, [_cache[61] || (_cache[61] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Name"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Email"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Role"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Admin"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Actions")])], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.users, function (user) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", {
+      key: user.id
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.email), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(user.role ? user.role.name : 'No Role'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [user.pivot && user.pivot.is_admin ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_33, _toConsumableArray(_cache[57] || (_cache[57] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-check-circle"
+    }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Admin ")])))) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_34, "-"))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.editUser(user);
+      },
+      "class": "btn-action"
+    }, _toConsumableArray(_cache[58] || (_cache[58] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-edit"
+    }, null, -1 /* HOISTED */)])), 8 /* PROPS */, _hoisted_36), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.confirmRemoveUser(user);
+      },
+      "class": "btn-action",
+      disabled: user.pivot && user.pivot.is_admin && $data.currentUser.id === user.id
+    }, _toConsumableArray(_cache[59] || (_cache[59] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-user-minus"
+    }, null, -1 /* HOISTED */)])), 8 /* PROPS */, _hoisted_37)])]);
+  }), 128 /* KEYED_FRAGMENT */)), $data.users.length === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", _hoisted_38, _cache[60] || (_cache[60] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+    colspan: "5",
+    "class": "empty-state"
+  }, "No users found", -1 /* HOISTED */)]))) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Departments Tab "), $data.activeTab === 'departments' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[63] || (_cache[63] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Departments", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[12] || (_cache[12] = function ($event) {
+      return _ctx.showAddDepartmentModal = true;
+    }),
+    "class": "btn-primary"
+  }, _cache[62] || (_cache[62] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-plus"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Add Department ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (department) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: department.id,
+      "class": "department-card"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+      "class": "card-header",
+      style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
+        backgroundColor: department.color || '#4caf50'
+      })
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.editDepartment(department);
+      },
+      "class": "btn-action"
+    }, _toConsumableArray(_cache[64] || (_cache[64] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-edit"
+    }, null, -1 /* HOISTED */)])), 8 /* PROPS */, _hoisted_43), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.confirmDeleteDepartment(department);
+      },
+      "class": "btn-action"
+    }, _toConsumableArray(_cache[65] || (_cache[65] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-trash"
+    }, null, -1 /* HOISTED */)])), 8 /* PROPS */, _hoisted_44)])], 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [department.code ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_46, [_cache[66] || (_cache[66] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Code:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.code), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), department.description ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("p", _hoisted_47, [_cache[67] || (_cache[67] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Description:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.description), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [_cache[68] || (_cache[68] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Positions:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.getDepartmentPositionCount(department)), 1 /* TEXT */)])])]);
+  }), 128 /* KEYED_FRAGMENT */)), $data.departments.length === 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_48, [_cache[69] || (_cache[69] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-building"
+  }, null, -1 /* HOISTED */)), _cache[70] || (_cache[70] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "No departments yet", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[13] || (_cache[13] = function ($event) {
+      return _ctx.showAddDepartmentModal = true;
+    }),
+    "class": "btn-primary"
+  }, "Add Department")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Account and Security Tab "), $data.activeTab === 'security' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_49, [_cache[80] || (_cache[80] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Account & Security", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [_cache[73] || (_cache[73] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Two-Factor Authentication", -1 /* HOISTED */)), _cache[74] || (_cache[74] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "section-description"
+  }, " Enable two-factor authentication to add an extra layer of security to your account. ", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_51, [_cache[72] || (_cache[72] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    "class": "setting-label"
+  }, "Two-Factor Authentication", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "checkbox",
+    "onUpdate:modelValue": _cache[14] || (_cache[14] = function ($event) {
+      return $data.twoFactorEnabled = $event;
+    }),
+    onChange: _cache[15] || (_cache[15] = function () {
+      return $options.toggleTwoFactor && $options.toggleTwoFactor.apply($options, arguments);
+    })
+  }, null, 544 /* NEED_HYDRATION, NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $data.twoFactorEnabled]]), _cache[71] || (_cache[71] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    "class": "toggle-slider"
+  }, null, -1 /* HOISTED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.twoFactorEnabled ? 'Enabled' : 'Disabled'), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_54, [_cache[78] || (_cache[78] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "API Tokens", -1 /* HOISTED */)), _cache[79] || (_cache[79] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "section-description"
+  }, " Create and manage API tokens to interact with our API from external applications. ", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[16] || (_cache[16] = function ($event) {
+      return $data.showCreateTokenModal = true;
+    }),
+    "class": "btn-secondary"
+  }, _cache[75] || (_cache[75] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-key"
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Create New Token ")])), $data.apiTokens.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_55, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.apiTokens, function (token) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: token.id,
+      "class": "token-item"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(token.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, "Created: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.formatDate(token.created_at)), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+      onClick: function onClick($event) {
+        return $options.revokeToken(token);
+      },
+      "class": "btn-danger-outline"
+    }, _toConsumableArray(_cache[76] || (_cache[76] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+      "class": "fas fa-trash"
+    }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Revoke ")])), 8 /* PROPS */, _hoisted_59)]);
+  }), 128 /* KEYED_FRAGMENT */))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_60, _cache[77] || (_cache[77] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "No API tokens created", -1 /* HOISTED */)])))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Notifications Tab "), $data.activeTab === 'notifications' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_61, [_cache[85] || (_cache[85] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Notification Preferences", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_62, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [_cache[82] || (_cache[82] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Email Notifications", -1 /* HOISTED */)), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.emailNotifications, function (option, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: 'email-' + index,
+      "class": "notification-option"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_65, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_66, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.description), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_67, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+      type: "checkbox",
+      "onUpdate:modelValue": function onUpdateModelValue($event) {
+        return option.enabled = $event;
+      },
+      onChange: _cache[17] || (_cache[17] = function () {
+        return $options.updateNotificationPreferences && $options.updateNotificationPreferences.apply($options, arguments);
+      })
+    }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_68), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, option.enabled]]), _cache[81] || (_cache[81] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+      "class": "toggle-slider"
+    }, null, -1 /* HOISTED */))])]);
+  }), 128 /* KEYED_FRAGMENT */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_69, [_cache[84] || (_cache[84] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "In-App Notifications", -1 /* HOISTED */)), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.appNotifications, function (option, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+      key: 'app-' + index,
+      "class": "notification-option"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_70, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_71, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_72, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(option.description), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_73, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+      type: "checkbox",
+      "onUpdate:modelValue": function onUpdateModelValue($event) {
+        return option.enabled = $event;
+      },
+      onChange: _cache[18] || (_cache[18] = function () {
+        return $options.updateNotificationPreferences && $options.updateNotificationPreferences.apply($options, arguments);
+      })
+    }, null, 40 /* PROPS, NEED_HYDRATION */, _hoisted_74), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, option.enabled]]), _cache[83] || (_cache[83] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+      "class": "toggle-slider"
+    }, null, -1 /* HOISTED */))])]);
+  }), 128 /* KEYED_FRAGMENT */))])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Invite User Modal "), $data.showInviteUserModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+    key: 3,
+    "class": "modal-backdrop",
+    onClick: _cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+      return $data.showInviteUserModal = false;
+    }, ["self"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_75, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_76, [_cache[87] || (_cache[87] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Invite User", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[19] || (_cache[19] = function ($event) {
+      return $data.showInviteUserModal = false;
+    }),
+    "class": "btn-close"
+  }, _cache[86] || (_cache[86] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-times"
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_77, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: _cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.inviteUser && $options.inviteUser.apply($options, arguments);
+    }, ["prevent"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_78, [_cache[88] || (_cache[88] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "invite-email"
+  }, "Email Address", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "invite-email",
+    "onUpdate:modelValue": _cache[20] || (_cache[20] = function ($event) {
+      return $data.inviteForm.email = $event;
+    }),
+    type: "email",
+    required: "",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.inviteForm.email]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_79, [_cache[89] || (_cache[89] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "invite-role"
+  }, "Role", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
+    id: "invite-role",
+    "onUpdate:modelValue": _cache[21] || (_cache[21] = function ($event) {
+      return $data.inviteForm.role_id = $event;
+    }),
+    "class": "form-control"
+  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.roles, function (role) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
+      key: role.id,
+      value: role.id
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(role.name), 9 /* TEXT, PROPS */, _hoisted_80);
+  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.inviteForm.role_id]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_81, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", _hoisted_82, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "checkbox",
+    "onUpdate:modelValue": _cache[22] || (_cache[22] = function ($event) {
+      return $data.inviteForm.is_admin = $event;
+    })
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, $data.inviteForm.is_admin]]), _cache[90] || (_cache[90] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Make organization admin "))]), _cache[91] || (_cache[91] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "help-text"
+  }, "Organization admins can manage users, settings, and all data.", -1 /* HOISTED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_83, [_cache[92] || (_cache[92] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "invite-message"
+  }, "Personal Message (Optional)", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+    id: "invite-message",
+    "onUpdate:modelValue": _cache[23] || (_cache[23] = function ($event) {
+      return $data.inviteForm.message = $event;
+    }),
+    rows: "3",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.inviteForm.message]])])], 32 /* NEED_HYDRATION */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_84, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[25] || (_cache[25] = function () {
+      return $options.inviteUser && $options.inviteUser.apply($options, arguments);
+    }),
+    "class": "btn-primary",
+    disabled: !$data.inviteForm.email
+  }, " Send Invitation ", 8 /* PROPS */, _hoisted_85), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[26] || (_cache[26] = function ($event) {
+      return $data.showInviteUserModal = false;
+    }),
+    "class": "btn-secondary"
+  }, " Cancel ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Add/Edit Department Modal "), $data.showDepartmentModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+    key: 4,
+    "class": "modal-backdrop",
+    onClick: _cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+      return $data.showDepartmentModal = false;
+    }, ["self"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_86, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_87, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.editingDepartment ? 'Edit Department' : 'Add Department'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[28] || (_cache[28] = function ($event) {
+      return $data.showDepartmentModal = false;
+    }),
+    "class": "btn-close"
+  }, _cache[93] || (_cache[93] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-times"
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_88, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
+    onSubmit: _cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.saveDepartment && $options.saveDepartment.apply($options, arguments);
+    }, ["prevent"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_89, [_cache[94] || (_cache[94] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "dept-name"
+  }, "Department Name", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "dept-name",
+    "onUpdate:modelValue": _cache[29] || (_cache[29] = function ($event) {
+      return $data.departmentForm.name = $event;
+    }),
+    type: "text",
+    required: "",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.departmentForm.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_90, [_cache[95] || (_cache[95] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "dept-code"
+  }, "Department Code", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "dept-code",
+    "onUpdate:modelValue": _cache[30] || (_cache[30] = function ($event) {
+      return $data.departmentForm.code = $event;
+    }),
+    type: "text",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.departmentForm.code]]), _cache[96] || (_cache[96] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    "class": "help-text"
+  }, "Optional code for integrations or reporting", -1 /* HOISTED */))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_91, [_cache[97] || (_cache[97] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "dept-description"
+  }, "Description", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+    id: "dept-description",
+    "onUpdate:modelValue": _cache[31] || (_cache[31] = function ($event) {
+      return $data.departmentForm.description = $event;
+    }),
+    rows: "3",
+    "class": "form-control"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.departmentForm.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_92, [_cache[98] || (_cache[98] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "dept-color"
+  }, "Color", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_93, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "dept-color",
+    "onUpdate:modelValue": _cache[32] || (_cache[32] = function ($event) {
+      return $data.departmentForm.color = $event;
+    }),
+    type: "color",
+    "class": "color-picker"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.departmentForm.color]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "onUpdate:modelValue": _cache[33] || (_cache[33] = function ($event) {
+      return $data.departmentForm.color = $event;
+    }),
+    type: "text",
+    "class": "form-control color-text"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.departmentForm.color]])])])], 32 /* NEED_HYDRATION */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_94, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[35] || (_cache[35] = function () {
+      return $options.saveDepartment && $options.saveDepartment.apply($options, arguments);
+    }),
+    "class": "btn-primary",
+    disabled: !$data.departmentForm.name
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.editingDepartment ? 'Update Department' : 'Add Department'), 9 /* TEXT, PROPS */, _hoisted_95), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[36] || (_cache[36] = function ($event) {
+      return $data.showDepartmentModal = false;
+    }),
+    "class": "btn-secondary"
+  }, " Cancel ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Delete Confirmation Modal "), $data.showDeleteConfirmation ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_96, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_97, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_98, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.deleteConfirmType === 'organization' ? 'Delete Organization' : 'Delete Department'), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[38] || (_cache[38] = function ($event) {
+      return $data.showDeleteConfirmation = false;
+    }),
+    "class": "btn-close"
+  }, _cache[99] || (_cache[99] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-times"
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_99, [_cache[103] || (_cache[103] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "warning-icon"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "fas fa-exclamation-triangle"
+  })], -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_100, [_cache[100] || (_cache[100] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Are you sure you want to delete ")), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.deleteConfirmName), 1 /* TEXT */), _cache[101] || (_cache[101] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("? "))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_101, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.deleteConfirmType === 'organization' ? 'This will permanently delete all data associated with this organization including scenarios, positions, and departments.' : 'This will permanently delete this department and unassign all positions currently in this department.'), 1 /* TEXT */), $data.deleteConfirmType === 'organization' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_102, [_cache[102] || (_cache[102] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "confirm-text"
+  }, "Type the organization name to confirm:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    id: "confirm-text",
+    "onUpdate:modelValue": _cache[39] || (_cache[39] = function ($event) {
+      return $data.deleteConfirmInput = $event;
+    }),
+    type: "text",
+    "class": "form-control",
+    placeholder: "Type name to confirm"
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.deleteConfirmInput]])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_103, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[40] || (_cache[40] = function () {
+      return $options.confirmDelete && $options.confirmDelete.apply($options, arguments);
+    }),
+    "class": "btn-danger",
+    disabled: $data.deleteConfirmType === 'organization' && $data.deleteConfirmInput !== $data.deleteConfirmName
+  }, " Delete " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.deleteConfirmType === 'organization' ? 'Organization' : 'Department'), 9 /* TEXT, PROPS */, _hoisted_104), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[41] || (_cache[41] = function ($event) {
+      return $data.showDeleteConfirmation = false;
+    }),
+    "class": "btn-secondary"
+  }, " Cancel ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=template&id=00e97c83&scoped=true":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationsList.vue?vue&type=template&id=00e97c83&scoped=true ***!
@@ -55011,87 +56619,88 @@ var _hoisted_3 = {
   "class": "org-name"
 };
 var _hoisted_4 = {
-  "class": "sidebar-content"
+  key: 1,
+  "class": "org-info"
 };
 var _hoisted_5 = {
-  "class": "sidebar-section"
+  "class": "sidebar-content"
 };
 var _hoisted_6 = {
-  "class": "nav-list"
+  "class": "sidebar-section"
 };
 var _hoisted_7 = {
-  "class": "nav-item"
+  "class": "nav-list"
 };
 var _hoisted_8 = {
   "class": "nav-item"
 };
 var _hoisted_9 = {
-  "class": "sidebar-section"
+  "class": "nav-item"
 };
 var _hoisted_10 = {
+  "class": "sidebar-section"
+};
+var _hoisted_11 = {
   key: 0,
   "class": "empty-state"
 };
-var _hoisted_11 = {
+var _hoisted_12 = {
   key: 1,
   "class": "scenario-list"
 };
-var _hoisted_12 = ["onClick"];
-var _hoisted_13 = {
+var _hoisted_13 = ["onClick"];
+var _hoisted_14 = {
   "class": "scenario-name"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   "class": "scenario-badges"
 };
-var _hoisted_15 = {
+var _hoisted_16 = {
   key: 0,
   "class": "badge badge-primary"
 };
-var _hoisted_16 = {
+var _hoisted_17 = {
   key: 1,
   "class": "badge badge-secondary"
 };
-var _hoisted_17 = {
+var _hoisted_18 = {
   "class": "sidebar-section"
 };
-var _hoisted_18 = {
+var _hoisted_19 = {
   key: 0,
   "class": "empty-state"
 };
-var _hoisted_19 = {
+var _hoisted_20 = {
   key: 1,
   "class": "department-list"
 };
-var _hoisted_20 = {
+var _hoisted_21 = {
   "class": "department-name"
 };
-var _hoisted_21 = {
+var _hoisted_22 = {
   "class": "sidebar-footer"
 };
-var _hoisted_22 = {
+var _hoisted_23 = {
   "class": "user-info"
 };
-var _hoisted_23 = {
+var _hoisted_24 = {
   "class": "user-avatar"
 };
-var _hoisted_24 = {
+var _hoisted_25 = {
   "class": "user-name"
 };
-var _hoisted_25 = {
+var _hoisted_26 = {
   key: 0,
   "class": "modal-backdrop"
 };
-var _hoisted_26 = {
+var _hoisted_27 = {
   "class": "modal-content"
 };
-var _hoisted_27 = {
+var _hoisted_28 = {
   "class": "modal-header"
 };
-var _hoisted_28 = {
-  "class": "modal-body"
-};
 var _hoisted_29 = {
-  "class": "form-group"
+  "class": "modal-body"
 };
 var _hoisted_30 = {
   "class": "form-group"
@@ -55099,26 +56708,26 @@ var _hoisted_30 = {
 var _hoisted_31 = {
   "class": "form-group"
 };
-var _hoisted_32 = ["value"];
-var _hoisted_33 = {
+var _hoisted_32 = {
+  "class": "form-group"
+};
+var _hoisted_33 = ["value"];
+var _hoisted_34 = {
   "class": "modal-footer"
 };
-var _hoisted_34 = ["disabled"];
-var _hoisted_35 = {
+var _hoisted_35 = ["disabled"];
+var _hoisted_36 = {
   key: 1,
   "class": "modal-backdrop"
 };
-var _hoisted_36 = {
+var _hoisted_37 = {
   "class": "modal-content"
 };
-var _hoisted_37 = {
+var _hoisted_38 = {
   "class": "modal-header"
 };
-var _hoisted_38 = {
-  "class": "modal-body"
-};
 var _hoisted_39 = {
-  "class": "form-group"
+  "class": "modal-body"
 };
 var _hoisted_40 = {
   "class": "form-group"
@@ -55130,9 +56739,12 @@ var _hoisted_42 = {
   "class": "form-group"
 };
 var _hoisted_43 = {
+  "class": "form-group"
+};
+var _hoisted_44 = {
   "class": "modal-footer"
 };
-var _hoisted_44 = ["disabled"];
+var _hoisted_45 = ["disabled"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
@@ -55142,42 +56754,49 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [$props.organization && $props.organization.name ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "org-logo",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)($props.organization.logo_path ? {
-      backgroundImage: "url(".concat($props.organization.logo_path, ")")
+      backgroundImage: "url(".concat($options.getLogoUrl($props.organization.logo_path), ")")
     } : {
       backgroundColor: $props.organization.primary_color || '#4caf50'
     })
-  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(!$props.organization.logo_path ? $props.organization.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.organization.name), 1 /* TEXT */)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(!$props.organization.logo_path ? $props.organization.name.charAt(0) : ''), 5 /* TEXT, STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.organization.name), 1 /* TEXT */)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, _cache[17] || (_cache[17] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "org-logo",
+    style: {
+      "backgroundColor": "'#4caf50'"
+    }
+  }, "?", -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "org-name"
+  }, "Loading...", -1 /* HOISTED */)]))), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return _ctx.$emit('toggle');
     }),
     "class": "btn-toggle-sidebar"
-  }, _cache[17] || (_cache[17] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[18] || (_cache[18] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-chevron-left"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_cache[20] || (_cache[20] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_cache[21] || (_cache[21] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Navigation", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/organizations/".concat($props.organization.id, "/dashboard"),
-    "class": "nav-link"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return _cache[18] || (_cache[18] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-        "class": "fas fa-tachometer-alt"
-      }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Dashboard", -1 /* HOISTED */)]);
-    }),
-    _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: "/organizations/".concat($props.organization.id, "/settings"),
+  }, "Navigation", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: $props.organization.id ? "/organizations/".concat($props.organization.id, "/dashboard") : '/dashboard',
     "class": "nav-link"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return _cache[19] || (_cache[19] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+        "class": "fas fa-tachometer-alt"
+      }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Dashboard", -1 /* HOISTED */)]);
+    }),
+    _: 1 /* STABLE */
+  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: $props.organization.id ? "/organizations/".concat($props.organization.id, "/settings") : '/dashboard',
+    "class": "nav-link"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return _cache[20] || (_cache[20] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
         "class": "fas fa-cog"
       }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Settings", -1 /* HOISTED */)]);
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["to"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_cache[22] || (_cache[22] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, 8 /* PROPS */, ["to"])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [_cache[23] || (_cache[23] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Scenarios", -1 /* HOISTED */)), !$data.scenarios.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, " No scenarios created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_11, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.scenarios, function (scenario) {
+  }, "Scenarios", -1 /* HOISTED */)), !$data.scenarios.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_11, " No scenarios created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_12, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.scenarios, function (scenario) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: scenario.id,
       "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["scenario-item", {
@@ -55189,17 +56808,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       onClick: function onClick($event) {
         return $options.selectScenario(scenario);
       }
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [scenario.is_current ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_15, "Current")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), scenario.is_base ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_16, "Base")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_12)], 2 /* CLASS */);
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [scenario.is_current ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_16, "Current")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), scenario.is_base ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_17, "Base")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 8 /* PROPS */, _hoisted_13)], 2 /* CLASS */);
   }), 128 /* KEYED_FRAGMENT */))])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[1] || (_cache[1] = function () {
       return $options.createNewScenario && $options.createNewScenario.apply($options, arguments);
     }),
     "class": "btn btn-secondary btn-block mt-2"
-  }, _cache[21] || (_cache[21] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[22] || (_cache[22] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-plus"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Scenario ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_cache[24] || (_cache[24] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Scenario ")]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_cache[25] || (_cache[25] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
     "class": "section-title"
-  }, "Departments", -1 /* HOISTED */)), !$data.departments.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, " No departments created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_19, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (department) {
+  }, "Departments", -1 /* HOISTED */)), !$data.departments.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_19, " No departments created yet ")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("ul", _hoisted_20, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.departments, function (department) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
       key: department.id,
       "class": "department-item"
@@ -55208,29 +56827,29 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
         backgroundColor: department.color || '#4caf50'
       })
-    }, null, 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.name), 1 /* TEXT */)]);
+    }, null, 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(department.name), 1 /* TEXT */)]);
   }), 128 /* KEYED_FRAGMENT */))])), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[2] || (_cache[2] = function () {
       return $options.createNewDepartment && $options.createNewDepartment.apply($options, arguments);
     }),
     "class": "btn btn-secondary btn-block mt-2"
-  }, _cache[23] || (_cache[23] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[24] || (_cache[24] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-plus"
-  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Department ")]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name.charAt(0) : ''), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name : ''), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, -1 /* HOISTED */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" New Department ")]))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name.charAt(0) : ''), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.user ? $data.user.name : ''), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[3] || (_cache[3] = function () {
       return $options.logout && $options.logout.apply($options, arguments);
     }),
     "class": "btn-logout"
-  }, _cache[25] || (_cache[25] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[26] || (_cache[26] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-sign-out-alt"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Scenario Modal "), $data.showNewScenarioModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_cache[27] || (_cache[27] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Scenario", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Scenario Modal "), $data.showNewScenarioModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [_cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Scenario", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[4] || (_cache[4] = function () {
       return $options.cancelNewScenario && $options.cancelNewScenario.apply($options, arguments);
     }),
     "class": "btn-close"
-  }, _cache[26] || (_cache[26] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[27] || (_cache[27] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_cache[28] || (_cache[28] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "scenario-name"
   }, "Scenario Name:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "scenario-name",
@@ -55238,7 +56857,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newScenario.name = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_cache[29] || (_cache[29] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "scenario-description"
   }, "Description:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     id: "scenario-description",
@@ -55246,7 +56865,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newScenario.description = $event;
     }),
     rows: "3"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [_cache[30] || (_cache[30] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newScenario.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [_cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "base-scenario"
   }, "Base Scenario:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     id: "base-scenario",
@@ -55257,28 +56876,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       key: scenario.id,
       value: scenario.id
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 9 /* TEXT, PROPS */, _hoisted_32);
-  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.newScenario.baseScenarioId]]), _cache[31] || (_cache[31] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(scenario.name), 9 /* TEXT, PROPS */, _hoisted_33);
+  }), 128 /* KEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.newScenario.baseScenarioId]]), _cache[32] || (_cache[32] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "form-help"
-  }, "New scenario will copy structure and data from the selected base scenario", -1 /* HOISTED */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "New scenario will copy structure and data from the selected base scenario", -1 /* HOISTED */))])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[8] || (_cache[8] = function () {
       return $options.saveNewScenario && $options.saveNewScenario.apply($options, arguments);
     }),
     "class": "btn-primary",
     disabled: !$data.newScenario.name
-  }, "Create Scenario", 8 /* PROPS */, _hoisted_34), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Create Scenario", 8 /* PROPS */, _hoisted_35), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[9] || (_cache[9] = function () {
       return $options.cancelNewScenario && $options.cancelNewScenario.apply($options, arguments);
     }),
     "class": "btn-secondary"
-  }, "Cancel")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Department Modal "), $data.showNewDepartmentModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [_cache[33] || (_cache[33] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Cancel")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" New Department Modal "), $data.showNewDepartmentModal ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [_cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, "Create New Department", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[10] || (_cache[10] = function () {
       return $options.cancelNewDepartment && $options.cancelNewDepartment.apply($options, arguments);
     }),
     "class": "btn-close"
-  }, _cache[32] || (_cache[32] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  }, _cache[33] || (_cache[33] = [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fas fa-times"
-  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [_cache[34] || (_cache[34] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, -1 /* HOISTED */)]))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[35] || (_cache[35] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-name"
   }, "Department Name:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-name",
@@ -55286,7 +56905,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.name = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_cache[35] || (_cache[35] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-code"
   }, "Department Code:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-code",
@@ -55294,7 +56913,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.code = $event;
     }),
     type: "text"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.code]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_cache[36] || (_cache[36] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.code]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [_cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-description"
   }, "Description:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     id: "department-description",
@@ -55302,7 +56921,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.description = $event;
     }),
     rows: "3"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [_cache[37] || (_cache[37] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [_cache[38] || (_cache[38] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "for": "department-color"
   }, "Color:", -1 /* HOISTED */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     id: "department-color",
@@ -55310,13 +56929,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.newDepartment.color = $event;
     }),
     type: "color"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.color]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $data.newDepartment.color]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[15] || (_cache[15] = function () {
       return $options.saveNewDepartment && $options.saveNewDepartment.apply($options, arguments);
     }),
     "class": "btn-primary",
     disabled: !$data.newDepartment.name
-  }, "Create Department", 8 /* PROPS */, _hoisted_44), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, "Create Department", 8 /* PROPS */, _hoisted_45), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     onClick: _cache[16] || (_cache[16] = function () {
       return $options.cancelNewDepartment && $options.cancelNewDepartment.apply($options, arguments);
     }),
@@ -56647,6 +58266,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationCreate_vue_vue_type_style_index_0_id_084a5b8c_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_style_index_0_id_73b37061_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_style_index_0_id_73b37061_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_style_index_0_id_73b37061_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -61192,16 +62841,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 // resources/js/app.js
-
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var _require = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js"),
   createApp = _require.createApp;
 var App = (__webpack_require__(/*! ./components/App.vue */ "./resources/js/components/App.vue")["default"]);
 var router = __webpack_require__(/*! ./router */ "./resources/js/router.js");
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs");
-
-// Import the auth module
 var auth = __webpack_require__(/*! ./auth */ "./resources/js/auth.js");
+var ThemeService = __webpack_require__(/*! ./services/ThemeService */ "./resources/js/services/ThemeService.js");
+window.ThemeService = ThemeService;
 
 // Make sure it's defined before using it
 if (auth) {
@@ -62058,6 +63706,82 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/OrganizationSettings.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/OrganizationSettings.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _OrganizationSettings_vue_vue_type_template_id_73b37061_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true */ "./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true");
+/* harmony import */ var _OrganizationSettings_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OrganizationSettings.vue?vue&type=script&lang=js */ "./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js");
+/* harmony import */ var _OrganizationSettings_vue_vue_type_style_index_0_id_73b37061_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css */ "./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+
+
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_OrganizationSettings_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_OrganizationSettings_vue_vue_type_template_id_73b37061_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-73b37061"],['__file',"resources/js/components/OrganizationSettings.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
+/***/ "./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_laravel_mix_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OrganizationSettings.vue?vue&type=script&lang=js */ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css":
+/*!******************************************************************************************************************!*\
+  !*** ./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css ***!
+  \******************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_style_index_0_id_73b37061_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=style&index=0&id=73b37061&scoped=true&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true ***!
+  \****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_laravel_mix_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_template_id_73b37061_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OrganizationSettings_vue_vue_type_template_id_73b37061_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true */ "./node_modules/laravel-mix/node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/OrganizationSettings.vue?vue&type=template&id=73b37061&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/OrganizationsList.vue":
 /*!*******************************************************!*\
   !*** ./resources/js/components/OrganizationsList.vue ***!
@@ -62457,6 +64181,7 @@ var Login = (__webpack_require__(/*! ./components/Login.vue */ "./resources/js/c
 var Register = (__webpack_require__(/*! ./components/Register.vue */ "./resources/js/components/Register.vue")["default"]);
 var OrganizationsList = (__webpack_require__(/*! ./components/OrganizationsList.vue */ "./resources/js/components/OrganizationsList.vue")["default"]);
 var OrganizationCreate = (__webpack_require__(/*! ./components/OrganizationCreate.vue */ "./resources/js/components/OrganizationCreate.vue")["default"]);
+var OrganizationSettings = (__webpack_require__(/*! ./components/OrganizationSettings.vue */ "./resources/js/components/OrganizationSettings.vue")["default"]);
 var ScenarioDetail = (__webpack_require__(/*! ./components/ScenarioDetail.vue */ "./resources/js/components/ScenarioDetail.vue")["default"]);
 var axios = __webpack_require__(/*! axios */ "./node_modules/axios/dist/browser/axios.cjs");
 
@@ -62509,9 +64234,17 @@ var router = createRouter({
       requiresAuth: true
     },
     props: function props(route) {
+      // Ensure ID is properly passed as a prop
+      var id = Number(route.params.id) || null;
       return {
-        organizationId: route.params.id
+        organizationId: id
       };
+    },
+    // ensure the component is recreated when the route changes
+    beforeRouteUpdate: function beforeRouteUpdate(to, from, next) {
+      // This will be called when the route params change but the component stays the same
+      console.log("Route is updating from", from.params.id, "to", to.params.id);
+      next();
     }
   }, {
     path: '/organizations/:id/departments',
@@ -62557,6 +64290,14 @@ var router = createRouter({
     path: '/organizations/:id/scenarios/:scenarioId/detail',
     component: ScenarioDetail,
     name: 'organizations.scenarios.detail',
+    meta: {
+      requiresAuth: true
+    },
+    props: true
+  }, {
+    path: '/organizations/:id/settings',
+    component: OrganizationSettings,
+    name: 'organizations.settings',
     meta: {
       requiresAuth: true
     },
@@ -62621,6 +64362,84 @@ router.beforeEach(/*#__PURE__*/function () {
   };
 }());
 module.exports = router;
+
+/***/ }),
+
+/***/ "./resources/js/services/ThemeService.js":
+/*!***********************************************!*\
+  !*** ./resources/js/services/ThemeService.js ***!
+  \***********************************************/
+/***/ ((module) => {
+
+// Create a new service: ThemeService.js
+module.exports = {
+  /**
+   * Apply organization-specific theming to the application
+   * @param {Object} organization - The organization object containing theme properties
+   */
+  setTheme: function setTheme(organization) {
+    if (!organization) return;
+    var root = document.documentElement;
+
+    // Set primary color if available
+    if (organization.primary_color) {
+      // Set CSS variables based on organization colors
+      root.style.setProperty('--primary-color', organization.primary_color || '#4caf50');
+      root.style.setProperty('--secondary-color', organization.secondary_color || '#2196f3');
+
+      // Derive complementary colors
+      root.style.setProperty('--primary-light', this.lightenColor(organization.primary_color, 40) || '#a5d6a7');
+      root.style.setProperty('--primary-dark', this.darkenColor(organization.primary_color, 20) || '#2e7d32');
+    }
+
+    // Set secondary color if available
+    if (organization.secondary_color) {
+      root.style.setProperty('--secondary-color', organization.secondary_color);
+      var darkShade = this.darkenColor(organization.secondary_color, 20);
+      var lightShade = this.lightenColor(organization.secondary_color, 40);
+      root.style.setProperty('--secondary-dark', darkShade);
+      root.style.setProperty('--secondary-light', lightShade);
+    }
+
+    // Persist theme in localStorage for quicker loading next time
+    localStorage.setItem('org_theme', JSON.stringify({
+      primary: organization.primary_color,
+      secondary: organization.secondary_color
+    }));
+  },
+  /**
+   * Create a lighter version of a hex color
+   * @param {string} color - Hex color code
+   * @param {number} percent - Amount to lighten (0-100)
+   * @returns {string} - Lightened hex color
+   */
+  lightenColor: function lightenColor(color, percent) {
+    if (!color || !color.startsWith('#')) return '#ffffff';
+    var r = parseInt(color.slice(1, 3), 16);
+    var g = parseInt(color.slice(3, 5), 16);
+    var b = parseInt(color.slice(5, 7), 16);
+    r = Math.min(255, Math.floor(r + (255 - r) * percent / 100));
+    g = Math.min(255, Math.floor(g + (255 - g) * percent / 100));
+    b = Math.min(255, Math.floor(b + (255 - b) * percent / 100));
+    return "#".concat(r.toString(16).padStart(2, '0')).concat(g.toString(16).padStart(2, '0')).concat(b.toString(16).padStart(2, '0'));
+  },
+  /**
+   * Create a darker version of a hex color
+   * @param {string} color - Hex color code
+   * @param {number} percent - Amount to darken (0-100)
+   * @returns {string} - Darkened hex color
+   */
+  darkenColor: function darkenColor(color, percent) {
+    if (!color || !color.startsWith('#')) return '#000000';
+    var r = parseInt(color.slice(1, 3), 16);
+    var g = parseInt(color.slice(3, 5), 16);
+    var b = parseInt(color.slice(5, 7), 16);
+    r = Math.max(0, Math.floor(r * (100 - percent) / 100));
+    g = Math.max(0, Math.floor(g * (100 - percent) / 100));
+    b = Math.max(0, Math.floor(b * (100 - percent) / 100));
+    return "#".concat(r.toString(16).padStart(2, '0')).concat(g.toString(16).padStart(2, '0')).concat(b.toString(16).padStart(2, '0'));
+  }
+};
 
 /***/ })
 

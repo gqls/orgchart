@@ -5,6 +5,7 @@ const Login = require('./components/Login.vue').default;
 const Register = require('./components/Register.vue').default;
 const OrganizationsList = require('./components/OrganizationsList.vue').default;
 const OrganizationCreate = require('./components/OrganizationCreate.vue').default;
+const OrganizationSettings = require('./components/OrganizationSettings.vue').default;
 const ScenarioDetail = require('./components/ScenarioDetail.vue').default;
 const axios = require('axios');
 
@@ -51,7 +52,17 @@ const router = createRouter({
             component: Dashboard,
             name: 'organizations.dashboard',
             meta: { requiresAuth: true },
-            props: (route) => ({ organizationId: route.params.id })
+            props: route => {
+                // Ensure ID is properly passed as a prop
+                const id = Number(route.params.id) || null;
+                return { organizationId: id };
+            },
+            // ensure the component is recreated when the route changes
+            beforeRouteUpdate(to, from, next) {
+                // This will be called when the route params change but the component stays the same
+                console.log("Route is updating from", from.params.id, "to", to.params.id);
+                next();
+            }
         },
         {
             path: '/organizations/:id/departments',
@@ -85,6 +96,13 @@ const router = createRouter({
             path: '/organizations/:id/scenarios/:scenarioId/detail',
             component: ScenarioDetail,
             name: 'organizations.scenarios.detail',
+            meta: { requiresAuth: true },
+            props: true
+        },
+        {
+            path: '/organizations/:id/settings',
+            component: OrganizationSettings,
+            name: 'organizations.settings',
             meta: { requiresAuth: true },
             props: true
         }

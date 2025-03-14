@@ -1,7 +1,14 @@
 // resources/js/components/AsIsAnalysis.vue
 <template>
   <div class="as-is-analysis">
-    <div class="metrics-tabs">
+  <div v-if="!isDataReady" class="loading-state">
+    <div class="loading-spinner">
+      <i class="fas fa-circle-notch fa-spin"></i>
+    </div>
+    <p>Loading analysis data...</p>
+  </div>
+
+    <div v-else class="metrics-tabs">
       <div
           v-for="tab in tabs"
           :key="tab.id"
@@ -241,7 +248,7 @@
 
 <script>
 import Chart from 'chart.js/auto';
-
+import { ref, watchEffect,computed, watch } from 'vue';
 export default {
   props: {
     organization: {
@@ -253,11 +260,13 @@ export default {
       type: Object,
       required: true,
       default: () => null
-    }
+    },
   },
 
   data() {
     return {
+      loading: true,
+      error: null,
       activeTab: 'dashboard',
       tabs: [
         { id: 'dashboard', name: 'Dashboard' },
@@ -311,14 +320,27 @@ export default {
 
         return true;
       });
-    }
+    },
+    isReady() {
+      return !!this.organization &&
+          !!this.organization.id &&
+          !!this.scenario &&
+          !!this.scenario.id;
+    },
+    isDataReady() {
+      return this.organization &&
+          this.organization.id &&
+          this.scenario &&
+          this.scenario.id &&
+          !this.loading;
+    },
   },
 
   watch: {
     scenario: {
       immediate: true,
       handler(newVal) {
-        if (newVal) {
+        if (newVal && newVal.id) {
           this.loadData();
         }
       }
@@ -334,6 +356,14 @@ export default {
   methods: {
 
     async loadData() {
+      if (!this.organization?.id || !this.scenario?.id) {
+        console.log('Cannot load data - missing required organization or scenario');
+        return;
+      }
+
+      this.loading = true;
+      this.error = null;
+
       try {
         // Fetch positions
         const positionsResponse = await axios.get(
@@ -366,6 +396,9 @@ export default {
 
       } catch (error) {
         console.error('Error loading analysis data:', error);
+        this.error = 'Failed to load analysis data. Please try again.';
+      } finally {
+        this.loading = false;
       }
     },
 

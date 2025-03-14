@@ -3,11 +3,8 @@
   <div class="dashboard">
     <!-- empty dashboard section with demo info -->
     <div v-if="!organizationId" class="empty-dashboard">
-      <div class="dashboard-logo">
-        <h3><img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo"> OrgChart</h3>
-      </div>
       <div class="welcome-message">
-        <h1>Welcome to OrgChart </h1>
+        <h1>Welcome to OrgChart</h1>
         <p>Select an organization to get started or create a new one.</p>
       </div>
 
@@ -55,9 +52,6 @@
       <template v-else>
         <div class="dashboard-header">
           <h1>{{ organization.name }}</h1>
-          <div class="dashboard-logo">
-            <h3><img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo"> OrgChart</h3>
-          </div>
           <div class="dashboard-actions">
             <button @click="toggleSidebar" class="btn-toggle">
               <i class="fas fa-bars"></i>
@@ -66,9 +60,14 @@
         </div>
 
         <div class="main-container" :class="{ 'sidebar-open': sidebarOpen }">
-          <sidebar :organization="organization" :open="sidebarOpen"/>
+          <sidebar
+              :organization="organization"
+              :open="sidebarOpen"
+              @error="handleError"
+          />
+
           <div class="content">
-            <div class="metrics-overview">
+            <div v-if="dashboardMetrics.length > 0" class="metrics-overview">
               <div class="metric-card" v-for="metric in dashboardMetrics" :key="metric.id">
                 <div class="metric-value" :class="getMetricClass(metric)">
                   {{ formatMetricValue(metric) }}
@@ -130,6 +129,7 @@ import Login from "./Login.vue";
 import OrganizationCreate from "./OrganizationCreate.vue";
 import OrganizationsList from "./OrganizationsList.vue";
 import Register from "./Register.vue";
+import ThemeService from "../services/ThemeService";
 
 export default {
   components: {
@@ -175,27 +175,56 @@ export default {
     };
   },
 
-  async created() {
-    if (this.organizationId) {
-      const orgId = parseInt(this.organizationId, 10);
-      if (isNaN(orgId)) {
-        this.error = "Invalid organization ID provided.";
-        return;
+  watch: {
+    organizationId: {
+      immediate: true,
+      handler(newVal, oldVal) {
+        if (newVal && newVal !== oldVal) {
+          console.log("organizationId changed from", oldVal, "to", newVal);
+          this.loading = true;
+          this.error = null;
+          this.organization = {};
+          this.fetchOrganization()
+              .then(() => {
+                if (this.organization && this.organization.id) {
+                  return Promise.all([
+                    this.fetchScenarios(),
+                    this.fetchDepartments()
+                  ]);
+                }
+              })
+              .catch(error => {
+                console.error("Error loading organization data:", error);
+                this.error = "Error loading organization data. Please try again.";
+              })
+              .finally(() => {
+                this.loading = false;
+              });
+        } else if (!newVal) {
+          // If no organization ID, fetch the list of organizations
+          this.fetchOrganizations();
+        }
       }
-      // If we have an organization ID, fetch that organization's data
+    }
+  },
+
+  async created() {
+
+    console.log("Component created with organizationId:", this.organizationId);
+    if (this.organizationId) {
       try {
         this.loading = true;
-        await this.fetchOrganization(orgId);
+        await this.fetchOrganization();
+
         // Only fetch dependent data after the organization is loaded
         if (this.organization && this.organization.id) {
-          await this.fetchScenarios(orgId);
-          await this.fetchDepartments(orgId);
-        } else {
-          console.error('Error loading fetchScenarios and fetch Departments in Dashboard.vue')
+          await this.fetchScenarios();
+          await this.fetchDepartments();
         }
       } catch (error) {
         this.error = "Error loading organization data. Please try again.";
-        console.error('Error initializing Dashboard:', error);
+      } finally {
+        this.loading = false;
       }
     } else {
       // If no organization ID, fetch the list of organizations
@@ -204,10 +233,11 @@ export default {
     }
   },
 
-
-
-
   methods: {
+    handleError(error) {
+      this.error = error;
+    },
+
     async checkAuth() {
       try {
         const response = await axios.get('/api/user');
@@ -226,6 +256,7 @@ export default {
       const isAuthenticated = await this.checkAuth();
       if (!isAuthenticated) {
         this.error = 'You must be logged in to view organizations';
+        this.loading = false;
         return;
       } else {
         console.log('you are logged in');
@@ -259,15 +290,25 @@ export default {
       }
     },
 
-    async fetchOrganization(orgId) {
-      this.loading = true;
-      this.error = null;
+    async fetchOrganization() {
+
+      console.log("Fetching organization data for ID:", this.organizationId);
+
+      if (!this.organizationId) {
+        console.error('No organization ID provided');
+        this.error = "Invalid organization ID";
+        return;
+      }
 
       try {
-        const response = await axios.get(`/api/organizations/${orgId}`);
+        const response = await axios.get(`/api/organizations/${this.organizationId}`);
         if (response.data && typeof response.data === 'object') {
           this.organization = response.data;
-          console.log('Organization loaded:', this.organization);
+
+          // Apply theming if the service exists
+          if (typeof ThemeService !== 'undefined' && ThemeService.setTheme) {
+            ThemeService.setTheme(this.organization);
+          }
         } else {
           console.error('Invalid organization data received:', response.data);
           this.organization = {}; // Fallback to empty object
@@ -282,9 +323,14 @@ export default {
       }
     },
 
-    async fetchScenarios(orgId) {
+    async fetchScenarios() {
+      if (!this.organization || !this.organization.id) {
+        console.error('Cannot fetch scenarios without a valid organization');
+        return;
+      }
+
       try {
-        const response = await axios.get(`/api/organizations/${orgId}/scenarios`);
+        const response = await axios.get(`/api/organizations/${this.organization.id}/scenarios`);
         if (Array.isArray(response.data)) {
           this.scenarios = response.data;
 
@@ -306,8 +352,13 @@ export default {
     },
 
     async setCurrentScenario(scenarioId) {
+      if (!this.organization || !this.organization.id) {
+        console.error('Cannot set current scenario without a valid organization');
+        return;
+      }
+
       try {
-        const response = await axios.get(`/api/organizations/${this.organizationId}/scenarios/${scenarioId}`);
+        const response = await axios.get(`/api/organizations/${this.organization.id}/scenarios/${scenarioId}`);
         this.currentScenario = response.data;
         this.fetchDashboardMetrics();
       } catch (error) {
@@ -315,10 +366,14 @@ export default {
       }
     },
 
-    async fetchDepartments(orgId) {
+    async fetchDepartments() {
+      if (!this.organization || !this.organization.id) {
+        console.error('Cannot fetch departments without a valid organization');
+        return;
+      }
 
       try {
-        const response = await axios.get(`/api/organizations/${orgId}/departments`);
+        const response = await axios.get(`/api/organizations/${this.organization.id}/departments`);
         this.departments = response.data;
       } catch (error) {
         console.error('Error fetching departments:', error);
@@ -328,39 +383,62 @@ export default {
     },
 
     async fetchDashboardMetrics() {
-      if (!this.currentScenario) return;
+      if (!this.organization || !this.organization.id || !this.currentScenario || !this.currentScenario.id) {
+        console.error('Cannot fetch metrics without a valid organization and scenario');
+        this.dashboardMetrics = [];
+        return;
+      }
 
       try {
-        const response = await axios.get(`/api/organizations/${this.organizationId}/scenarios/${this.currentScenario.id}/metrics`);
+        const response = await axios.get(
+            `/api/organizations/${this.organization.id}/scenarios/${this.currentScenario.id}/metrics`
+        );
+
+        if (!Array.isArray(response.data)) {
+          console.warn('Unexpected metrics data format:', response.data);
+          this.dashboardMetrics = [];
+          return;
+        }
+
         this.dashboardMetrics = response.data;
 
         // Add trend data if we have a comparison scenario (e.g., previous month)
         if (this.scenarios.length > 1) {
           const baseScenario = this.scenarios.find(s => s.is_base);
           if (baseScenario && baseScenario.id !== this.currentScenario.id) {
-            const comparisonResponse = await axios.get(`/api/organizations/${this.organizationId}/compare-scenarios`, {
-              params: {
-                scenario1_id: this.currentScenario.id,
-                scenario2_id: baseScenario.id
-              }
-            });
+            try {
+              const comparisonResponse = await axios.get(
+                  `/api/organizations/${this.organization.id}/compare-scenarios`,
+                  {
+                    params: {
+                      scenario1_id: this.currentScenario.id,
+                      scenario2_id: baseScenario.id
+                    }
+                  }
+              );
 
-            const comparison = comparisonResponse.data.comparison;
+              if (comparisonResponse.data && comparisonResponse.data.comparison) {
+                const comparison = comparisonResponse.data.comparison;
 
-            // Add trend data to metrics
-            this.dashboardMetrics.forEach(metric => {
-              const compMetric = comparison.find(m => m.code === metric.code);
-              if (compMetric) {
-                metric.trend = {
-                  value: compMetric.difference,
-                  percentage: compMetric.difference_percentage
-                };
+                // Add trend data to metrics
+                this.dashboardMetrics.forEach(metric => {
+                  const compMetric = comparison.find(m => m.code === metric.code);
+                  if (compMetric) {
+                    metric.trend = {
+                      value: compMetric.difference,
+                      percentage: compMetric.difference_percentage
+                    };
+                  }
+                });
               }
-            });
+            } catch (error) {
+              console.error('Error comparing scenarios:', error);
+            }
           }
         }
       } catch (error) {
         console.error('Error fetching dashboard metrics:', error);
+        this.dashboardMetrics = [];
       }
     },
 
@@ -377,11 +455,12 @@ export default {
 
     getOrgLogoStyle(org) {
       if (!org) return {};
+
       if (org.logo_path) {
         const logoUrl = org.logo_path.startsWith('http')
             ? org.logo_path
             : `/storage/${org.logo_path}`;
-        return { backgroundImage: `url(${org.logo_path})` };
+        return { backgroundImage: `url(${logoUrl})` };
       } else {
         return { backgroundColor: org.primary_color || '#4caf50' };
       }
@@ -392,44 +471,71 @@ export default {
     },
 
     formatMetricValue(metric) {
-      if (!metric || !metric.pivot) return 'N/A';
+      if (!metric || !metric.pivot || metric.pivot.value === undefined || metric.pivot.value === null) return 'N/A';
 
-      if (metric.format === 'currency') {
-        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(metric.pivot.value);
-      } else if (metric.format === 'percentage') {
-        return `${metric.pivot.value}%`;
-      } else if (metric.format === 'number') {
-        return new Intl.NumberFormat('en-US').format(metric.pivot.value);
+      try {
+        if (metric.format === 'currency') {
+          return new Intl.NumberFormat('en-UK', { style: 'currency', currency: 'GBP' }).format(metric.pivot.value);
+        } else if (metric.format === 'percentage') {
+          return `${metric.pivot.value}%`;
+        } else if (metric.format === 'number') {
+          return new Intl.NumberFormat('en-UK').format(metric.pivot.value);
+        }
+
+        return metric.pivot.value.toString();
+      } catch (e) {
+        console.error('Error formatting metric value:', e);
+        return 'Error';
       }
-
-      return metric.pivot.value;
     },
 
     formatTrendValue(trend) {
-      if (trend.percentage) {
-        return `${trend.percentage.toFixed(1)}%`;
+      if (!trend || trend.percentage === undefined || trend.percentage === null) {
+        return '';
       }
-      return trend.value;
+
+      try {
+        if (typeof trend.percentage === 'number') {
+          return `${trend.percentage.toFixed(1)}%`;
+        } else if (typeof trend.value !== 'undefined') {
+          return trend.value.toString();
+        }
+        return '';
+      } catch (e) {
+        console.error('Error formatting trend value:', e);
+        return '';
+      }
     },
 
     getMetricClass(metric) {
-      if (!metric.pivot || !metric.pivot.goal) return '';
+      if (!metric || !metric.pivot || !metric.pivot.goal) return '';
 
-      const value = metric.pivot.value;
-      const goal = metric.pivot.goal;
+      try {
+        const value = parseFloat(metric.pivot.value);
+        const goal = parseFloat(metric.pivot.goal);
 
-      if (value >= goal) return 'metric-success';
-      if (value >= goal * 0.9) return 'metric-warning';
-      return 'metric-danger';
+        if (isNaN(value) || isNaN(goal)) return '';
+
+        if (value >= goal) return 'metric-success';
+        if (value >= goal * 0.9) return 'metric-warning';
+        return 'metric-danger';
+      } catch (e) {
+        console.error('Error determining metric class:', e);
+        return '';
+      }
     },
 
     getTrendClass(trend) {
+      if (!trend) return '';
+
       if (trend.value > 0) return 'trend-up';
       if (trend.value < 0) return 'trend-down';
       return '';
     },
 
     getTrendIcon(trend) {
+      if (!trend) return '';
+
       if (trend.value > 0) return 'fas fa-arrow-up';
       if (trend.value < 0) return 'fas fa-arrow-down';
       return 'fas fa-equals';

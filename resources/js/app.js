@@ -1,13 +1,13 @@
 // resources/js/app.js
-
 require('./bootstrap');
 const { createApp } = require('vue');
 const App = require('./components/App.vue').default;
 const router = require('./router');
 const axios = require('axios');
-
-// Import the auth module
 const auth = require('./auth');
+const ThemeService = require('./services/ThemeService');
+
+window.ThemeService = ThemeService;
 
 // Make sure it's defined before using it
 if (auth) {
