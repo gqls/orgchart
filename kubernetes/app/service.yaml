@@ -1,4 +1,4 @@
-# orgmaps-service.yaml
+# orgchart-service.yaml
 apiVersion: v1
 kind: Service
 metadata:

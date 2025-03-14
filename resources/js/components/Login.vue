@@ -3,7 +3,7 @@
   <div class="auth-container">
     <div class="auth-card">
       <div class="auth-header">
-        <h1>Log in to Q5 OrgMaps</h1>
+        <h1>Log in to OrgChart</h1>
         <p>Welcome back. Please enter your credentials to continue.</p>
       </div>
       <button @click="testAuth">Test Authentication</button>

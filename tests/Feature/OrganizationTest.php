@@ -24,7 +24,7 @@ class OrganizationTest extends TestCase
         parent::setUp();
 
         // Create roles
-        $role = Role::create(['name' => 'Orgcharts Admin', 'slug' => 'orgcharts-admin', 'description' => 'Q5 administrator']);
+        $role = Role::create(['name' => 'Orgcharts Admin', 'slug' => 'orgcharts-admin', 'description' => 'OrgChart administrator']);
 
         // Create user
         $this->user = User::factory()->create([

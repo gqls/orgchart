@@ -1,4 +1,4 @@
-# orgmaps-mysql-service.yaml
+# orgchart-mysql-service.yaml
 apiVersion: v1
 kind: Service
 metadata:

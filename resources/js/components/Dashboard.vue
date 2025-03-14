@@ -3,11 +3,11 @@
   <div class="dashboard">
     <!-- empty dashboard section with demo info -->
     <div v-if="!organizationId" class="empty-dashboard">
-      <div class="dashboard-logo"> OrgChart
-        <img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo">
+      <div class="dashboard-logo">
+        <h3><img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo"> OrgChart</h3>
       </div>
       <div class="welcome-message">
-        <h1>Welcome to OrgMaps</h1>
+        <h1>Welcome to OrgChart </h1>
         <p>Select an organization to get started or create a new one.</p>
       </div>
 
@@ -56,7 +56,7 @@
         <div class="dashboard-header">
           <h1>{{ organization.name }}</h1>
           <div class="dashboard-logo">
-            <img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo">OrgChart
+            <h3><img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo"> OrgChart</h3>
           </div>
           <div class="dashboard-actions">
             <button @click="toggleSidebar" class="btn-toggle">

@@ -1,10 +1,13 @@
 // resources/js/components/Register.vue
 <template>
+  <div class="dashboard-logo">
+  <h3><img src="/img/logo.jpeg" alt="OrgChart Logo" class="header-logo"> OrgChart</h3>
+  </div>
   <div class="auth-container">
     <div class="auth-card">
       <div class="auth-header">
         <h1>Create an Account</h1>
-        <p>Fill in the form below to create your Q5 OrgMaps account.</p>
+        <p>Fill in the form below to create your OrgChart account.</p>
       </div>
 
       <form @submit.prevent="register" class="auth-form">
@@ -101,23 +104,23 @@
         </div>
         <div class="modal-body">
           <h4>1. Acceptance of Terms</h4>
-          <p>By accessing or using Q5 OrgMaps, you agree to be bound by these Terms of Service and all applicable laws
+          <p>By accessing or using OrgChart, you agree to be bound by these Terms of Service and all applicable laws
             and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing
             this site.</p>
 
           <h4>2. Use License</h4>
-          <p>Permission is granted to temporarily use Q5 OrgMaps for personal, non-commercial transitory viewing only.
+          <p>Permission is granted to temporarily use OrgChart for personal, non-commercial transitory viewing only.
             This is the grant of a license, not a transfer of title.</p>
 
           <h4>3. Disclaimer</h4>
-          <p>The materials on Q5 OrgMaps are provided on an 'as is' basis. Q5 OrgMaps makes no warranties, expressed or
+          <p>The materials on OrgChart are provided on an 'as is' basis. OrgChart makes no warranties, expressed or
             implied, and hereby disclaims and negates all other warranties including, without limitation, implied
             warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of
             intellectual property or other violation of rights.</p>
 
           <h4>4. Limitations</h4>
-          <p>In no event shall Q5 OrgMaps or its suppliers be liable for any damages arising out of the use or inability
-            to use the materials on Q5 OrgMaps, even if Q5 OrgMaps or a Q5 OrgMaps authorized representative has been
+          <p>In no event shall OrgChart or its suppliers be liable for any damages arising out of the use or inability
+            to use the materials on OrgChart, even if OrgChart or a OrgChart authorized representative has been
             notified orally or in writing of the possibility of such damage.</p>
         </div>
         <div class="modal-footer">

@@ -20,7 +20,7 @@ class OrganizationSeeder extends Seeder
         // Create a demo organization
         $demoOrg = Organization::create([
             'name' => 'Demo Organization',
-            'description' => 'This is a demo organization to help you get started with OrgMaps. You can explore its features or create your own organization.',
+            'description' => 'This is a demo organization to help you get started with OrgChart. You can explore its features or create your own organization.',
             'slug' => Str::slug('Demo Organization'),
             'primary_color' => '#4CAF50',
             'logo_path' => null, // No logo by default
