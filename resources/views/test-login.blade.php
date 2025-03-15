@@ -22,7 +22,7 @@
 
 <div>
     <h2>Test Authentication</h2>
-    <button id="testAuth">Test Auth</button>
+    <button id="testAuth">Test Auth in blade</button>
     <pre id="result"></pre>
 </div>
 

@@ -323,13 +323,13 @@ class ComposerStaticInit121ea3a2fffe49b3ef9aa4d064b28c19
         ),
         'Spatie\\LaravelIgnition\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
-            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
+            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/laravel-ignition',
+            1 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
         ),
         'Spatie\\Ignition\\' => 
         array (
-            0 => __DIR__ . '/..' . '/spatie/ignition/src',
-            1 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
+            0 => __DIR__ . '/..' . '/spatie/error-solutions/legacy/ignition',
+            1 => __DIR__ . '/..' . '/spatie/ignition/src',
         ),
         'Spatie\\FlareClient\\' => 
         array (
@@ -545,15 +545,26 @@ class ComposerStaticInit121ea3a2fffe49b3ef9aa4d064b28c19
     );
 
     public static $classMap = array (
+        'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Api\\ActivityLogController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ActivityLogController.php',
         'App\\Http\\Controllers\\Api\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/AuthController.php',
         'App\\Http\\Controllers\\Api\\DepartmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/DepartmentController.php',
         'App\\Http\\Controllers\\Api\\OrganizationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/OrganizationController.php',
+        'App\\Http\\Controllers\\Api\\OrganizationUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/OrganizationUserController.php',
         'App\\Http\\Controllers\\Api\\PositionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/PositionController.php',
         'App\\Http\\Controllers\\Api\\ReportingRelationshipController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ReportingRelationshipController.php',
+        'App\\Http\\Controllers\\Api\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/RoleController.php',
         'App\\Http\\Controllers\\Api\\ScenarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ScenarioController.php',
+        'App\\Http\\Controllers\\Api\\TestController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/TestController.php',
+        'App\\Http\\Controllers\\Api\\UserSettingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/UserSettingsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+        'App\\Http\\Middleware\\LogRequests' => __DIR__ . '/../..' . '/app/Http/Middleware/LogRequests.php',
+        'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\ActivityLog' => __DIR__ . '/../..' . '/app/Models/ActivityLog.php',
         'App\\Models\\Department' => __DIR__ . '/../..' . '/app/Models/Department.php',
+        'App\\Models\\Employee' => __DIR__ . '/../..' . '/app/Models/Employee.php',
         'App\\Models\\Metric' => __DIR__ . '/../..' . '/app/Models/Metric.php',
         'App\\Models\\Organization' => __DIR__ . '/../..' . '/app/Models/Organization.php',
         'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
@@ -566,7 +577,10 @@ class ComposerStaticInit121ea3a2fffe49b3ef9aa4d064b28c19
         'App\\Models\\Strategy' => __DIR__ . '/../..' . '/app/Models/Strategy.php',
         'App\\Models\\Template' => __DIR__ . '/../..' . '/app/Models/Template.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Policies\\OrganizationPolicy' => __DIR__ . '/../..' . '/app/Policies/OrganizationPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
+        'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -691,7 +705,10 @@ class ComposerStaticInit121ea3a2fffe49b3ef9aa4d064b28c19
         'Database\\Factories\\ScenarioFactory' => __DIR__ . '/../..' . '/database/factories/ScenarioFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\DemoDataSeeder' => __DIR__ . '/../..' . '/database/seeders/DemoDataSeeder.php',
+        'Database\\Seeders\\OrganizationSeeder' => __DIR__ . '/../..' . '/database/seeders/OrganizationSeeder.php',
         'Database\\Seeders\\RoleSeeder' => __DIR__ . '/../..' . '/database/seeders/RoleSeeder.php',
+        'Database\\Seeders\\UserSeeder' => __DIR__ . '/../..' . '/database/seeders/UserSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',

@@ -244,7 +244,7 @@ export default {
         console.log('User authentication status:', response.data);
         return true;
       } catch (error) {
-        console.error('Authentication check failed:', error);
+        console.error('Authentication check failed: in dashboard vue 247', error);
         return false;
       }
     },

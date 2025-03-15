@@ -124,5 +124,35 @@ docker-compose exec app php artisan route:list
 
 docker-compose exec app php artisan storage:link
 
+// in browser:
+localStorage.clear();
+sessionStorage.clear();
+
+// In browser console
+async function testAuth() {
+    try {
+        const response = await fetch('/api/auth-debug', {
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                'Accept': 'application/json'
+            },
+            credentials: 'include'
+        });
+        console.log(await response.json());
+				console.log('Auth test response:', response.data);
+    } catch (error) {
+        console.error('Auth test failed:', error);
+    }
+}
+testAuth();
+
+// sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+
+
+
+
+
 
 

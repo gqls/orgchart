@@ -13,7 +13,8 @@ mix.js('resources/js/app.js', 'public/js')
                 '@': path.resolve('resources/js'),
             },
         }
-    });
+    })
+    .sourceMaps();
 
 if (mix.inProduction()) {
     mix.version();

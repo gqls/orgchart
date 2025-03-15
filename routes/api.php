@@ -13,6 +13,10 @@ use App\Http\Controllers\Api\UserSettingsController;
 use App\Http\Controllers\Api\OrganizationUserController;
 use App\Models\Organization;
 
+
+Route::get('/debug', function() {
+
+})->middleware('debugbar');
 // Public routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
@@ -41,13 +45,23 @@ Route::get('/auth-test', function () {
         return response()->json(['authenticated' => true, 'user' => auth()->user()]);
     }
     return response()->json(['authenticated' => false], 401);
-})->middleware('auth:sanctum');
+});//->middleware('auth:sanctum');
 
 Route::get('/test-controller', [App\Http\Controllers\Api\TestController::class, 'index']);
 
 Route::get('/test', function () {
     return response()->json(['message' => 'API is working']);
 });
+
+// routes/api.php
+Route::get('/test-auth', function (Request $request) {
+    return response()->json([
+        'headers' => $request->headers->all(),
+        'user' => auth()->user(),
+        'session' => session()->all(),
+        'cookies' => $request->cookies->all()
+    ]);
+})->middleware('auth:sanctum');
 
 // Protected routes
 Route::middleware('auth:sanctum')->group(function () {

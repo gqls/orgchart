@@ -1,5 +1,3 @@
-// Create a new migration
-// database/migrations/2023_03_15_000000_add_permissions_to_organization_user_table.php
 <?php
 
 use Illuminate\Database\Migrations\Migration;

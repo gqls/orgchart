@@ -6,6 +6,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use App\Providers\RouteServiceProvider;
+use Laravel\Sanctum\SanctumServiceProvider;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -18,6 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
         AppServiceProvider::class,
         RouteServiceProvider::class,
         AuthServiceProvider::class,
+        SanctumServiceProvider::class,
     ])
     ->withMiddleware(function (Middleware $middleware) {
         //

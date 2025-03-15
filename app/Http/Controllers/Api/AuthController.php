@@ -44,34 +44,51 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->only('email', 'password');
-        $attempt = Auth::attempt($credentials);
+        try {
+            $request->validate([
+                'email' => 'required|email',
+                'password' => 'required',
+            ]);
 
-        if (!$attempt) {
+            if (!Auth::attempt($request->only('email', 'password'))) {
+                return response()->json([
+                    'message' => 'Invalid login credentials'
+                ], 401);
+            }
+
+            $user = User::where('email', $request->email)->firstOrFail();
+
+            // Revoke all existing tokens
+            $user->tokens()->delete();
+
+            // Create new token
+            $token = $user->createToken('auth_token')->plainTextToken;
+
             return response()->json([
-                'message' => 'Invalid login details'
-            ], 401);
+                'access_token' => $token,
+                'token_type' => 'Bearer',
+                'user' => $user->load('role')
+            ]);
+
+        } catch (\Exception $e) {
+            Log::error('Login error: ' . $e->getMessage());
+            return response()->json([
+                'message' => 'An error occurred during login',
+                'error' => $e->getMessage()
+            ], 500);
         }
-
-        $user = User::where('email', $request->email)->firstOrFail();
-        $user->load('role');
-
-        $token = $user->createToken('auth_token')->plainTextToken;
-
-        return response()->json([
-            'user' => $user,
-            'access_token' => $token,
-            'token_type' => 'Bearer',
-        ]);
     }
 
     public function logout(Request $request)
     {
-        $request->user()->currentAccessToken()->delete();
-
-        return response()->json(['message' => 'Successfully logged out']);
+        try {
+            $request->user()->currentAccessToken()->delete();
+            return response()->json(['message' => 'Successfully logged out']);
+        } catch (\Exception $e) {
+            Log::error('Logout error: ' . $e->getMessage());
+            return response()->json(['message' => 'Logout failed'], 500);
+        }
     }
-
     public function user(Request $request)
     {
         $user = $request->user();

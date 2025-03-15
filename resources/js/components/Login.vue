@@ -9,6 +9,10 @@
       <button @click="testAuth">Test Authentication</button>
 
       <form @submit.prevent="login" class="auth-form">
+        <button type="button" @click="debugAuthState" class="btn-secondary">
+          Debug Auth State
+        </button>
+
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -67,6 +71,9 @@
       <div class="auth-footer">
         <p>Don't have an account? <router-link to="/register">Sign up</router-link></p>
       </div>
+      <div v-if="debugInfo" class="debug-info">
+        <pre>{{ debugInfo }}</pre>
+      </div>
     </div>
   </div>
 </template>
@@ -85,60 +92,158 @@ export default {
       errors: {},
       loginError: null,
       loading: false,
-      showPassword: false
+      showPassword: false,
+      debugInfo: null
     };
   },
 
   methods: {
+    async checkAuthStatus() {
+      try {
+        const response = await axios.get('/api/auth-debug');
+        console.log('Auth check response:', response.data);
+        this.debugInfo = response.data;
+        console.log('Debug info login.vue:', this.debugInfo);
+        alert('Authentication works! in check auth status');
+      } catch (error) {
+        console.error('Auth check failed in loginvue checkAuthStatus:', error);
+      }
+    },
+
+    async debugAuthState() {
+      console.group('Authentication Debug Information');
+
+      // Check localStorage
+      const token = localStorage.getItem('token');
+      console.log('Token in localStorage:', token ? `${token.substring(0, 10)}...` : 'None');
+
+      const user = localStorage.getItem('user');
+      console.log('User in localStorage:', user ? 'Present' : 'None');
+
+      // Check headers
+      console.log('Current axios headers:', axios.defaults.headers.common);
+
+      // Check CSRF token
+      const csrfMeta = document.querySelector('meta[name="csrf-token"]');
+      console.log('CSRF meta tag present:', !!csrfMeta);
+      console.log('CSRF token value:', csrfMeta ? csrfMeta.getAttribute('content') : 'None');
+
+      try {
+        // Test CSRF endpoint
+        const csrfResponse = await axios.get('/sanctum/csrf-cookie');
+        console.log('CSRF cookie response:', csrfResponse.status);
+      } catch (error) {
+        console.error('CSRF cookie request failed:', error.message);
+      }
+
+      console.groupEnd();
+    },
+
+
     async testAuth() {
       try {
         const token = localStorage.getItem('token');
         console.log('Stored token:', token);
 
-        console.log('Headers:', axios.defaults.headers.common);
+        // Check for the CSRF token
+        const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+        console.log('CSRF token:', csrfToken);
+
+        // Log current stored user (if any)
+        const storedUser = localStorage.getItem('user');
+        console.log('Stored user:', storedUser);
+
+        // Add more debugging info to headers
+        if (token) {
+          axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+        } else {
+          console.warn('No token found in localStorage - authentication will fail');
+        }
+
+        console.log('Headers before request:', axios.defaults.headers.common);
 
         const response = await axios.get('/api/user');
         console.log('Auth test response:', response.data);
-        alert('Authentication works!');
+        alert('Authentication works! testAuth');
       } catch (error) {
-        console.error('Auth test failed:', error);
-        alert('Authentication failed: ' + error.message);
+        console.error('Auth test failed in testAuth:', error);
+
+        // Enhanced error logging
+        if (error.response) {
+          console.log('Error response status:', error.response.status);
+          console.log('Error response data:', error.response.data);
+          console.log('Error response headers:', error.response.headers);
+        }
+
+        alert('Authentication failed: in testAuth ' + error.message);
       }
     },
 
     async login() {
       try {
-        // First get CSRF cookie
+        this.loading = true;
+        this.loginError = null;
+        this.errors = {};
+
+        // Clear any existing tokens first to avoid conflicts
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+
+        // Reset authorization header
+        delete axios.defaults.headers.common['Authorization'];
+
+        // Get CSRF cookie
         await axios.get('/sanctum/csrf-cookie');
 
-        // Log what we're sending
-        console.log('Login attempt with:', this.form);
+        console.log('Login attempt with:', { email: this.form.email, password: '******' });
 
         // Attempt login
         const response = await axios.post('/api/login', this.form);
-        console.log('Login response:', response.data);
+        console.log('Login response structure:', Object.keys(response.data));
 
         if (response.data.access_token) {
-          // Save token to localStorage
+          console.log('Token received, length:', response.data.access_token.length);
+          console.log('Token found:', response.data.access_token.substring(0, 10) + '...');
+          console.log('User data:', response.data.user);
+
+          // Store token
           localStorage.setItem('token', response.data.access_token);
 
-          // Set authorization header for future requests
+          // Set axios default header
           axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
 
-          // Save user data
-          localStorage.setItem('user', JSON.stringify(response.data.user));
+          // Test auth with new token
+          try {
+            const userResponse = await axios.get('/api/user');
+            console.log('User verification successful:', userResponse.data);
+          } catch (verifyError) {
+            console.error('Token verification failed:', verifyError);
+            throw new Error('Authentication verification failed');
+          }
 
-          // Emit login event
-          this.$emit('login', response.data.user);
-
-          // Navigate to dashboard
-          this.$router.push('/dashboard');
+          // Navigate to dashboard or intended route
+          const redirect = this.$route.query.redirect || '/dashboard';
+          this.$router.push(redirect);
         } else {
           throw new Error('No access token received');
         }
       } catch (error) {
-        console.error('Login error:', error.response?.data || error.message);
-        this.loginError = 'Login failed. Please check your credentials.';
+        console.error('Login error:', error);
+
+        if (error.response?.status === 422) {
+          this.errors = error.response.data.errors;
+        } else if (error.response?.data?.message) {
+          console.error('Server error message:', error.response.data.message);
+          this.loginError = error.response.data.message;
+        } else {
+          this.loginError = 'An unexpected error occurred in Login.vue. Please try again.';
+        }
+
+        console.log("calling checkAuthStatus in error part of catch in login() in login.vue");
+        // Log additional debug info
+        await this.checkAuthStatus();
+      } finally {
+        this.loading = false;
       }
     }
   }

@@ -131,19 +131,34 @@ const router = createRouter({
 // Navigation guards
 router.beforeEach(async (to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAuth)) {
+        // Check if we have a token before making the API call
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+            console.log('No token found, redirecting to login');
+            next({
+                name: 'login',
+                query: { redirect: to.fullPath }
+            });
+            return;
+        }
+
         try {
+            // Ensure the Authorization header is set
+            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+
             const response = await axios.get('/api/user');
             if (response.status === 200 && response.data) {
                 next();
             } else {
-                next({
-                    name: 'login',
-                    query: { redirect: to.fullPath }
-                });
+                throw new Error('Invalid user data received');
             }
         } catch (error) {
-            console.error('Authentication check failed:', error);
-            localStorage.removeItem('token'); // Clear invalid token
+            // Clear invalid authentication data
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+            delete axios.defaults.headers.common['Authorization'];
+
             next({
                 name: 'login',
                 query: { redirect: to.fullPath }
