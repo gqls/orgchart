@@ -3,17 +3,62 @@ const axios = require('axios');
 
 // Create the auth object
 const auth = {
-    init() {
-        this.setAuthHeader();
-    },
+        init() {
+            // Check for existing token
+            const token = localStorage.getItem('token');
+            if (token) {
+                axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+            }
+
+            // Add response interceptor for 401 errors
+            axios.interceptors.response.use(
+                response => response,
+                error => {
+                    if (error.response && error.response.status === 401) {
+                        this.logout();
+                        window.location = '/login';
+                    }
+                    return Promise.reject(error);
+                }
+            );
+        },
 
     setAuthHeader() {
         const token = localStorage.getItem('token');
         if (token) {
             axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-            return true;
         }
-        return false;
+
+        // Add response interceptor for 401 errors
+        axios.interceptors.response.use(
+            response => response,
+            error => {
+                if (error.response && error.response.status === 401) {
+                    this.logout();
+                    window.location = '/login';
+                }
+                return Promise.reject(error);
+            }
+        );
+        return true;
+    },
+
+    async login(credentials) {
+        try {
+            // Get CSRF cookie first
+            await axios.get('/sanctum/csrf-cookie');
+
+            const response = await axios.post('/api/login', credentials);
+            if (response.data.access_token) {
+                localStorage.setItem('token', response.data.access_token);
+                localStorage.setItem('user', JSON.stringify(response.data.user));
+                axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
+                return response.data;
+            }
+            throw new Error('Login failed');
+        } catch (error) {
+            throw error;
+        }
     },
 
     async check() {

@@ -49,17 +49,12 @@ class AuthController extends Controller
 
         if (!$attempt) {
             return response()->json([
-                'message' => 'Invalid login details',
-                'credentials' => $credentials,  // Remove in production!
-                'attempt_result' => $attempt
+                'message' => 'Invalid login details'
             ], 401);
         }
 
         $user = User::where('email', $request->email)->firstOrFail();
         $user->load('role');
-
-        // Clear previous tokens (optional)
-        // $user->tokens()->delete();
 
         $token = $user->createToken('auth_token')->plainTextToken;
 
@@ -67,7 +62,6 @@ class AuthController extends Controller
             'user' => $user,
             'access_token' => $token,
             'token_type' => 'Bearer',
-            'auth_check' => Auth::check()
         ]);
     }
 

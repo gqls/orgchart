@@ -27,9 +27,9 @@
             {{ org && org.name && !org.logo_path ? org.name.charAt(0) : '' }}
           </div>
           <div class="org-info">
-            <h3>{{ org && org.name ? org.name : 'Unnamed Organization' }}</h3>
+            <h3>{{ org && org.name ? org.name : 'Unnamed Organisation' }}</h3>
             <p v-if="org && org.description" class="org-description">{{ org.description }}</p>
-            <div v-if="org && org.name === 'Demo Organization'" class="demo-badge">
+            <div v-if="org && org.name === 'Demo Organisation'" class="demo-badge">
               Demo
             </div>
           </div>

@@ -8,6 +8,7 @@ const OrganizationCreate = require('./components/OrganizationCreate.vue').defaul
 const OrganizationSettings = require('./components/OrganizationSettings.vue').default;
 const ScenarioDetail = require('./components/ScenarioDetail.vue').default;
 const axios = require('axios');
+const UserProfileSettings = require("./components/UserProfileSettings.vue");
 
 // Create router
 const router = createRouter({
@@ -28,6 +29,24 @@ const router = createRouter({
             component: Register,
             name: 'register',
             meta: { requiresAuth: false }
+        },
+/*        {
+            path: '/forgot-password',
+            component: () => import('./components/ForgotPassword.vue'),
+            name: 'forgot-password',
+            meta: { requiresAuth: false }
+        },
+        {
+            path: '/profile',
+            component: () => import('./components/UserProfile.vue'),
+            name: 'profile',
+            meta: { requiresAuth: true }
+        },*/
+        {
+            path: '/settings',
+            component: () => UserProfileSettings,
+            name: 'settings',
+            meta: { requiresAuth: true }
         },
         {
             path: '/dashboard',

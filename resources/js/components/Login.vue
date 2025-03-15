@@ -128,22 +128,11 @@ export default {
           // Save user data
           localStorage.setItem('user', JSON.stringify(response.data.user));
 
-          // Test auth
-          try {
-            console.log('Testing authentication...');
-            // Use a different variable name - this was "testResponse" before
-            const authTestResponse = await axios.get('/api/user');
-            console.log('Auth test response:', authTestResponse.data);
+          // Emit login event
+          this.$emit('login', response.data.user);
 
-            // Emit login event
-            this.$emit('login', response.data.user);
-
-            // Navigate to dashboard
-            this.$router.push({name: 'dashboard'});
-          } catch (testError) {
-            console.error('Token verification failed:', testError);
-            alert('Login successful but authentication failed. Please try again.');
-          }
+          // Navigate to dashboard
+          this.$router.push('/dashboard');
         } else {
           throw new Error('No access token received');
         }
@@ -151,21 +140,8 @@ export default {
         console.error('Login error:', error.response?.data || error.message);
         this.loginError = 'Login failed. Please check your credentials.';
       }
-      // After successful login, navigate appropriately
-      if (this.intendedRoute && this.intendedRoute.name === 'organizations.dashboard') {
-        // Only navigate to organization dashboard if we have a valid organization ID
-        if (this.intendedRoute.params && this.intendedRoute.params.id) {
-          this.$router.push(this.intendedRoute);
-        } else {
-          // Navigate to the general dashboard if no specific organization
-          this.$router.push({name: 'dashboard'});
-        }
-      } else {
-        // Default navigation if no intended route
-        this.$router.push({name: 'dashboard'});
-      }
     }
-  },
+  }
 }
 </script>
 
