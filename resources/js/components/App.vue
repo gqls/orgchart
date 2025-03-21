@@ -21,25 +21,21 @@ export default {
 
   data() {
     return {
-      isAuthenticated: false,
-      user: null
+      isAuthenticated: true,
+      user: {
+        id: 1,
+        name: 'Admin User',
+        email: 'admin@example.com'
+      }
     };
   },
 
   created() {
-    // Check if we have a token
-    const token = localStorage.getItem('token');
-    const userData = localStorage.getItem('user');
+    // Set a dummy token
+    localStorage.setItem('token', 'dummy-token-for-development');
 
-    if (token && userData) {
-      // Set up axios with token
-      axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-
-      // Restore user data
-      const user = JSON.parse(userData);
-      this.$emit('login', user);
-    }
-    //this.checkAuth();
+    this.isAuthenticated = true;
+    this.user = JSON.parse(localStorage.getItem('user'));
   },
 
   methods: {

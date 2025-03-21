@@ -2,6 +2,22 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DashboardController;
+
+Route::get('/', function () {
+    var_dump("stop here mr xdebug");
+    xdebug_break();
+    var_dump("a first step");
+    var_dump("a second step");
+    return phpinfo();
+    // Automatically log in as user 1 (usually admin)
+    #\Illuminate\Support\Facades\Auth::loginUsingId(1);
+
+    // Redirect to your dashboard or main page
+    #return redirect('/dashboard'); // or whatever your main page is
+});
+
+//Route::get('/dashboard', [\App\Http\Controllers\Api\OrganizationController::class, 'index'])->name('dashboard');
 
 Route::get('/debug-providers', function () {
     $providers = app()->getLoadedProviders();

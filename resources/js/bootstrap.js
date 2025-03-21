@@ -13,7 +13,7 @@ if (token) {
 
 const authToken = localStorage.getItem('token');
 if (authToken) {
-    axios.defaults.headers.common['Authorization'] = `Bearer ${authToken}`;
+    axios.defaults.headers.common['Authorization'] = 'Bearer dummy-token-for-development';
 }
 
 // axios interceptor to handle 401 errors

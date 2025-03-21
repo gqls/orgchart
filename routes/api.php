@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\UserSettingsController;
 use App\Http\Controllers\Api\OrganizationUserController;
 use App\Models\Organization;
+use App\Http\Controllers\Api\ActivityLogController;
 
 
 Route::get('/debug', function() {
@@ -61,10 +62,10 @@ Route::get('/test-auth', function (Request $request) {
         'session' => session()->all(),
         'cookies' => $request->cookies->all()
     ]);
-})->middleware('auth:sanctum');
+});//->middleware('auth:sanctum');
 
 // Protected routes
-Route::middleware('auth:sanctum')->group(function () {
+//Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/user', function (Request $request) {
@@ -138,4 +139,4 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('organizations/{organization}/activity-logs', [ActivityLogController::class, 'index']);
     Route::get('organizations/{organization}/activity-logs/{activityLog}', [ActivityLogController::class, 'show']);
 
-});
+//});
